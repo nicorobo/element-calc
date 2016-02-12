@@ -1,3 +1,3 @@
 # element-calc
-# element-calc
-# element-calc
+
+A molecular mass calculator.
