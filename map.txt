@@ -1,0 +1,20 @@
+This is where you should put all of your sweet ideas/plans.
+Example
+Files: 
+	app.js
+	element_list.js
+	util.js
+	/components
+		table.js
+		element.js
+		data_view.js
+
+app.js will depend on table and data. It will have click handlers for elements, and will maintain a list of selected elements.
+
+data.js will display the molecular mass, and formuala.
+
+util.js will have utility methods to handle the math.
+
+table.js will render our periodic table.
+
+element will be the actual element, will trigger a click handler, and will display the abbr., mass, and atomic number. 
