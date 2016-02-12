@@ -21205,22 +21205,17 @@ var App = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this));
 
 		_this.addElement = _this.addElement.bind(_this);
+		_this.state = {
+			compound: new Compound()
+		};
 		return _this;
 	}
 
 	_createClass(App, [{
-		key: 'getInitialState',
-		value: function getInitialState() {
-			var compound = new Compound();
-			return {
-				compound: compound
-			};
-		}
-	}, {
 		key: 'addElement',
 		value: function addElement(element) {
 			this.state.compound.add(element);
-			console.log('Element Added...');
+			console.log(element + ' added to compound...');
 		}
 	}, {
 		key: 'render',

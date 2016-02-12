@@ -9,18 +9,14 @@ class App extends React.Component {
 	constructor() {
 		super()
 		this.addElement = this.addElement.bind(this);
-	}
-
-	getInitialState() {
-		var compound = new Compound();
-		return {
-			compound: compound
+		this.state = {
+			compound: new Compound()
 		}
 	}
 
 	addElement(element) {
 		this.state.compound.add(element);
-		console.log('Element Added...');
+		console.log(`${element} added to compound...`);
 	}
 
 	render() {
