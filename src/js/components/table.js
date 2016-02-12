@@ -8,9 +8,11 @@ class Table extends React.Component {
 	render() {
 		return (
 			<table>
-				{ schema.map( row => {
-					return <Row data={row} />
-				})}
+				<tbody>
+					{ schema.map( row => {
+						return <Row data={row} />
+					})}
+				</tbody>
 			</table>
 		)
 	}

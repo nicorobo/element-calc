@@ -19096,11 +19096,10 @@ var Element = function (_React$Component) {
 	_createClass(Element, [{
 		key: 'render',
 		value: function render() {
-			console.log(this.props.element);
 			return React.createElement(
 				'td',
 				null,
-				'Element'
+				'E'
 			);
 		}
 	}]);
@@ -19137,11 +19136,9 @@ var Space = function (_React$Component) {
 	_createClass(Space, [{
 		key: 'render',
 		value: function render() {
-			return React.createElement(
-				'td',
-				null,
-				'Space'
-			);
+			return React.createElement('td', {
+				colSpan: this.props.width || 1,
+				rowSpan: this.props.height || 1 });
 		}
 	}]);
 
@@ -19182,9 +19179,13 @@ var Table = function (_React$Component) {
 			return React.createElement(
 				'table',
 				null,
-				schema.map(function (row) {
-					return React.createElement(Row, { data: row });
-				})
+				React.createElement(
+					'tbody',
+					null,
+					schema.map(function (row) {
+						return React.createElement(Row, { data: row });
+					})
+				)
 			);
 		}
 	}]);
