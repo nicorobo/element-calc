@@ -6,7 +6,7 @@ class Element extends React.Component {
 	render () {
 		return (
 			<td>
-				E
+				{this.props.element}
 			</td>
 		)
 	}

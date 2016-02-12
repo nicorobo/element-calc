@@ -19099,7 +19099,7 @@ var Element = function (_React$Component) {
 			return React.createElement(
 				'td',
 				null,
-				'E'
+				this.props.element
 			);
 		}
 	}]);
