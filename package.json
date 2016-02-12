@@ -1,7 +1,7 @@
 {
-  "name": "react-project",
+  "name": "element-calc",
   "version": "1.0.0",
-  "description": "A simple project.",
+  "description": "A molar mass calculator.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "mendeleev": "^1.0.1",
     "react": "^0.14.6",
     "react-dom": "^0.14.6"
   }

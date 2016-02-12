@@ -92,11 +92,2159 @@ process.chdir = function (dir) {
 process.umask = function() { return 0; };
 
 },{}],2:[function(require,module,exports){
+module.exports={  
+   "H":{  
+      "name":"hydrogen",
+      "symbol":"H",
+      "type":"other-nonmetal",
+      "number":"1",
+      "mass":"1.008",
+      "period":"1",
+      "group":"1",
+      "melting":"14.01",
+      "boiling":"20.28",
+      "density":"0.00008988",
+      "electronegativity":"2.20",
+      "radius":"25",
+      "valence":"1",
+      "specificheat":"14.304",
+      "comment":""
+   },
+   "He":{  
+      "name":"helium",
+      "symbol":"He",
+      "type":"noble-gas",
+      "number":"2",
+      "mass":"4.003",
+      "period":"1",
+      "group":"18",
+      "melting":"0.95",
+      "boiling":"4.22",
+      "density":"0.0001785",
+      "electronegativity":"",
+      "radius":"31",
+      "valence":"2",
+      "specificheat":"5.193",
+      "comment":""
+   },
+   "Li":{  
+      "name":"lithium",
+      "symbol":"Li",
+      "type":"alkali-metal",
+      "number":"3",
+      "mass":"6.941",
+      "period":"2",
+      "group":"1",
+      "melting":"453.69",
+      "boiling":"1560",
+      "density":"0.534",
+      "electronegativity":"0.98",
+      "radius":"145",
+      "valence":"1",
+      "specificheat":"3.582",
+      "comment":""
+   },
+   "Be":{  
+      "name":"beryllium",
+      "symbol":"Be",
+      "type":"alkaline-earth",
+      "number":"4",
+      "mass":"9.012",
+      "period":"2",
+      "group":"2",
+      "melting":"1560",
+      "boiling":"2742",
+      "density":"1.85",
+      "electronegativity":"1.57",
+      "radius":"105",
+      "valence":"2",
+      "specificheat":"1.825",
+      "comment":""
+   },
+   "B":{  
+      "name":"boron",
+      "symbol":"B",
+      "type":"metalloid",
+      "number":"5",
+      "mass":"10.81",
+      "period":"2",
+      "group":"13",
+      "melting":"2349",
+      "boiling":"4200",
+      "density":"2.34",
+      "electronegativity":"2.04",
+      "radius":"",
+      "valence":"",
+      "specificheat":"1.026",
+      "comment":""
+   },
+   "C":{  
+      "name":"carbon",
+      "symbol":"C",
+      "type":"other-nonmetal",
+      "number":"6",
+      "mass":"12.011",
+      "period":"2",
+      "group":"14",
+      "melting":"3800",
+      "boiling":"4300",
+      "density":"2.267",
+      "electronegativity":"2.55",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.709",
+      "comment":""
+   },
+   "N":{  
+      "name":"nitrogen",
+      "symbol":"N",
+      "type":"other-nonmetal",
+      "number":"7",
+      "mass":"14.007",
+      "period":"2",
+      "group":"15",
+      "melting":"63.15",
+      "boiling":"77.36",
+      "density":"0.0012506",
+      "electronegativity":"3.04",
+      "radius":"",
+      "valence":"",
+      "specificheat":"1.04",
+      "comment":""
+   },
+   "O":{  
+      "name":"oxygen",
+      "symbol":"O",
+      "type":"other-nonmetal",
+      "number":"8",
+      "mass":"15.9999",
+      "period":"2",
+      "group":"16",
+      "melting":"54.36",
+      "boiling":"90.20",
+      "density":"0.001429",
+      "electronegativity":"3.44",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.918",
+      "comment":""
+   },
+   "F":{  
+      "name":"fluorine",
+      "symbol":"F",
+      "type":"halogen",
+      "number":"9",
+      "mass":"18.998",
+      "period":"2",
+      "group":"17",
+      "melting":"53.53",
+      "boiling":"85.03",
+      "density":"0.001696",
+      "electronegativity":"3.98",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.824",
+      "comment":""
+   },
+   "Ne":{  
+      "name":"neon",
+      "symbol":"Ne",
+      "type":"noble-gas",
+      "number":"10",
+      "mass":"20.1797",
+      "period":"2",
+      "group":"18",
+      "melting":"24.56",
+      "boiling":"27.07",
+      "density":"0.0008999",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"1.03",
+      "comment":""
+   },
+   "Na":{  
+      "name":"sodium",
+      "symbol":"Na",
+      "type":"alkali-metal",
+      "number":"11",
+      "mass":"22.9898",
+      "period":"3",
+      "group":"1",
+      "melting":"370.87",
+      "boiling":"1156",
+      "density":"0.971",
+      "electronegativity":"0.93",
+      "radius":"",
+      "valence":"",
+      "specificheat":"1.228",
+      "comment":""
+   },
+   "Mg":{  
+      "name":"magnesium",
+      "symbol":"Mg",
+      "type":"alkaline-earth",
+      "number":"12",
+      "mass":"24.305",
+      "period":"3",
+      "group":"2",
+      "melting":"923",
+      "boiling":"1363",
+      "density":"1.738",
+      "electronegativity":"1.31",
+      "radius":"",
+      "valence":"",
+      "specificheat":"1.023",
+      "comment":""
+   },
+   "Al":{  
+      "name":"aluminium",
+      "symbol":"Al",
+      "type":"post-transition-metal",
+      "number":"13",
+      "mass":"26.982",
+      "period":"3",
+      "group":"13",
+      "melting":"933.47",
+      "boiling":"2792",
+      "density":"2.698",
+      "electronegativity":"1.61",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.897",
+      "comment":""
+   },
+   "Si":{  
+      "name":"silicon",
+      "symbol":"Si",
+      "type":"metalloid",
+      "number":"14",
+      "mass":"28.085",
+      "period":"3",
+      "group":"14",
+      "melting":"1687",
+      "boiling":"3538",
+      "density":"2.3296",
+      "electronegativity":"1.9",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.705",
+      "comment":""
+   },
+   "P":{  
+      "name":"phosphorus",
+      "symbol":"P",
+      "type":"other-nonmetal",
+      "number":"15",
+      "mass":"30.974",
+      "period":"3",
+      "group":"15",
+      "melting":"317.30",
+      "boiling":"550",
+      "density":"1.82",
+      "electronegativity":"2.19",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.769",
+      "comment":""
+   },
+   "S":{  
+      "name":"sulfur",
+      "symbol":"S",
+      "type":"other-nonmetal",
+      "number":"16",
+      "mass":"32.06",
+      "period":"3",
+      "group":"16",
+      "melting":"388.36",
+      "boiling":"717.87",
+      "density":"2.067",
+      "electronegativity":"2.58",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.71",
+      "comment":""
+   },
+   "Cl":{  
+      "name":"chlorine",
+      "symbol":"Cl",
+      "type":"halogen",
+      "number":"17",
+      "mass":"35.45",
+      "period":"3",
+      "group":"17",
+      "melting":"171.6",
+      "boiling":"239.11",
+      "density":"0.003214",
+      "electronegativity":"3.16",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.479",
+      "comment":""
+   },
+   "Ar":{  
+      "name":"argon",
+      "symbol":"Ar",
+      "type":"noble-gas",
+      "number":"18",
+      "mass":"39.948",
+      "period":"3",
+      "group":"18",
+      "melting":"83.80",
+      "boiling":"87.30",
+      "density":"0.0017837",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.52",
+      "comment":""
+   },
+   "K":{  
+      "name":"potassium",
+      "symbol":"K",
+      "type":"alkali-metal",
+      "number":"19",
+      "mass":"39.0983",
+      "period":"4",
+      "group":"1",
+      "melting":"336.53",
+      "boiling":"1032",
+      "density":"0.862",
+      "electronegativity":"0.82",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.757",
+      "comment":""
+   },
+   "Ca":{  
+      "name":"calcium",
+      "symbol":"Ca",
+      "type":"alkaline-earth",
+      "number":"20",
+      "mass":"40.078",
+      "period":"4",
+      "group":"2",
+      "melting":"1115",
+      "boiling":"1757",
+      "density":"1.54",
+      "electronegativity":"1",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.647",
+      "comment":""
+   },
+   "Sc":{  
+      "name":"scandium",
+      "symbol":"Sc",
+      "type":"transition-metal",
+      "number":"21",
+      "mass":"44.956",
+      "period":"4",
+      "group":"3",
+      "melting":"1814",
+      "boiling":"3109",
+      "density":"2.989",
+      "electronegativity":"1.36",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.568",
+      "comment":""
+   },
+   "Ti":{  
+      "name":"titanium",
+      "symbol":"Ti",
+      "type":"transition-metal",
+      "number":"22",
+      "mass":"47.867",
+      "period":"4",
+      "group":"4",
+      "melting":"1941",
+      "boiling":"3560",
+      "density":"4.54",
+      "electronegativity":"1.54",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.523",
+      "comment":""
+   },
+   "V":{  
+      "name":"vandium",
+      "symbol":"V",
+      "type":"transition-metal",
+      "number":"23",
+      "mass":"50.9415",
+      "period":"4",
+      "group":"5",
+      "melting":"2183",
+      "boiling":"3680",
+      "density":"6.11",
+      "electronegativity":"1.63",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.489",
+      "comment":""
+   },
+   "Cr":{  
+      "name":"chromium",
+      "symbol":"Cr",
+      "type":"transition-metal",
+      "number":"24",
+      "mass":"51.9961",
+      "period":"4",
+      "group":"6",
+      "melting":"2180",
+      "boiling":"2944",
+      "density":"7.15",
+      "electronegativity":"1.66",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.449",
+      "comment":""
+   },
+   "Mn":{  
+      "name":"manganese",
+      "symbol":"Mn",
+      "type":"transition-metal",
+      "number":"25",
+      "mass":"54.938",
+      "period":"4",
+      "group":"7",
+      "melting":"1519",
+      "boiling":"2334",
+      "density":"7.44",
+      "electronegativity":"1.55",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.479",
+      "comment":""
+   },
+   "Fe":{  
+      "name":"iron",
+      "symbol":"Fe",
+      "type":"transition-metal",
+      "number":"26",
+      "mass":"55.845",
+      "period":"4",
+      "group":"8",
+      "melting":"1811",
+      "boiling":"3134",
+      "density":"7.874",
+      "electronegativity":"1.83",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.449",
+      "comment":""
+   },
+   "Co":{  
+      "name":"cobalt",
+      "symbol":"Co",
+      "type":"transition-metal",
+      "number":"27",
+      "mass":"58.9332",
+      "period":"4",
+      "group":"9",
+      "melting":"1768",
+      "boiling":"3200",
+      "density":"8.86",
+      "electronegativity":"1.88",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.421",
+      "comment":""
+   },
+   "Ni":{  
+      "name":"nickel",
+      "symbol":"Ni",
+      "type":"transition-metal",
+      "number":"28",
+      "mass":"58.6934",
+      "period":"4",
+      "group":"10",
+      "melting":"1728",
+      "boiling":"3186",
+      "density":"8.912",
+      "electronegativity":"1.91",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.444",
+      "comment":""
+   },
+   "Cu":{  
+      "name":"copper",
+      "symbol":"Cu",
+      "type":"transition-metal",
+      "number":"29",
+      "mass":"63.546",
+      "period":"4",
+      "group":"11",
+      "melting":"1357.77",
+      "boiling":"2835",
+      "density":"8.96",
+      "electronegativity":"1.9",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.385",
+      "comment":""
+   },
+   "Zn":{  
+      "name":"zinc",
+      "symbol":"Zn",
+      "type":"transition-metal",
+      "number":"30",
+      "mass":"65.38",
+      "period":"4",
+      "group":"12",
+      "melting":"692.88",
+      "boiling":"1180",
+      "density":"7.134",
+      "electronegativity":"1.65",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.388",
+      "comment":""
+   },
+   "Ga":{  
+      "name":"gallium",
+      "symbol":"Ga",
+      "type":"post-transition-metal",
+      "number":"31",
+      "mass":"69.723",
+      "period":"4",
+      "group":"13",
+      "melting":"302.9146",
+      "boiling":"2477",
+      "density":"5.907",
+      "electronegativity":"1.81",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.371",
+      "comment":""
+   },
+   "Ge":{  
+      "name":"germanium",
+      "symbol":"Ge",
+      "type":"metalloid",
+      "number":"32",
+      "mass":"72.630",
+      "period":"4",
+      "group":"14",
+      "melting":"1211.40",
+      "boiling":"3106",
+      "density":"5.323",
+      "electronegativity":"2.01",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.32",
+      "comment":""
+   },
+   "As":{  
+      "name":"arsenic",
+      "symbol":"As",
+      "type":"metalloid",
+      "number":"33",
+      "mass":"74.92160",
+      "period":"4",
+      "group":"15",
+      "melting":"1090",
+      "boiling":"887",
+      "density":"5.776",
+      "electronegativity":"2.18",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.329",
+      "comment":""
+   },
+   "Se":{  
+      "name":"selenium",
+      "symbol":"Se",
+      "type":"other-nonmetal",
+      "number":"34",
+      "mass":"78.96",
+      "period":"4",
+      "group":"16",
+      "melting":"453",
+      "boiling":"958",
+      "density":"4.809",
+      "electronegativity":"2.55",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.321",
+      "comment":""
+   },
+   "Br":{  
+      "name":"bromine",
+      "symbol":"Br",
+      "type":"halogen",
+      "number":"35",
+      "mass":"79.904",
+      "period":"4",
+      "group":"17",
+      "melting":"265.8",
+      "boiling":"332.0",
+      "density":"3.122",
+      "electronegativity":"2.96",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.474",
+      "comment":""
+   },
+   "Kr":{  
+      "name":"krypton",
+      "symbol":"Kr",
+      "type":"noble-gas",
+      "number":"36",
+      "mass":"83.798",
+      "period":"4",
+      "group":"18",
+      "melting":"115.79",
+      "boiling":"119.93",
+      "density":"0.003733",
+      "electronegativity":"3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.248",
+      "comment":""
+   },
+   "Rb":{  
+      "name":"rubidium",
+      "symbol":"Rb",
+      "type":"alkali-metal",
+      "number":"37",
+      "mass":"85.4678",
+      "period":"5",
+      "group":"1",
+      "melting":"312.46",
+      "boiling":"961",
+      "density":"1.532",
+      "electronegativity":"0.82",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.363",
+      "comment":""
+   },
+   "Sr":{  
+      "name":"strontium",
+      "symbol":"Sr",
+      "type":"alkaline-earth",
+      "number":"38",
+      "mass":"87.62",
+      "period":"5",
+      "group":"2",
+      "melting":"1050",
+      "boiling":"1655",
+      "density":"2.64",
+      "electronegativity":"0.95",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.301",
+      "comment":""
+   },
+   "Y":{  
+      "name":"yttrium",
+      "symbol":"Y",
+      "type":"transition-metal",
+      "number":"39",
+      "mass":"88.906",
+      "period":"5",
+      "group":"3",
+      "melting":"1799",
+      "boiling":"3609",
+      "density":"4.469",
+      "electronegativity":"1.22",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.298",
+      "comment":""
+   },
+   "Zr":{  
+      "name":"zirconium",
+      "symbol":"Zr",
+      "type":"transition-metal",
+      "number":"40",
+      "mass":"91.224",
+      "period":"5",
+      "group":"4",
+      "melting":"2128",
+      "boiling":"4682",
+      "density":"6.506",
+      "electronegativity":"1.33",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.278",
+      "comment":""
+   },
+   "Nb":{  
+      "name":"niobium",
+      "symbol":"Nb",
+      "type":"transition-metal",
+      "number":"41",
+      "mass":"92.90638",
+      "period":"5",
+      "group":"5",
+      "melting":"2750",
+      "boiling":"5017",
+      "density":"8.57",
+      "electronegativity":"1.6",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.265",
+      "comment":""
+   },
+   "Mo":{  
+      "name":"molybdenum",
+      "symbol":"Mo",
+      "type":"transition-metal",
+      "number":"42",
+      "mass":"95.96",
+      "period":"5",
+      "group":"6",
+      "melting":"2896",
+      "boiling":"4912",
+      "density":"10.28",
+      "electronegativity":"2.16",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.251",
+      "comment":""
+   },
+   "Tc":{  
+      "name":"technetium",
+      "symbol":"Tc",
+      "type":"transition-metal",
+      "number":"43",
+      "mass":"98",
+      "period":"5",
+      "group":"7",
+      "melting":"2430",
+      "boiling":"4538",
+      "density":"11.5",
+      "electronegativity":"1.9",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.63",
+      "comment":""
+   },
+   "Ru":{  
+      "name":"ruthenium",
+      "symbol":"Ru",
+      "type":"transition-metal",
+      "number":"44",
+      "mass":"101.07",
+      "period":"5",
+      "group":"8",
+      "melting":"2607",
+      "boiling":"4423",
+      "density":"12.37",
+      "electronegativity":"2.2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.238",
+      "comment":""
+   },
+   "Rh":{  
+      "name":"rhodium",
+      "symbol":"Rh",
+      "type":"transition-metal",
+      "number":"45",
+      "mass":"102.9055",
+      "period":"5",
+      "group":"9",
+      "melting":"2237",
+      "boiling":"3968",
+      "density":"12.41",
+      "electronegativity":"2.28",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.243",
+      "comment":""
+   },
+   "Pd":{  
+      "name":"palladium",
+      "symbol":"Pd",
+      "type":"transition-metal",
+      "number":"46",
+      "mass":"106.42",
+      "period":"5",
+      "group":"10",
+      "melting":"1828.05",
+      "boiling":"3236",
+      "density":"12.02",
+      "electronegativity":"2.2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.244",
+      "comment":""
+   },
+   "Ag":{  
+      "name":"silver",
+      "symbol":"Ag",
+      "type":"transition-metal",
+      "number":"47",
+      "mass":"107.8682",
+      "period":"5",
+      "group":"11",
+      "melting":"1234.93",
+      "boiling":"2435",
+      "density":"10.501",
+      "electronegativity":"1.93",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.235",
+      "comment":""
+   },
+   "Cd":{  
+      "name":"cadmium",
+      "symbol":"Cd",
+      "type":"transition-metal",
+      "number":"48",
+      "mass":"112.411",
+      "period":"5",
+      "group":"12",
+      "melting":"594.22",
+      "boiling":"1040",
+      "density":"8.69",
+      "electronegativity":"1.69",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.232",
+      "comment":""
+   },
+   "In":{  
+      "name":"indium",
+      "symbol":"In",
+      "type":"post-transition-metal",
+      "number":"49",
+      "mass":"114.818",
+      "period":"5",
+      "group":"13",
+      "melting":"429.75",
+      "boiling":"2345",
+      "density":"7.31",
+      "electronegativity":"1.78",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.233",
+      "comment":""
+   },
+   "Sn":{  
+      "name":"tin",
+      "symbol":"Sn",
+      "type":"post-transition-metal",
+      "number":"50",
+      "mass":"118.710",
+      "period":"5",
+      "group":"14",
+      "melting":"505.08",
+      "boiling":"2875",
+      "density":"7.287",
+      "electronegativity":"1.96",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.228",
+      "comment":""
+   },
+   "Sb":{  
+      "name":"antimony",
+      "symbol":"Sb",
+      "type":"metalloid",
+      "number":"51",
+      "mass":"121.760",
+      "period":"5",
+      "group":"15",
+      "melting":"903.78",
+      "boiling":"1860",
+      "density":"6.685",
+      "electronegativity":"2.05",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.207",
+      "comment":""
+   },
+   "Te":{  
+      "name":"tellurium",
+      "symbol":"Te",
+      "type":"metalloid",
+      "number":"52",
+      "mass":"127.6",
+      "period":"5",
+      "group":"16",
+      "melting":"722.66",
+      "boiling":"1261",
+      "density":"6.232",
+      "electronegativity":"2.1",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.202",
+      "comment":""
+   },
+   "I":{  
+      "name":"iodine",
+      "symbol":"I",
+      "type":"halogen",
+      "number":"53",
+      "mass":"126.90447",
+      "period":"5",
+      "group":"17",
+      "melting":"386.85",
+      "boiling":"457.4",
+      "density":"4.93",
+      "electronegativity":"2.66",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.214",
+      "comment":""
+   },
+   "Xe":{  
+      "name":"xenon",
+      "symbol":"Xe",
+      "type":"noble-gas",
+      "number":"54",
+      "mass":"131.293",
+      "period":"5",
+      "group":"18",
+      "melting":"161.4",
+      "boiling":"165.03",
+      "density":"0.005887",
+      "electronegativity":"2.6",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.158",
+      "comment":""
+   },
+   "Cs":{  
+      "name":"caesium",
+      "symbol":"Cs",
+      "type":"alkali-metal",
+      "number":"55",
+      "mass":"132.9054",
+      "period":"6",
+      "group":"1",
+      "melting":"301.59",
+      "boiling":"944",
+      "density":"1.873",
+      "electronegativity":"0.79",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.242",
+      "comment":""
+   },
+   "Ba":{  
+      "name":"barium",
+      "symbol":"Ba",
+      "type":"alkaline-earth",
+      "number":"56",
+      "mass":"137.327",
+      "period":"6",
+      "group":"2",
+      "melting":"1000",
+      "boiling":"2170",
+      "density":"3.594",
+      "electronegativity":"0.89",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.204",
+      "comment":""
+   },
+   "La":{  
+      "name":"Lanthanum",
+      "symbol":"La",
+      "type":"lanthanoid",
+      "number":"57",
+      "mass":"138.90547",
+      "period":"6",
+      "group":"",
+      "melting":"1193",
+      "boiling":"3737",
+      "density":"6.145",
+      "electronegativity":"1.1",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.195",
+      "comment":""
+   },
+   "Ce":{  
+      "name":"cerium",
+      "symbol":"Ce",
+      "type":"lanthanoid",
+      "number":"58",
+      "mass":"140.116",
+      "period":"6",
+      "group":"",
+      "melting":"1068",
+      "boiling":"3716",
+      "density":"6.77",
+      "electronegativity":"1.12",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.192",
+      "comment":""
+   },
+   "Pr":{  
+      "name":"praseodymium",
+      "symbol":"Pr",
+      "type":"lanthanoid",
+      "number":"59",
+      "mass":"140.90765",
+      "period":"6",
+      "group":"",
+      "melting":"1208",
+      "boiling":"3793",
+      "density":"6.773",
+      "electronegativity":"1.13",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.193",
+      "comment":""
+   },
+   "Nd":{  
+      "name":"neodymium",
+      "symbol":"Nd",
+      "type":"lanthanoid",
+      "number":"60",
+      "mass":"144.242",
+      "period":"6",
+      "group":"",
+      "melting":"1297",
+      "boiling":"3347",
+      "density":"7.007",
+      "electronegativity":"1.14",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.19",
+      "comment":""
+   },
+   "Pm":{  
+      "name":"promethium",
+      "symbol":"Pm",
+      "type":"lanthanoid",
+      "number":"61",
+      "mass":"145",
+      "period":"6",
+      "group":"",
+      "melting":"1315",
+      "boiling":"3273",
+      "density":"7.26",
+      "electronegativity":"1.13",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Sm":{  
+      "name":"samarium",
+      "symbol":"Sm",
+      "type":"lanthanoid",
+      "number":"62",
+      "mass":"150.36",
+      "period":"6",
+      "group":"",
+      "melting":"1345",
+      "boiling":"2067",
+      "density":"7.52",
+      "electronegativity":"1.17",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.197",
+      "comment":""
+   },
+   "Eu":{  
+      "name":"europium",
+      "symbol":"Eu",
+      "type":"lanthanoid",
+      "number":"63",
+      "mass":"151.964",
+      "period":"6",
+      "group":"",
+      "melting":"1099",
+      "boiling":"1802",
+      "density":"5.243",
+      "electronegativity":"1.2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.182",
+      "comment":""
+   },
+   "Gd":{  
+      "name":"gadolinium",
+      "symbol":"Gd",
+      "type":"lanthanoid",
+      "number":"64",
+      "mass":"157.25",
+      "period":"6",
+      "group":"",
+      "melting":"1585",
+      "boiling":"3546",
+      "density":"7.895",
+      "electronegativity":"1.2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.236",
+      "comment":""
+   },
+   "Tb":{  
+      "name":"terbium",
+      "symbol":"Tb",
+      "type":"lanthanoid",
+      "number":"65",
+      "mass":"158.92535",
+      "period":"6",
+      "group":"",
+      "melting":"1629",
+      "boiling":"3503",
+      "density":"8.229",
+      "electronegativity":"1.2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.182",
+      "comment":""
+   },
+   "Dy":{  
+      "name":"dysprosium",
+      "symbol":"Dy",
+      "type":"lanthanoid",
+      "number":"66",
+      "mass":"162.500",
+      "period":"6",
+      "group":"",
+      "melting":"1680",
+      "boiling":"2840",
+      "density":"8.55",
+      "electronegativity":"1.22",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.17",
+      "comment":""
+   },
+   "Ho":{  
+      "name":"holmium",
+      "symbol":"Ho",
+      "type":"lanthanoid",
+      "number":"67",
+      "mass":"164.93032",
+      "period":"6",
+      "group":"",
+      "melting":"1734",
+      "boiling":"2993",
+      "density":"8.795",
+      "electronegativity":"1.23",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.165",
+      "comment":""
+   },
+   "Er":{  
+      "name":"erbium",
+      "symbol":"Er",
+      "type":"lanthanoid",
+      "number":"68",
+      "mass":"167.259",
+      "period":"6",
+      "group":"",
+      "melting":"1802",
+      "boiling":"3141",
+      "density":"9.066",
+      "electronegativity":"1.24",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.168",
+      "comment":""
+   },
+   "Tm":{  
+      "name":"thulium",
+      "symbol":"Tm",
+      "type":"lanthanoid",
+      "number":"69",
+      "mass":"168.93421",
+      "period":"6",
+      "group":"",
+      "melting":"1818",
+      "boiling":"2223",
+      "density":"9.321",
+      "electronegativity":"1.25",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.16",
+      "comment":""
+   },
+   "Yb":{  
+      "name":"ytterbium",
+      "symbol":"Yb",
+      "type":"lanthanoid",
+      "number":"70",
+      "mass":"173.054",
+      "period":"6",
+      "group":"",
+      "melting":"1097",
+      "boiling":"1469",
+      "density":"6.965",
+      "electronegativity":"1.1",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.155",
+      "comment":""
+   },
+   "Lu":{  
+      "name":"lutetium",
+      "symbol":"Lu",
+      "type":"lanthanoid",
+      "number":"71",
+      "mass":"174.9668",
+      "period":"6",
+      "group":"3",
+      "melting":"1925",
+      "boiling":"3675",
+      "density":"9.84",
+      "electronegativity":"1.27",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.154",
+      "comment":""
+   },
+   "Hf":{  
+      "name":"hafnium",
+      "symbol":"Hf",
+      "type":"transition-metal",
+      "number":"72",
+      "mass":"178.49",
+      "period":"6",
+      "group":"4",
+      "melting":"2506",
+      "boiling":"4876",
+      "density":"13.31",
+      "electronegativity":"1.3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.1444",
+      "comment":""
+   },
+   "Ta":{  
+      "name":"tantalum",
+      "symbol":"Ta",
+      "type":"transition-metal",
+      "number":"73",
+      "mass":"180.94788",
+      "period":"6",
+      "group":"5",
+      "melting":"3290",
+      "boiling":"5731",
+      "density":"16.654",
+      "electronegativity":"1.5",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.14",
+      "comment":""
+   },
+   "W":{  
+      "name":"tungsten",
+      "symbol":"W",
+      "type":"transition-metal",
+      "number":"74",
+      "mass":"180.9478",
+      "period":"6",
+      "group":"6",
+      "melting":"3290",
+      "boiling":"5731",
+      "density":"16.654",
+      "electronegativity":"1.5",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.14",
+      "comment":""
+   },
+   "Re":{  
+      "name":"rhenium",
+      "symbol":"Re",
+      "type":"transition-metal",
+      "number":"75",
+      "mass":"186.207",
+      "period":"6",
+      "group":"7",
+      "melting":"3459",
+      "boiling":"5869",
+      "density":"21.02",
+      "electronegativity":"1.9",
+      "radius":"",
+      "valence":"",
+      "specificheat":"1.37",
+      "comment":""
+   },
+   "Os":{  
+      "name":"osmium",
+      "symbol":"Os",
+      "type":"transition-metal",
+      "number":"76",
+      "mass":"190.23",
+      "period":"6",
+      "group":"8",
+      "melting":"3306",
+      "boiling":"5285",
+      "density":"22.61",
+      "electronegativity":"2.2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.13",
+      "comment":""
+   },
+   "Ir":{  
+      "name":"iridium",
+      "symbol":"Ir",
+      "type":"transition-metal",
+      "number":"77",
+      "mass":"192.217",
+      "period":"6",
+      "group":"9",
+      "melting":"2719",
+      "boiling":"4701",
+      "density":"22.56",
+      "electronegativity":"2.2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.131",
+      "comment":""
+   },
+   "Pt":{  
+      "name":"platinum",
+      "symbol":"Pt",
+      "type":"transition-metal",
+      "number":"78",
+      "mass":"195.084",
+      "period":"6",
+      "group":"10",
+      "melting":"2041.4",
+      "boiling":"4098",
+      "density":"21.46",
+      "electronegativity":"2.28",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.133",
+      "comment":""
+   },
+   "Au":{  
+      "name":"gold",
+      "symbol":"Au",
+      "type":"transition-metal",
+      "number":"79",
+      "mass":"196.966569",
+      "period":"6",
+      "group":"11",
+      "melting":"1337.33",
+      "boiling":"3129",
+      "density":"19.282",
+      "electronegativity":"2.54",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.129",
+      "comment":""
+   },
+   "Hg":{  
+      "name":"mercury",
+      "symbol":"Hg",
+      "type":"transition-metal",
+      "number":"80",
+      "mass":"200.592",
+      "period":"6",
+      "group":"12",
+      "melting":"234.43",
+      "boiling":"629.88",
+      "density":"13.5336",
+      "electronegativity":"2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.14",
+      "comment":""
+   },
+   "Tl":{  
+      "name":"thalium",
+      "symbol":"Tl",
+      "type":"post-transition-metal",
+      "number":"81",
+      "mass":"204.38",
+      "period":"6",
+      "group":"13",
+      "melting":"577",
+      "boiling":"1746",
+      "density":"11.85",
+      "electronegativity":"1.62",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.129",
+      "comment":""
+   },
+   "Pb":{  
+      "name":"lead",
+      "symbol":"Pb",
+      "type":"post-transition-metal",
+      "number":"82",
+      "mass":"207.2",
+      "period":"6",
+      "group":"14",
+      "melting":"600.61",
+      "boiling":"2022",
+      "density":"11.342",
+      "electronegativity":"1.87",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.129",
+      "comment":""
+   },
+   "Bi":{  
+      "name":"bismuth",
+      "symbol":"Bi",
+      "type":"post-transition-metal",
+      "number":"83",
+      "mass":"208.98040",
+      "period":"6",
+      "group":"15",
+      "melting":"544.7",
+      "boiling":"1837",
+      "density":"9.807",
+      "electronegativity":"2.02",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.122",
+      "comment":""
+   },
+   "Po":{  
+      "name":"polonium",
+      "symbol":"Po",
+      "type":"metalloid",
+      "number":"84",
+      "mass":"209",
+      "period":"6",
+      "group":"16",
+      "melting":"527",
+      "boiling":"1235",
+      "density":"9.32",
+      "electronegativity":"2.0",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.125",
+      "comment":""
+   },
+   "At":{  
+      "name":"astatine",
+      "symbol":"At",
+      "type":"halogen",
+      "number":"85",
+      "mass":"210",
+      "period":"6",
+      "group":"17",
+      "melting":"575",
+      "boiling":"610",
+      "density":"7",
+      "electronegativity":"2.2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Rn":{  
+      "name":"radon",
+      "symbol":"Rn",
+      "type":"noble-gas",
+      "number":"86",
+      "mass":"222",
+      "period":"6",
+      "group":"18",
+      "melting":"202",
+      "boiling":"211.3",
+      "density":"0.00973",
+      "electronegativity":"2.2",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.094",
+      "comment":""
+   },
+   "Fr":{  
+      "name":"francium",
+      "symbol":"Fr",
+      "type":"alkali-metal",
+      "number":"87",
+      "mass":"223",
+      "period":"7",
+      "group":"1",
+      "melting":"300",
+      "boiling":"950",
+      "density":"1.87",
+      "electronegativity":"0.7",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Ra":{  
+      "name":"radium",
+      "symbol":"Ra",
+      "type":"alkaline-earth",
+      "number":"88",
+      "mass":"226",
+      "period":"7",
+      "group":"2",
+      "melting":"973",
+      "boiling":"2010",
+      "density":"5.5",
+      "electronegativity":"0.9",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.094",
+      "comment":""
+   },
+   "Ac":{  
+      "name":"actinium",
+      "symbol":"Ac",
+      "type":"actinoid",
+      "number":"89",
+      "mass":"227",
+      "period":"7",
+      "group":"",
+      "melting":"1323",
+      "boiling":"3471",
+      "density":"10.07",
+      "electronegativity":"1.1",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.12",
+      "comment":""
+   },
+   "Th":{  
+      "name":"thorium",
+      "symbol":"Th",
+      "type":"actinoid",
+      "number":"90",
+      "mass":"232.03806",
+      "period":"7",
+      "group":"",
+      "melting":"2115",
+      "boiling":"5061",
+      "density":"11.72",
+      "electronegativity":"1.3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.113",
+      "comment":""
+   },
+   "Pa":{  
+      "name":"protactinium",
+      "symbol":"Pa",
+      "type":"actinoid",
+      "number":"91",
+      "mass":"231.03588",
+      "period":"7",
+      "group":"",
+      "melting":"1841",
+      "boiling":"4300",
+      "density":"15.37",
+      "electronegativity":"1.5",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "U":{  
+      "name":"uranium",
+      "symbol":"U",
+      "type":"actinoid",
+      "number":"92",
+      "mass":"238.02891",
+      "period":"7",
+      "group":"",
+      "melting":"1405.3",
+      "boiling":"4404",
+      "density":"18.95",
+      "electronegativity":"1.38",
+      "radius":"",
+      "valence":"",
+      "specificheat":"0.116",
+      "comment":""
+   },
+   "Np":{  
+      "name":"neptunium",
+      "symbol":"Np",
+      "type":"actinoid",
+      "number":"93",
+      "mass":"237",
+      "period":"7",
+      "group":"",
+      "melting":"917",
+      "boiling":"4273",
+      "density":"20.45",
+      "electronegativity":"1.36",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Pu":{  
+      "name":"plutonium",
+      "symbol":"Pu",
+      "type":"actinoid",
+      "number":"94",
+      "mass":"244",
+      "period":"7",
+      "group":"",
+      "melting":"912.5",
+      "boiling":"3501",
+      "density":"19.84",
+      "electronegativity":"1.28",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Am":{  
+      "name":"americium",
+      "symbol":"Am",
+      "type":"actinoid",
+      "number":"95",
+      "mass":"243",
+      "period":"7",
+      "group":"",
+      "melting":"1449",
+      "boiling":"2880",
+      "density":"13.69",
+      "electronegativity":"1.13",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Cm":{  
+      "name":"curium",
+      "symbol":"Cm",
+      "type":"actinoid",
+      "number":"96",
+      "mass":"247",
+      "period":"7",
+      "group":"",
+      "melting":"1613",
+      "boiling":"3383",
+      "density":"13.51",
+      "electronegativity":"1.28",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Bk":{  
+      "name":"berkelium",
+      "symbol":"Bk",
+      "type":"actinoid",
+      "number":"97",
+      "mass":"247",
+      "period":"7",
+      "group":"",
+      "melting":"1259",
+      "boiling":"2900",
+      "density":"14.79",
+      "electronegativity":"1.3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Cf":{  
+      "name":"californium",
+      "symbol":"Cf",
+      "type":"actinoid",
+      "number":"98",
+      "mass":"251",
+      "period":"7",
+      "group":"",
+      "melting":"1173",
+      "boiling":"1743",
+      "density":"15.1",
+      "electronegativity":"1.3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Es":{  
+      "name":"einsteinium",
+      "symbol":"Es",
+      "type":"actinoid",
+      "number":"99",
+      "mass":"252",
+      "period":"7",
+      "group":"",
+      "melting":"1133",
+      "boiling":"1269",
+      "density":"8.84",
+      "electronegativity":"1.3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Fm":{  
+      "name":"fermium",
+      "symbol":"Fm",
+      "type":"actinoid",
+      "number":"100",
+      "mass":"257",
+      "period":"7",
+      "group":"",
+      "melting":"1125",
+      "boiling":"",
+      "density":"",
+      "electronegativity":"1.3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Md":{  
+      "name":"mendelevium",
+      "symbol":"Md",
+      "type":"actinoid",
+      "number":"101",
+      "mass":"258",
+      "period":"7",
+      "group":"",
+      "melting":"1100",
+      "boiling":"",
+      "density":"",
+      "electronegativity":"1.3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "No":{  
+      "name":"nobelium",
+      "symbol":"No",
+      "type":"actinoid",
+      "number":"102",
+      "mass":"259",
+      "period":"7",
+      "group":"",
+      "melting":"1100",
+      "boiling":"",
+      "density":"",
+      "electronegativity":"1.3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Lr":{  
+      "name":"lawrencium",
+      "symbol":"Lr",
+      "type":"actinoid",
+      "number":"103",
+      "mass":"266",
+      "period":"7",
+      "group":"3",
+      "melting":"1900",
+      "boiling":"",
+      "density":"",
+      "electronegativity":"1.3",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Rf":{  
+      "name":"rutherforium",
+      "symbol":"Rf",
+      "type":"transition-metal",
+      "number":"104",
+      "mass":"267",
+      "period":"7",
+      "group":"4",
+      "melting":"2400",
+      "boiling":"5800",
+      "density":"23.2",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Db":{  
+      "name":"dubnium",
+      "symbol":"Db",
+      "type":"transition-metal",
+      "number":"105",
+      "mass":"268",
+      "period":"7",
+      "group":"5",
+      "melting":"",
+      "boiling":"",
+      "density":"29.3",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Sg":{  
+      "name":"seaborgium",
+      "symbol":"Sg",
+      "type":"transition-metal",
+      "number":"106",
+      "mass":"268",
+      "period":"7",
+      "group":"6",
+      "melting":"",
+      "boiling":"",
+      "density":"35",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Bh":{  
+      "name":"bohrium",
+      "symbol":"Bh",
+      "type":"transition-metal",
+      "number":"107",
+      "mass":"270",
+      "period":"7",
+      "group":"7",
+      "melting":"",
+      "boiling":"",
+      "density":"37.1",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Hs":{  
+      "name":"hassium",
+      "symbol":"Hs",
+      "type":"transition-metal",
+      "number":"108",
+      "mass":"269",
+      "period":"7",
+      "group":"8",
+      "melting":"",
+      "boiling":"",
+      "density":"40.7",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Mt":{  
+      "name":"meitnerium",
+      "symbol":"Mt",
+      "type":"transition-metal",
+      "number":"109",
+      "mass":"278",
+      "period":"7",
+      "group":"9",
+      "melting":"",
+      "boiling":"",
+      "density":"37.4",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Ds":{  
+      "name":"darmstadtium",
+      "symbol":"Ds",
+      "type":"transition-metal",
+      "number":"110",
+      "mass":"281",
+      "period":"7",
+      "group":"10",
+      "melting":"",
+      "boiling":"",
+      "density":"34.8",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Rg":{  
+      "name":"roentgenium",
+      "symbol":"Rg",
+      "type":"transition-metal",
+      "number":"111",
+      "mass":"281",
+      "period":"7",
+      "group":"11",
+      "melting":"",
+      "boiling":"",
+      "density":"28.7",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Cn":{  
+      "name":"copernicium",
+      "symbol":"Cn",
+      "type":"transition-metal",
+      "number":"112",
+      "mass":"285",
+      "period":"7",
+      "group":"12",
+      "melting":"",
+      "boiling":"357",
+      "density":"23.7",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Uut":{  
+      "name":"ununtrium",
+      "symbol":"Uut",
+      "type":"post-transition-metal",
+      "number":"113",
+      "mass":"286",
+      "period":"7",
+      "group":"13",
+      "melting":"700",
+      "boiling":"1400",
+      "density":"16",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Fl":{  
+      "name":"flerovium",
+      "symbol":"Fl",
+      "type":"post-transition-metal",
+      "number":"114",
+      "mass":"289",
+      "period":"7",
+      "group":"14",
+      "melting":"340",
+      "boiling":"420",
+      "density":"14",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Uup":{  
+      "name":"ununpentium",
+      "symbol":"Uup",
+      "type":"post-transition-metal",
+      "number":"115",
+      "mass":"289",
+      "period":"7",
+      "group":"15",
+      "melting":"700",
+      "boiling":"1400",
+      "density":"13.5",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Lv":{  
+      "name":"livermorium",
+      "symbol":"Lv",
+      "type":"post-transition-metal",
+      "number":"116",
+      "mass":"293",
+      "period":"7",
+      "group":"16",
+      "melting":"708.5",
+      "boiling":"1085",
+      "density":"12.9",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Uus":{  
+      "name":"ununseptium",
+      "symbol":"Uus",
+      "type":"halogen",
+      "number":"117",
+      "mass":"294",
+      "period":"7",
+      "group":"17",
+      "melting":"673",
+      "boiling":"823",
+      "density":"7.2",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   },
+   "Uuo":{  
+      "name":"ununoctium",
+      "symbol":"Uuo",
+      "type":"noble-gas",
+      "number":"118",
+      "mass":"294",
+      "period":"7",
+      "group":"18",
+      "melting":"258",
+      "boiling":"263",
+      "density":"5",
+      "electronegativity":"",
+      "radius":"",
+      "valence":"",
+      "specificheat":"",
+      "comment":""
+   }
+}
+},{}],3:[function(require,module,exports){
+// index.js
+'use strict'
+const Compound = require('./lib/Compound.js');
+const PeriodicTable = require('./lib/PeriodicTable.js');
+
+module.exports = {
+	Compound: Compound,
+	PeriodicTable: PeriodicTable
+}
+
+},{"./lib/Compound.js":4,"./lib/PeriodicTable.js":5}],4:[function(require,module,exports){
+// Compound.js
+'use strict'
+
+const elements = require('../data/elements.json');
+
+class Compound {
+	constructor (element_list) {
+		this.mass = 0;
+		this.elements = {};
+		if(element_list){
+			for (var element in element_list) {
+				let quantity = element_list[element];
+				this.add(element, quantity);
+			}
+		}
+	}
+
+	add (element, quantity) {
+		quantity = quantity || 1;
+		let element_data = elements[element];
+		if (!element_data) {
+			return false;
+		} 
+		if (this.elements[element]) {
+			this.elements[element] += quantity;
+		} else {
+			this.elements[element] = quantity;
+		}
+		this.mass += (quantity * element_data.mass);
+		return true;
+	}
+
+	remove (element, quantity) {
+		quantity = quantity || 1
+		let element_data = elements[element];
+		if (!element_data || !this.elements[element]) {
+			return false;
+		} 
+		let elementCount = this.elements[element];
+		if (quantity >= elementCount) {
+			delete this.elements[element];
+			this.mass -= (elementCount * element_data.mass);
+		} else {
+			this.elements[element] -= quantity;
+			this.mass -= (quantity * element_data.mass);
+		}
+		return true;
+	}
+
+	clear () {
+		this.mass = 0;
+		this.elements = {};
+	}
+
+	toHTML () {
+		let html = '';
+		for (var element in this.elements) {
+			let quantity = this.elements[element]
+			html += element;
+			html += quantity <= 1 ? '' : '<sub>'+quantity+'</sub>';
+		}
+		return html;
+	}
+}
+
+module.exports = Compound;
+},{"../data/elements.json":2}],5:[function(require,module,exports){
+// PeriodicTable.js
+
+'use strict'
+const elements = require('../data/elements.json');
+
+class PeriodicTable {
+
+	static getElement (el) {
+		if (elements[el]) {
+			return elements[el];
+		} else {
+			return null;
+		}
+	}
+
+	static getAtomic (atomicNumber) {
+		let results = filterElements(v => {
+			return elements[v].number == atomicNumber
+		});
+		return results[0] || null;
+	}
+
+	static getGroup (group) {
+		let results = filterElements(v => {
+			return elements[v].group == group
+		});
+		if (results.length <= 0) {
+			return null;
+		}
+		return results || null;
+	}
+
+	static getPeriod (period) {
+		let results = filterElements(v => {
+			return elements[v].period == period
+		});
+		if (results.length <= 0) {
+			return null;
+		}
+		return results || null;
+	}
+
+	static getType (type) {
+		let results = filterElements(v => {
+			return elements[v].type == type
+		});
+		if (results.length <= 0) {
+			return null;
+		}
+		return results || null;
+	}
+}
+
+function filterElements(filter) {
+	let results = Object.keys(elements).filter(filter).map(v => {
+		return elements[v];
+	})
+	return results;
+}
+module.exports = PeriodicTable;
+},{"../data/elements.json":2}],6:[function(require,module,exports){
 'use strict';
 
 module.exports = require('react/lib/ReactDOM');
 
-},{"react/lib/ReactDOM":37}],3:[function(require,module,exports){
+},{"react/lib/ReactDOM":41}],7:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -133,7 +2281,7 @@ var AutoFocusUtils = {
 };
 
 module.exports = AutoFocusUtils;
-},{"./ReactMount":67,"./findDOMNode":110,"fbjs/lib/focusNode":140}],4:[function(require,module,exports){
+},{"./ReactMount":71,"./findDOMNode":114,"fbjs/lib/focusNode":144}],8:[function(require,module,exports){
 /**
  * Copyright 2013-2015 Facebook, Inc.
  * All rights reserved.
@@ -539,7 +2687,7 @@ var BeforeInputEventPlugin = {
 };
 
 module.exports = BeforeInputEventPlugin;
-},{"./EventConstants":16,"./EventPropagators":20,"./FallbackCompositionState":21,"./SyntheticCompositionEvent":92,"./SyntheticInputEvent":96,"fbjs/lib/ExecutionEnvironment":132,"fbjs/lib/keyOf":150}],5:[function(require,module,exports){
+},{"./EventConstants":20,"./EventPropagators":24,"./FallbackCompositionState":25,"./SyntheticCompositionEvent":96,"./SyntheticInputEvent":100,"fbjs/lib/ExecutionEnvironment":136,"fbjs/lib/keyOf":154}],9:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -679,7 +2827,7 @@ var CSSProperty = {
 };
 
 module.exports = CSSProperty;
-},{}],6:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -857,7 +3005,7 @@ ReactPerf.measureMethods(CSSPropertyOperations, 'CSSPropertyOperations', {
 
 module.exports = CSSPropertyOperations;
 }).call(this,require('_process'))
-},{"./CSSProperty":5,"./ReactPerf":73,"./dangerousStyleValue":107,"_process":1,"fbjs/lib/ExecutionEnvironment":132,"fbjs/lib/camelizeStyleName":134,"fbjs/lib/hyphenateStyleName":145,"fbjs/lib/memoizeStringOnly":152,"fbjs/lib/warning":157}],7:[function(require,module,exports){
+},{"./CSSProperty":9,"./ReactPerf":77,"./dangerousStyleValue":111,"_process":1,"fbjs/lib/ExecutionEnvironment":136,"fbjs/lib/camelizeStyleName":138,"fbjs/lib/hyphenateStyleName":149,"fbjs/lib/memoizeStringOnly":156,"fbjs/lib/warning":161}],11:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -953,7 +3101,7 @@ PooledClass.addPoolingTo(CallbackQueue);
 
 module.exports = CallbackQueue;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"./PooledClass":25,"_process":1,"fbjs/lib/invariant":146}],8:[function(require,module,exports){
+},{"./Object.assign":28,"./PooledClass":29,"_process":1,"fbjs/lib/invariant":150}],12:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1275,7 +3423,7 @@ var ChangeEventPlugin = {
 };
 
 module.exports = ChangeEventPlugin;
-},{"./EventConstants":16,"./EventPluginHub":17,"./EventPropagators":20,"./ReactUpdates":85,"./SyntheticEvent":94,"./getEventTarget":116,"./isEventSupported":121,"./isTextInputElement":122,"fbjs/lib/ExecutionEnvironment":132,"fbjs/lib/keyOf":150}],9:[function(require,module,exports){
+},{"./EventConstants":20,"./EventPluginHub":21,"./EventPropagators":24,"./ReactUpdates":89,"./SyntheticEvent":98,"./getEventTarget":120,"./isEventSupported":125,"./isTextInputElement":126,"fbjs/lib/ExecutionEnvironment":136,"fbjs/lib/keyOf":154}],13:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -1299,7 +3447,7 @@ var ClientReactRootIndex = {
 };
 
 module.exports = ClientReactRootIndex;
-},{}],10:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1431,7 +3579,7 @@ ReactPerf.measureMethods(DOMChildrenOperations, 'DOMChildrenOperations', {
 
 module.exports = DOMChildrenOperations;
 }).call(this,require('_process'))
-},{"./Danger":13,"./ReactMultiChildUpdateTypes":69,"./ReactPerf":73,"./setInnerHTML":126,"./setTextContent":127,"_process":1,"fbjs/lib/invariant":146}],11:[function(require,module,exports){
+},{"./Danger":17,"./ReactMultiChildUpdateTypes":73,"./ReactPerf":77,"./setInnerHTML":130,"./setTextContent":131,"_process":1,"fbjs/lib/invariant":150}],15:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1668,7 +3816,7 @@ var DOMProperty = {
 
 module.exports = DOMProperty;
 }).call(this,require('_process'))
-},{"_process":1,"fbjs/lib/invariant":146}],12:[function(require,module,exports){
+},{"_process":1,"fbjs/lib/invariant":150}],16:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -1896,7 +4044,7 @@ ReactPerf.measureMethods(DOMPropertyOperations, 'DOMPropertyOperations', {
 
 module.exports = DOMPropertyOperations;
 }).call(this,require('_process'))
-},{"./DOMProperty":11,"./ReactPerf":73,"./quoteAttributeValueForBrowser":124,"_process":1,"fbjs/lib/warning":157}],13:[function(require,module,exports){
+},{"./DOMProperty":15,"./ReactPerf":77,"./quoteAttributeValueForBrowser":128,"_process":1,"fbjs/lib/warning":161}],17:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2044,7 +4192,7 @@ var Danger = {
 
 module.exports = Danger;
 }).call(this,require('_process'))
-},{"_process":1,"fbjs/lib/ExecutionEnvironment":132,"fbjs/lib/createNodesFromMarkup":137,"fbjs/lib/emptyFunction":138,"fbjs/lib/getMarkupWrap":142,"fbjs/lib/invariant":146}],14:[function(require,module,exports){
+},{"_process":1,"fbjs/lib/ExecutionEnvironment":136,"fbjs/lib/createNodesFromMarkup":141,"fbjs/lib/emptyFunction":142,"fbjs/lib/getMarkupWrap":146,"fbjs/lib/invariant":150}],18:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2072,7 +4220,7 @@ var keyOf = require('fbjs/lib/keyOf');
 var DefaultEventPluginOrder = [keyOf({ ResponderEventPlugin: null }), keyOf({ SimpleEventPlugin: null }), keyOf({ TapEventPlugin: null }), keyOf({ EnterLeaveEventPlugin: null }), keyOf({ ChangeEventPlugin: null }), keyOf({ SelectEventPlugin: null }), keyOf({ BeforeInputEventPlugin: null })];
 
 module.exports = DefaultEventPluginOrder;
-},{"fbjs/lib/keyOf":150}],15:[function(require,module,exports){
+},{"fbjs/lib/keyOf":154}],19:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2197,7 +4345,7 @@ var EnterLeaveEventPlugin = {
 };
 
 module.exports = EnterLeaveEventPlugin;
-},{"./EventConstants":16,"./EventPropagators":20,"./ReactMount":67,"./SyntheticMouseEvent":98,"fbjs/lib/keyOf":150}],16:[function(require,module,exports){
+},{"./EventConstants":20,"./EventPropagators":24,"./ReactMount":71,"./SyntheticMouseEvent":102,"fbjs/lib/keyOf":154}],20:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -2290,7 +4438,7 @@ var EventConstants = {
 };
 
 module.exports = EventConstants;
-},{"fbjs/lib/keyMirror":149}],17:[function(require,module,exports){
+},{"fbjs/lib/keyMirror":153}],21:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2572,7 +4720,7 @@ var EventPluginHub = {
 
 module.exports = EventPluginHub;
 }).call(this,require('_process'))
-},{"./EventPluginRegistry":18,"./EventPluginUtils":19,"./ReactErrorUtils":58,"./accumulateInto":104,"./forEachAccumulated":112,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],18:[function(require,module,exports){
+},{"./EventPluginRegistry":22,"./EventPluginUtils":23,"./ReactErrorUtils":62,"./accumulateInto":108,"./forEachAccumulated":116,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],22:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -2795,7 +4943,7 @@ var EventPluginRegistry = {
 
 module.exports = EventPluginRegistry;
 }).call(this,require('_process'))
-},{"_process":1,"fbjs/lib/invariant":146}],19:[function(require,module,exports){
+},{"_process":1,"fbjs/lib/invariant":150}],23:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3000,7 +5148,7 @@ var EventPluginUtils = {
 
 module.exports = EventPluginUtils;
 }).call(this,require('_process'))
-},{"./EventConstants":16,"./ReactErrorUtils":58,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],20:[function(require,module,exports){
+},{"./EventConstants":20,"./ReactErrorUtils":62,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],24:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3138,7 +5286,7 @@ var EventPropagators = {
 
 module.exports = EventPropagators;
 }).call(this,require('_process'))
-},{"./EventConstants":16,"./EventPluginHub":17,"./accumulateInto":104,"./forEachAccumulated":112,"_process":1,"fbjs/lib/warning":157}],21:[function(require,module,exports){
+},{"./EventConstants":20,"./EventPluginHub":21,"./accumulateInto":108,"./forEachAccumulated":116,"_process":1,"fbjs/lib/warning":161}],25:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -3234,7 +5382,7 @@ assign(FallbackCompositionState.prototype, {
 PooledClass.addPoolingTo(FallbackCompositionState);
 
 module.exports = FallbackCompositionState;
-},{"./Object.assign":24,"./PooledClass":25,"./getTextContentAccessor":119}],22:[function(require,module,exports){
+},{"./Object.assign":28,"./PooledClass":29,"./getTextContentAccessor":123}],26:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -3465,7 +5613,7 @@ var HTMLDOMPropertyConfig = {
 };
 
 module.exports = HTMLDOMPropertyConfig;
-},{"./DOMProperty":11,"fbjs/lib/ExecutionEnvironment":132}],23:[function(require,module,exports){
+},{"./DOMProperty":15,"fbjs/lib/ExecutionEnvironment":136}],27:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3602,7 +5750,7 @@ var LinkedValueUtils = {
 
 module.exports = LinkedValueUtils;
 }).call(this,require('_process'))
-},{"./ReactPropTypeLocations":75,"./ReactPropTypes":76,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],24:[function(require,module,exports){
+},{"./ReactPropTypeLocations":79,"./ReactPropTypes":80,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],28:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -3650,7 +5798,7 @@ function assign(target, sources) {
 }
 
 module.exports = assign;
-},{}],25:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3772,7 +5920,7 @@ var PooledClass = {
 
 module.exports = PooledClass;
 }).call(this,require('_process'))
-},{"_process":1,"fbjs/lib/invariant":146}],26:[function(require,module,exports){
+},{"_process":1,"fbjs/lib/invariant":150}],30:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -3813,7 +5961,7 @@ React.__SECRET_DOM_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactDOM;
 React.__SECRET_DOM_SERVER_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactDOMServer;
 
 module.exports = React;
-},{"./Object.assign":24,"./ReactDOM":37,"./ReactDOMServer":47,"./ReactIsomorphic":65,"./deprecated":108}],27:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactDOM":41,"./ReactDOMServer":51,"./ReactIsomorphic":69,"./deprecated":112}],31:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -3852,7 +6000,7 @@ var ReactBrowserComponentMixin = {
 
 module.exports = ReactBrowserComponentMixin;
 }).call(this,require('_process'))
-},{"./ReactInstanceMap":64,"./findDOMNode":110,"_process":1,"fbjs/lib/warning":157}],28:[function(require,module,exports){
+},{"./ReactInstanceMap":68,"./findDOMNode":114,"_process":1,"fbjs/lib/warning":161}],32:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4177,7 +6325,7 @@ ReactPerf.measureMethods(ReactBrowserEventEmitter, 'ReactBrowserEventEmitter', {
 });
 
 module.exports = ReactBrowserEventEmitter;
-},{"./EventConstants":16,"./EventPluginHub":17,"./EventPluginRegistry":18,"./Object.assign":24,"./ReactEventEmitterMixin":59,"./ReactPerf":73,"./ViewportMetrics":103,"./isEventSupported":121}],29:[function(require,module,exports){
+},{"./EventConstants":20,"./EventPluginHub":21,"./EventPluginRegistry":22,"./Object.assign":28,"./ReactEventEmitterMixin":63,"./ReactPerf":77,"./ViewportMetrics":107,"./isEventSupported":125}],33:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -4302,7 +6450,7 @@ var ReactChildReconciler = {
 
 module.exports = ReactChildReconciler;
 }).call(this,require('_process'))
-},{"./ReactReconciler":78,"./instantiateReactComponent":120,"./shouldUpdateReactComponent":128,"./traverseAllChildren":129,"_process":1,"fbjs/lib/warning":157}],30:[function(require,module,exports){
+},{"./ReactReconciler":82,"./instantiateReactComponent":124,"./shouldUpdateReactComponent":132,"./traverseAllChildren":133,"_process":1,"fbjs/lib/warning":161}],34:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -4485,7 +6633,7 @@ var ReactChildren = {
 };
 
 module.exports = ReactChildren;
-},{"./PooledClass":25,"./ReactElement":54,"./traverseAllChildren":129,"fbjs/lib/emptyFunction":138}],31:[function(require,module,exports){
+},{"./PooledClass":29,"./ReactElement":58,"./traverseAllChildren":133,"fbjs/lib/emptyFunction":142}],35:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -5259,7 +7407,7 @@ var ReactClass = {
 
 module.exports = ReactClass;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"./ReactComponent":32,"./ReactElement":54,"./ReactNoopUpdateQueue":71,"./ReactPropTypeLocationNames":74,"./ReactPropTypeLocations":75,"_process":1,"fbjs/lib/emptyObject":139,"fbjs/lib/invariant":146,"fbjs/lib/keyMirror":149,"fbjs/lib/keyOf":150,"fbjs/lib/warning":157}],32:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactComponent":36,"./ReactElement":58,"./ReactNoopUpdateQueue":75,"./ReactPropTypeLocationNames":78,"./ReactPropTypeLocations":79,"_process":1,"fbjs/lib/emptyObject":143,"fbjs/lib/invariant":150,"fbjs/lib/keyMirror":153,"fbjs/lib/keyOf":154,"fbjs/lib/warning":161}],36:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -5384,7 +7532,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactComponent;
 }).call(this,require('_process'))
-},{"./ReactNoopUpdateQueue":71,"./canDefineProperty":106,"_process":1,"fbjs/lib/emptyObject":139,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],33:[function(require,module,exports){
+},{"./ReactNoopUpdateQueue":75,"./canDefineProperty":110,"_process":1,"fbjs/lib/emptyObject":143,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],37:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -5426,7 +7574,7 @@ var ReactComponentBrowserEnvironment = {
 };
 
 module.exports = ReactComponentBrowserEnvironment;
-},{"./ReactDOMIDOperations":42,"./ReactMount":67}],34:[function(require,module,exports){
+},{"./ReactDOMIDOperations":46,"./ReactMount":71}],38:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -5480,7 +7628,7 @@ var ReactComponentEnvironment = {
 
 module.exports = ReactComponentEnvironment;
 }).call(this,require('_process'))
-},{"_process":1,"fbjs/lib/invariant":146}],35:[function(require,module,exports){
+},{"_process":1,"fbjs/lib/invariant":150}],39:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -6177,7 +8325,7 @@ var ReactCompositeComponent = {
 
 module.exports = ReactCompositeComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"./ReactComponentEnvironment":34,"./ReactCurrentOwner":36,"./ReactElement":54,"./ReactInstanceMap":64,"./ReactPerf":73,"./ReactPropTypeLocationNames":74,"./ReactPropTypeLocations":75,"./ReactReconciler":78,"./ReactUpdateQueue":84,"./shouldUpdateReactComponent":128,"_process":1,"fbjs/lib/emptyObject":139,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],36:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactComponentEnvironment":38,"./ReactCurrentOwner":40,"./ReactElement":58,"./ReactInstanceMap":68,"./ReactPerf":77,"./ReactPropTypeLocationNames":78,"./ReactPropTypeLocations":79,"./ReactReconciler":82,"./ReactUpdateQueue":88,"./shouldUpdateReactComponent":132,"_process":1,"fbjs/lib/emptyObject":143,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],40:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -6208,7 +8356,7 @@ var ReactCurrentOwner = {
 };
 
 module.exports = ReactCurrentOwner;
-},{}],37:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -6303,7 +8451,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = React;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":36,"./ReactDOMTextComponent":48,"./ReactDefaultInjection":51,"./ReactInstanceHandles":63,"./ReactMount":67,"./ReactPerf":73,"./ReactReconciler":78,"./ReactUpdates":85,"./ReactVersion":86,"./findDOMNode":110,"./renderSubtreeIntoContainer":125,"_process":1,"fbjs/lib/ExecutionEnvironment":132,"fbjs/lib/warning":157}],38:[function(require,module,exports){
+},{"./ReactCurrentOwner":40,"./ReactDOMTextComponent":52,"./ReactDefaultInjection":55,"./ReactInstanceHandles":67,"./ReactMount":71,"./ReactPerf":77,"./ReactReconciler":82,"./ReactUpdates":89,"./ReactVersion":90,"./findDOMNode":114,"./renderSubtreeIntoContainer":129,"_process":1,"fbjs/lib/ExecutionEnvironment":136,"fbjs/lib/warning":161}],42:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -6354,7 +8502,7 @@ var ReactDOMButton = {
 };
 
 module.exports = ReactDOMButton;
-},{}],39:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -7319,7 +9467,7 @@ assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mix
 
 module.exports = ReactDOMComponent;
 }).call(this,require('_process'))
-},{"./AutoFocusUtils":3,"./CSSPropertyOperations":6,"./DOMProperty":11,"./DOMPropertyOperations":12,"./EventConstants":16,"./Object.assign":24,"./ReactBrowserEventEmitter":28,"./ReactComponentBrowserEnvironment":33,"./ReactDOMButton":38,"./ReactDOMInput":43,"./ReactDOMOption":44,"./ReactDOMSelect":45,"./ReactDOMTextarea":49,"./ReactMount":67,"./ReactMultiChild":68,"./ReactPerf":73,"./ReactUpdateQueue":84,"./canDefineProperty":106,"./escapeTextContentForBrowser":109,"./isEventSupported":121,"./setInnerHTML":126,"./setTextContent":127,"./validateDOMNesting":130,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/keyOf":150,"fbjs/lib/shallowEqual":155,"fbjs/lib/warning":157}],40:[function(require,module,exports){
+},{"./AutoFocusUtils":7,"./CSSPropertyOperations":10,"./DOMProperty":15,"./DOMPropertyOperations":16,"./EventConstants":20,"./Object.assign":28,"./ReactBrowserEventEmitter":32,"./ReactComponentBrowserEnvironment":37,"./ReactDOMButton":42,"./ReactDOMInput":47,"./ReactDOMOption":48,"./ReactDOMSelect":49,"./ReactDOMTextarea":53,"./ReactMount":71,"./ReactMultiChild":72,"./ReactPerf":77,"./ReactUpdateQueue":88,"./canDefineProperty":110,"./escapeTextContentForBrowser":113,"./isEventSupported":125,"./setInnerHTML":130,"./setTextContent":131,"./validateDOMNesting":134,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/keyOf":154,"fbjs/lib/shallowEqual":159,"fbjs/lib/warning":161}],44:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -7499,7 +9647,7 @@ var ReactDOMFactories = mapObject({
 
 module.exports = ReactDOMFactories;
 }).call(this,require('_process'))
-},{"./ReactElement":54,"./ReactElementValidator":55,"_process":1,"fbjs/lib/mapObject":151}],41:[function(require,module,exports){
+},{"./ReactElement":58,"./ReactElementValidator":59,"_process":1,"fbjs/lib/mapObject":155}],45:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -7518,7 +9666,7 @@ var ReactDOMFeatureFlags = {
 };
 
 module.exports = ReactDOMFeatureFlags;
-},{}],42:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -7615,7 +9763,7 @@ ReactPerf.measureMethods(ReactDOMIDOperations, 'ReactDOMIDOperations', {
 
 module.exports = ReactDOMIDOperations;
 }).call(this,require('_process'))
-},{"./DOMChildrenOperations":10,"./DOMPropertyOperations":12,"./ReactMount":67,"./ReactPerf":73,"_process":1,"fbjs/lib/invariant":146}],43:[function(require,module,exports){
+},{"./DOMChildrenOperations":14,"./DOMPropertyOperations":16,"./ReactMount":71,"./ReactPerf":77,"_process":1,"fbjs/lib/invariant":150}],47:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -7771,7 +9919,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMInput;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":23,"./Object.assign":24,"./ReactDOMIDOperations":42,"./ReactMount":67,"./ReactUpdates":85,"_process":1,"fbjs/lib/invariant":146}],44:[function(require,module,exports){
+},{"./LinkedValueUtils":27,"./Object.assign":28,"./ReactDOMIDOperations":46,"./ReactMount":71,"./ReactUpdates":89,"_process":1,"fbjs/lib/invariant":150}],48:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -7863,7 +10011,7 @@ var ReactDOMOption = {
 
 module.exports = ReactDOMOption;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"./ReactChildren":30,"./ReactDOMSelect":45,"_process":1,"fbjs/lib/warning":157}],45:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactChildren":34,"./ReactDOMSelect":49,"_process":1,"fbjs/lib/warning":161}],49:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8054,7 +10202,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMSelect;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":23,"./Object.assign":24,"./ReactMount":67,"./ReactUpdates":85,"_process":1,"fbjs/lib/warning":157}],46:[function(require,module,exports){
+},{"./LinkedValueUtils":27,"./Object.assign":28,"./ReactMount":71,"./ReactUpdates":89,"_process":1,"fbjs/lib/warning":161}],50:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -8267,7 +10415,7 @@ var ReactDOMSelection = {
 };
 
 module.exports = ReactDOMSelection;
-},{"./getNodeForCharacterOffset":118,"./getTextContentAccessor":119,"fbjs/lib/ExecutionEnvironment":132}],47:[function(require,module,exports){
+},{"./getNodeForCharacterOffset":122,"./getTextContentAccessor":123,"fbjs/lib/ExecutionEnvironment":136}],51:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -8294,7 +10442,7 @@ var ReactDOMServer = {
 };
 
 module.exports = ReactDOMServer;
-},{"./ReactDefaultInjection":51,"./ReactServerRendering":82,"./ReactVersion":86}],48:[function(require,module,exports){
+},{"./ReactDefaultInjection":55,"./ReactServerRendering":86,"./ReactVersion":90}],52:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8424,7 +10572,7 @@ assign(ReactDOMTextComponent.prototype, {
 
 module.exports = ReactDOMTextComponent;
 }).call(this,require('_process'))
-},{"./DOMChildrenOperations":10,"./DOMPropertyOperations":12,"./Object.assign":24,"./ReactComponentBrowserEnvironment":33,"./ReactMount":67,"./escapeTextContentForBrowser":109,"./setTextContent":127,"./validateDOMNesting":130,"_process":1}],49:[function(require,module,exports){
+},{"./DOMChildrenOperations":14,"./DOMPropertyOperations":16,"./Object.assign":28,"./ReactComponentBrowserEnvironment":37,"./ReactMount":71,"./escapeTextContentForBrowser":113,"./setTextContent":131,"./validateDOMNesting":134,"_process":1}],53:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8540,7 +10688,7 @@ function _handleChange(event) {
 
 module.exports = ReactDOMTextarea;
 }).call(this,require('_process'))
-},{"./LinkedValueUtils":23,"./Object.assign":24,"./ReactDOMIDOperations":42,"./ReactUpdates":85,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],50:[function(require,module,exports){
+},{"./LinkedValueUtils":27,"./Object.assign":28,"./ReactDOMIDOperations":46,"./ReactUpdates":89,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],54:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -8608,7 +10756,7 @@ var ReactDefaultBatchingStrategy = {
 };
 
 module.exports = ReactDefaultBatchingStrategy;
-},{"./Object.assign":24,"./ReactUpdates":85,"./Transaction":102,"fbjs/lib/emptyFunction":138}],51:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactUpdates":89,"./Transaction":106,"fbjs/lib/emptyFunction":142}],55:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -8708,7 +10856,7 @@ module.exports = {
   inject: inject
 };
 }).call(this,require('_process'))
-},{"./BeforeInputEventPlugin":4,"./ChangeEventPlugin":8,"./ClientReactRootIndex":9,"./DefaultEventPluginOrder":14,"./EnterLeaveEventPlugin":15,"./HTMLDOMPropertyConfig":22,"./ReactBrowserComponentMixin":27,"./ReactComponentBrowserEnvironment":33,"./ReactDOMComponent":39,"./ReactDOMTextComponent":48,"./ReactDefaultBatchingStrategy":50,"./ReactDefaultPerf":52,"./ReactEventListener":60,"./ReactInjection":61,"./ReactInstanceHandles":63,"./ReactMount":67,"./ReactReconcileTransaction":77,"./SVGDOMPropertyConfig":87,"./SelectEventPlugin":88,"./ServerReactRootIndex":89,"./SimpleEventPlugin":90,"_process":1,"fbjs/lib/ExecutionEnvironment":132}],52:[function(require,module,exports){
+},{"./BeforeInputEventPlugin":8,"./ChangeEventPlugin":12,"./ClientReactRootIndex":13,"./DefaultEventPluginOrder":18,"./EnterLeaveEventPlugin":19,"./HTMLDOMPropertyConfig":26,"./ReactBrowserComponentMixin":31,"./ReactComponentBrowserEnvironment":37,"./ReactDOMComponent":43,"./ReactDOMTextComponent":52,"./ReactDefaultBatchingStrategy":54,"./ReactDefaultPerf":56,"./ReactEventListener":64,"./ReactInjection":65,"./ReactInstanceHandles":67,"./ReactMount":71,"./ReactReconcileTransaction":81,"./SVGDOMPropertyConfig":91,"./SelectEventPlugin":92,"./ServerReactRootIndex":93,"./SimpleEventPlugin":94,"_process":1,"fbjs/lib/ExecutionEnvironment":136}],56:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -8946,7 +11094,7 @@ var ReactDefaultPerf = {
 };
 
 module.exports = ReactDefaultPerf;
-},{"./DOMProperty":11,"./ReactDefaultPerfAnalysis":53,"./ReactMount":67,"./ReactPerf":73,"fbjs/lib/performanceNow":154}],53:[function(require,module,exports){
+},{"./DOMProperty":15,"./ReactDefaultPerfAnalysis":57,"./ReactMount":71,"./ReactPerf":77,"fbjs/lib/performanceNow":158}],57:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9148,7 +11296,7 @@ var ReactDefaultPerfAnalysis = {
 };
 
 module.exports = ReactDefaultPerfAnalysis;
-},{"./Object.assign":24}],54:[function(require,module,exports){
+},{"./Object.assign":28}],58:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -9398,7 +11546,7 @@ ReactElement.isValidElement = function (object) {
 
 module.exports = ReactElement;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"./ReactCurrentOwner":36,"./canDefineProperty":106,"_process":1}],55:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactCurrentOwner":40,"./canDefineProperty":110,"_process":1}],59:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -9682,7 +11830,7 @@ var ReactElementValidator = {
 
 module.exports = ReactElementValidator;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":36,"./ReactElement":54,"./ReactPropTypeLocationNames":74,"./ReactPropTypeLocations":75,"./canDefineProperty":106,"./getIteratorFn":117,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],56:[function(require,module,exports){
+},{"./ReactCurrentOwner":40,"./ReactElement":58,"./ReactPropTypeLocationNames":78,"./ReactPropTypeLocations":79,"./canDefineProperty":110,"./getIteratorFn":121,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],60:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -9734,7 +11882,7 @@ assign(ReactEmptyComponent.prototype, {
 ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 
 module.exports = ReactEmptyComponent;
-},{"./Object.assign":24,"./ReactElement":54,"./ReactEmptyComponentRegistry":57,"./ReactReconciler":78}],57:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactElement":58,"./ReactEmptyComponentRegistry":61,"./ReactReconciler":82}],61:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -9783,7 +11931,7 @@ var ReactEmptyComponentRegistry = {
 };
 
 module.exports = ReactEmptyComponentRegistry;
-},{}],58:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -9863,7 +12011,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactErrorUtils;
 }).call(this,require('_process'))
-},{"_process":1}],59:[function(require,module,exports){
+},{"_process":1}],63:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -9902,7 +12050,7 @@ var ReactEventEmitterMixin = {
 };
 
 module.exports = ReactEventEmitterMixin;
-},{"./EventPluginHub":17}],60:[function(require,module,exports){
+},{"./EventPluginHub":21}],64:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10114,7 +12262,7 @@ var ReactEventListener = {
 };
 
 module.exports = ReactEventListener;
-},{"./Object.assign":24,"./PooledClass":25,"./ReactInstanceHandles":63,"./ReactMount":67,"./ReactUpdates":85,"./getEventTarget":116,"fbjs/lib/EventListener":131,"fbjs/lib/ExecutionEnvironment":132,"fbjs/lib/getUnboundedScrollPosition":143}],61:[function(require,module,exports){
+},{"./Object.assign":28,"./PooledClass":29,"./ReactInstanceHandles":67,"./ReactMount":71,"./ReactUpdates":89,"./getEventTarget":120,"fbjs/lib/EventListener":135,"fbjs/lib/ExecutionEnvironment":136,"fbjs/lib/getUnboundedScrollPosition":147}],65:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10153,7 +12301,7 @@ var ReactInjection = {
 };
 
 module.exports = ReactInjection;
-},{"./DOMProperty":11,"./EventPluginHub":17,"./ReactBrowserEventEmitter":28,"./ReactClass":31,"./ReactComponentEnvironment":34,"./ReactEmptyComponent":56,"./ReactNativeComponent":70,"./ReactPerf":73,"./ReactRootIndex":80,"./ReactUpdates":85}],62:[function(require,module,exports){
+},{"./DOMProperty":15,"./EventPluginHub":21,"./ReactBrowserEventEmitter":32,"./ReactClass":35,"./ReactComponentEnvironment":38,"./ReactEmptyComponent":60,"./ReactNativeComponent":74,"./ReactPerf":77,"./ReactRootIndex":84,"./ReactUpdates":89}],66:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10278,7 +12426,7 @@ var ReactInputSelection = {
 };
 
 module.exports = ReactInputSelection;
-},{"./ReactDOMSelection":46,"fbjs/lib/containsNode":135,"fbjs/lib/focusNode":140,"fbjs/lib/getActiveElement":141}],63:[function(require,module,exports){
+},{"./ReactDOMSelection":50,"fbjs/lib/containsNode":139,"fbjs/lib/focusNode":144,"fbjs/lib/getActiveElement":145}],67:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -10583,7 +12731,7 @@ var ReactInstanceHandles = {
 
 module.exports = ReactInstanceHandles;
 }).call(this,require('_process'))
-},{"./ReactRootIndex":80,"_process":1,"fbjs/lib/invariant":146}],64:[function(require,module,exports){
+},{"./ReactRootIndex":84,"_process":1,"fbjs/lib/invariant":150}],68:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10631,7 +12779,7 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
-},{}],65:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -10708,7 +12856,7 @@ var React = {
 
 module.exports = React;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"./ReactChildren":30,"./ReactClass":31,"./ReactComponent":32,"./ReactDOMFactories":40,"./ReactElement":54,"./ReactElementValidator":55,"./ReactPropTypes":76,"./ReactVersion":86,"./onlyChild":123,"_process":1}],66:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactChildren":34,"./ReactClass":35,"./ReactComponent":36,"./ReactDOMFactories":44,"./ReactElement":58,"./ReactElementValidator":59,"./ReactPropTypes":80,"./ReactVersion":90,"./onlyChild":127,"_process":1}],70:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -10754,7 +12902,7 @@ var ReactMarkupChecksum = {
 };
 
 module.exports = ReactMarkupChecksum;
-},{"./adler32":105}],67:[function(require,module,exports){
+},{"./adler32":109}],71:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -11607,7 +13755,7 @@ ReactPerf.measureMethods(ReactMount, 'ReactMount', {
 
 module.exports = ReactMount;
 }).call(this,require('_process'))
-},{"./DOMProperty":11,"./Object.assign":24,"./ReactBrowserEventEmitter":28,"./ReactCurrentOwner":36,"./ReactDOMFeatureFlags":41,"./ReactElement":54,"./ReactEmptyComponentRegistry":57,"./ReactInstanceHandles":63,"./ReactInstanceMap":64,"./ReactMarkupChecksum":66,"./ReactPerf":73,"./ReactReconciler":78,"./ReactUpdateQueue":84,"./ReactUpdates":85,"./instantiateReactComponent":120,"./setInnerHTML":126,"./shouldUpdateReactComponent":128,"./validateDOMNesting":130,"_process":1,"fbjs/lib/containsNode":135,"fbjs/lib/emptyObject":139,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],68:[function(require,module,exports){
+},{"./DOMProperty":15,"./Object.assign":28,"./ReactBrowserEventEmitter":32,"./ReactCurrentOwner":40,"./ReactDOMFeatureFlags":45,"./ReactElement":58,"./ReactEmptyComponentRegistry":61,"./ReactInstanceHandles":67,"./ReactInstanceMap":68,"./ReactMarkupChecksum":70,"./ReactPerf":77,"./ReactReconciler":82,"./ReactUpdateQueue":88,"./ReactUpdates":89,"./instantiateReactComponent":124,"./setInnerHTML":130,"./shouldUpdateReactComponent":132,"./validateDOMNesting":134,"_process":1,"fbjs/lib/containsNode":139,"fbjs/lib/emptyObject":143,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],72:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12106,7 +14254,7 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 }).call(this,require('_process'))
-},{"./ReactChildReconciler":29,"./ReactComponentEnvironment":34,"./ReactCurrentOwner":36,"./ReactMultiChildUpdateTypes":69,"./ReactReconciler":78,"./flattenChildren":111,"_process":1}],69:[function(require,module,exports){
+},{"./ReactChildReconciler":33,"./ReactComponentEnvironment":38,"./ReactCurrentOwner":40,"./ReactMultiChildUpdateTypes":73,"./ReactReconciler":82,"./flattenChildren":115,"_process":1}],73:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -12139,7 +14287,7 @@ var ReactMultiChildUpdateTypes = keyMirror({
 });
 
 module.exports = ReactMultiChildUpdateTypes;
-},{"fbjs/lib/keyMirror":149}],70:[function(require,module,exports){
+},{"fbjs/lib/keyMirror":153}],74:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -12236,7 +14384,7 @@ var ReactNativeComponent = {
 
 module.exports = ReactNativeComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"_process":1,"fbjs/lib/invariant":146}],71:[function(require,module,exports){
+},{"./Object.assign":28,"_process":1,"fbjs/lib/invariant":150}],75:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -12357,7 +14505,7 @@ var ReactNoopUpdateQueue = {
 
 module.exports = ReactNoopUpdateQueue;
 }).call(this,require('_process'))
-},{"_process":1,"fbjs/lib/warning":157}],72:[function(require,module,exports){
+},{"_process":1,"fbjs/lib/warning":161}],76:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12451,7 +14599,7 @@ var ReactOwner = {
 
 module.exports = ReactOwner;
 }).call(this,require('_process'))
-},{"_process":1,"fbjs/lib/invariant":146}],73:[function(require,module,exports){
+},{"_process":1,"fbjs/lib/invariant":150}],77:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12550,7 +14698,7 @@ function _noMeasure(objName, fnName, func) {
 
 module.exports = ReactPerf;
 }).call(this,require('_process'))
-},{"_process":1}],74:[function(require,module,exports){
+},{"_process":1}],78:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -12577,7 +14725,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactPropTypeLocationNames;
 }).call(this,require('_process'))
-},{"_process":1}],75:[function(require,module,exports){
+},{"_process":1}],79:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -12600,7 +14748,7 @@ var ReactPropTypeLocations = keyMirror({
 });
 
 module.exports = ReactPropTypeLocations;
-},{"fbjs/lib/keyMirror":149}],76:[function(require,module,exports){
+},{"fbjs/lib/keyMirror":153}],80:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -12957,7 +15105,7 @@ function getClassName(propValue) {
 }
 
 module.exports = ReactPropTypes;
-},{"./ReactElement":54,"./ReactPropTypeLocationNames":74,"./getIteratorFn":117,"fbjs/lib/emptyFunction":138}],77:[function(require,module,exports){
+},{"./ReactElement":58,"./ReactPropTypeLocationNames":78,"./getIteratorFn":121,"fbjs/lib/emptyFunction":142}],81:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13109,7 +15257,7 @@ assign(ReactReconcileTransaction.prototype, Transaction.Mixin, Mixin);
 PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
-},{"./CallbackQueue":7,"./Object.assign":24,"./PooledClass":25,"./ReactBrowserEventEmitter":28,"./ReactDOMFeatureFlags":41,"./ReactInputSelection":62,"./Transaction":102}],78:[function(require,module,exports){
+},{"./CallbackQueue":11,"./Object.assign":28,"./PooledClass":29,"./ReactBrowserEventEmitter":32,"./ReactDOMFeatureFlags":45,"./ReactInputSelection":66,"./Transaction":106}],82:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13217,7 +15365,7 @@ var ReactReconciler = {
 };
 
 module.exports = ReactReconciler;
-},{"./ReactRef":79}],79:[function(require,module,exports){
+},{"./ReactRef":83}],83:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13296,7 +15444,7 @@ ReactRef.detachRefs = function (instance, element) {
 };
 
 module.exports = ReactRef;
-},{"./ReactOwner":72}],80:[function(require,module,exports){
+},{"./ReactOwner":76}],84:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -13326,7 +15474,7 @@ var ReactRootIndex = {
 };
 
 module.exports = ReactRootIndex;
-},{}],81:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -13350,7 +15498,7 @@ var ReactServerBatchingStrategy = {
 };
 
 module.exports = ReactServerBatchingStrategy;
-},{}],82:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -13436,7 +15584,7 @@ module.exports = {
   renderToStaticMarkup: renderToStaticMarkup
 };
 }).call(this,require('_process'))
-},{"./ReactDefaultBatchingStrategy":50,"./ReactElement":54,"./ReactInstanceHandles":63,"./ReactMarkupChecksum":66,"./ReactServerBatchingStrategy":81,"./ReactServerRenderingTransaction":83,"./ReactUpdates":85,"./instantiateReactComponent":120,"_process":1,"fbjs/lib/emptyObject":139,"fbjs/lib/invariant":146}],83:[function(require,module,exports){
+},{"./ReactDefaultBatchingStrategy":54,"./ReactElement":58,"./ReactInstanceHandles":67,"./ReactMarkupChecksum":70,"./ReactServerBatchingStrategy":85,"./ReactServerRenderingTransaction":87,"./ReactUpdates":89,"./instantiateReactComponent":124,"_process":1,"fbjs/lib/emptyObject":143,"fbjs/lib/invariant":150}],87:[function(require,module,exports){
 /**
  * Copyright 2014-2015, Facebook, Inc.
  * All rights reserved.
@@ -13524,7 +15672,7 @@ assign(ReactServerRenderingTransaction.prototype, Transaction.Mixin, Mixin);
 PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
-},{"./CallbackQueue":7,"./Object.assign":24,"./PooledClass":25,"./Transaction":102,"fbjs/lib/emptyFunction":138}],84:[function(require,module,exports){
+},{"./CallbackQueue":11,"./Object.assign":28,"./PooledClass":29,"./Transaction":106,"fbjs/lib/emptyFunction":142}],88:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -13784,7 +15932,7 @@ var ReactUpdateQueue = {
 
 module.exports = ReactUpdateQueue;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"./ReactCurrentOwner":36,"./ReactElement":54,"./ReactInstanceMap":64,"./ReactUpdates":85,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],85:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactCurrentOwner":40,"./ReactElement":58,"./ReactInstanceMap":68,"./ReactUpdates":89,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],89:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -14010,7 +16158,7 @@ var ReactUpdates = {
 
 module.exports = ReactUpdates;
 }).call(this,require('_process'))
-},{"./CallbackQueue":7,"./Object.assign":24,"./PooledClass":25,"./ReactPerf":73,"./ReactReconciler":78,"./Transaction":102,"_process":1,"fbjs/lib/invariant":146}],86:[function(require,module,exports){
+},{"./CallbackQueue":11,"./Object.assign":28,"./PooledClass":29,"./ReactPerf":77,"./ReactReconciler":82,"./Transaction":106,"_process":1,"fbjs/lib/invariant":150}],90:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14025,7 +16173,7 @@ module.exports = ReactUpdates;
 'use strict';
 
 module.exports = '0.14.7';
-},{}],87:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14153,7 +16301,7 @@ var SVGDOMPropertyConfig = {
 };
 
 module.exports = SVGDOMPropertyConfig;
-},{"./DOMProperty":11}],88:[function(require,module,exports){
+},{"./DOMProperty":15}],92:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14355,7 +16503,7 @@ var SelectEventPlugin = {
 };
 
 module.exports = SelectEventPlugin;
-},{"./EventConstants":16,"./EventPropagators":20,"./ReactInputSelection":62,"./SyntheticEvent":94,"./isTextInputElement":122,"fbjs/lib/ExecutionEnvironment":132,"fbjs/lib/getActiveElement":141,"fbjs/lib/keyOf":150,"fbjs/lib/shallowEqual":155}],89:[function(require,module,exports){
+},{"./EventConstants":20,"./EventPropagators":24,"./ReactInputSelection":66,"./SyntheticEvent":98,"./isTextInputElement":126,"fbjs/lib/ExecutionEnvironment":136,"fbjs/lib/getActiveElement":145,"fbjs/lib/keyOf":154,"fbjs/lib/shallowEqual":159}],93:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -14385,7 +16533,7 @@ var ServerReactRootIndex = {
 };
 
 module.exports = ServerReactRootIndex;
-},{}],90:[function(require,module,exports){
+},{}],94:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -14975,7 +17123,7 @@ var SimpleEventPlugin = {
 
 module.exports = SimpleEventPlugin;
 }).call(this,require('_process'))
-},{"./EventConstants":16,"./EventPropagators":20,"./ReactMount":67,"./SyntheticClipboardEvent":91,"./SyntheticDragEvent":93,"./SyntheticEvent":94,"./SyntheticFocusEvent":95,"./SyntheticKeyboardEvent":97,"./SyntheticMouseEvent":98,"./SyntheticTouchEvent":99,"./SyntheticUIEvent":100,"./SyntheticWheelEvent":101,"./getEventCharCode":113,"_process":1,"fbjs/lib/EventListener":131,"fbjs/lib/emptyFunction":138,"fbjs/lib/invariant":146,"fbjs/lib/keyOf":150}],91:[function(require,module,exports){
+},{"./EventConstants":20,"./EventPropagators":24,"./ReactMount":71,"./SyntheticClipboardEvent":95,"./SyntheticDragEvent":97,"./SyntheticEvent":98,"./SyntheticFocusEvent":99,"./SyntheticKeyboardEvent":101,"./SyntheticMouseEvent":102,"./SyntheticTouchEvent":103,"./SyntheticUIEvent":104,"./SyntheticWheelEvent":105,"./getEventCharCode":117,"_process":1,"fbjs/lib/EventListener":135,"fbjs/lib/emptyFunction":142,"fbjs/lib/invariant":150,"fbjs/lib/keyOf":154}],95:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15015,7 +17163,7 @@ function SyntheticClipboardEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
-},{"./SyntheticEvent":94}],92:[function(require,module,exports){
+},{"./SyntheticEvent":98}],96:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15053,7 +17201,7 @@ function SyntheticCompositionEvent(dispatchConfig, dispatchMarker, nativeEvent, 
 SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface);
 
 module.exports = SyntheticCompositionEvent;
-},{"./SyntheticEvent":94}],93:[function(require,module,exports){
+},{"./SyntheticEvent":98}],97:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15091,7 +17239,7 @@ function SyntheticDragEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeE
 SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
-},{"./SyntheticMouseEvent":98}],94:[function(require,module,exports){
+},{"./SyntheticMouseEvent":102}],98:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -15274,7 +17422,7 @@ PooledClass.addPoolingTo(SyntheticEvent, PooledClass.fourArgumentPooler);
 
 module.exports = SyntheticEvent;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"./PooledClass":25,"_process":1,"fbjs/lib/emptyFunction":138,"fbjs/lib/warning":157}],95:[function(require,module,exports){
+},{"./Object.assign":28,"./PooledClass":29,"_process":1,"fbjs/lib/emptyFunction":142,"fbjs/lib/warning":161}],99:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15312,7 +17460,7 @@ function SyntheticFocusEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
-},{"./SyntheticUIEvent":100}],96:[function(require,module,exports){
+},{"./SyntheticUIEvent":104}],100:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15351,7 +17499,7 @@ function SyntheticInputEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 
 module.exports = SyntheticInputEvent;
-},{"./SyntheticEvent":94}],97:[function(require,module,exports){
+},{"./SyntheticEvent":98}],101:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15437,7 +17585,7 @@ function SyntheticKeyboardEvent(dispatchConfig, dispatchMarker, nativeEvent, nat
 SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
-},{"./SyntheticUIEvent":100,"./getEventCharCode":113,"./getEventKey":114,"./getEventModifierState":115}],98:[function(require,module,exports){
+},{"./SyntheticUIEvent":104,"./getEventCharCode":117,"./getEventKey":118,"./getEventModifierState":119}],102:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15511,7 +17659,7 @@ function SyntheticMouseEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
-},{"./SyntheticUIEvent":100,"./ViewportMetrics":103,"./getEventModifierState":115}],99:[function(require,module,exports){
+},{"./SyntheticUIEvent":104,"./ViewportMetrics":107,"./getEventModifierState":119}],103:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15558,7 +17706,7 @@ function SyntheticTouchEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
-},{"./SyntheticUIEvent":100,"./getEventModifierState":115}],100:[function(require,module,exports){
+},{"./SyntheticUIEvent":104,"./getEventModifierState":119}],104:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15619,7 +17767,7 @@ function SyntheticUIEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEve
 SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
-},{"./SyntheticEvent":94,"./getEventTarget":116}],101:[function(require,module,exports){
+},{"./SyntheticEvent":98,"./getEventTarget":120}],105:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15675,7 +17823,7 @@ function SyntheticWheelEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
-},{"./SyntheticMouseEvent":98}],102:[function(require,module,exports){
+},{"./SyntheticMouseEvent":102}],106:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -15909,7 +18057,7 @@ var Transaction = {
 
 module.exports = Transaction;
 }).call(this,require('_process'))
-},{"_process":1,"fbjs/lib/invariant":146}],103:[function(require,module,exports){
+},{"_process":1,"fbjs/lib/invariant":150}],107:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -15937,7 +18085,7 @@ var ViewportMetrics = {
 };
 
 module.exports = ViewportMetrics;
-},{}],104:[function(require,module,exports){
+},{}],108:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -15999,7 +18147,7 @@ function accumulateInto(current, next) {
 
 module.exports = accumulateInto;
 }).call(this,require('_process'))
-},{"_process":1,"fbjs/lib/invariant":146}],105:[function(require,module,exports){
+},{"_process":1,"fbjs/lib/invariant":150}],109:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16042,7 +18190,7 @@ function adler32(data) {
 }
 
 module.exports = adler32;
-},{}],106:[function(require,module,exports){
+},{}],110:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16069,7 +18217,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = canDefineProperty;
 }).call(this,require('_process'))
-},{"_process":1}],107:[function(require,module,exports){
+},{"_process":1}],111:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16125,7 +18273,7 @@ function dangerousStyleValue(name, value) {
 }
 
 module.exports = dangerousStyleValue;
-},{"./CSSProperty":5}],108:[function(require,module,exports){
+},{"./CSSProperty":9}],112:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16176,7 +18324,7 @@ function deprecated(fnName, newModule, newPackage, ctx, fn) {
 
 module.exports = deprecated;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"_process":1,"fbjs/lib/warning":157}],109:[function(require,module,exports){
+},{"./Object.assign":28,"_process":1,"fbjs/lib/warning":161}],113:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16215,7 +18363,7 @@ function escapeTextContentForBrowser(text) {
 }
 
 module.exports = escapeTextContentForBrowser;
-},{}],110:[function(require,module,exports){
+},{}],114:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16267,7 +18415,7 @@ function findDOMNode(componentOrElement) {
 
 module.exports = findDOMNode;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":36,"./ReactInstanceMap":64,"./ReactMount":67,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],111:[function(require,module,exports){
+},{"./ReactCurrentOwner":40,"./ReactInstanceMap":68,"./ReactMount":71,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],115:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16318,7 +18466,7 @@ function flattenChildren(children) {
 
 module.exports = flattenChildren;
 }).call(this,require('_process'))
-},{"./traverseAllChildren":129,"_process":1,"fbjs/lib/warning":157}],112:[function(require,module,exports){
+},{"./traverseAllChildren":133,"_process":1,"fbjs/lib/warning":161}],116:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16348,7 +18496,7 @@ var forEachAccumulated = function (arr, cb, scope) {
 };
 
 module.exports = forEachAccumulated;
-},{}],113:[function(require,module,exports){
+},{}],117:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16399,7 +18547,7 @@ function getEventCharCode(nativeEvent) {
 }
 
 module.exports = getEventCharCode;
-},{}],114:[function(require,module,exports){
+},{}],118:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16503,7 +18651,7 @@ function getEventKey(nativeEvent) {
 }
 
 module.exports = getEventKey;
-},{"./getEventCharCode":113}],115:[function(require,module,exports){
+},{"./getEventCharCode":117}],119:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16548,7 +18696,7 @@ function getEventModifierState(nativeEvent) {
 }
 
 module.exports = getEventModifierState;
-},{}],116:[function(require,module,exports){
+},{}],120:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16578,7 +18726,7 @@ function getEventTarget(nativeEvent) {
 }
 
 module.exports = getEventTarget;
-},{}],117:[function(require,module,exports){
+},{}],121:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16619,7 +18767,7 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
-},{}],118:[function(require,module,exports){
+},{}],122:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16693,7 +18841,7 @@ function getNodeForCharacterOffset(root, offset) {
 }
 
 module.exports = getNodeForCharacterOffset;
-},{}],119:[function(require,module,exports){
+},{}],123:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16727,7 +18875,7 @@ function getTextContentAccessor() {
 }
 
 module.exports = getTextContentAccessor;
-},{"fbjs/lib/ExecutionEnvironment":132}],120:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":136}],124:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16842,7 +18990,7 @@ function instantiateReactComponent(node) {
 
 module.exports = instantiateReactComponent;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"./ReactCompositeComponent":35,"./ReactEmptyComponent":56,"./ReactNativeComponent":70,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],121:[function(require,module,exports){
+},{"./Object.assign":28,"./ReactCompositeComponent":39,"./ReactEmptyComponent":60,"./ReactNativeComponent":74,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],125:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16903,7 +19051,7 @@ function isEventSupported(eventNameSuffix, capture) {
 }
 
 module.exports = isEventSupported;
-},{"fbjs/lib/ExecutionEnvironment":132}],122:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":136}],126:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -16944,7 +19092,7 @@ function isTextInputElement(elem) {
 }
 
 module.exports = isTextInputElement;
-},{}],123:[function(require,module,exports){
+},{}],127:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -16980,7 +19128,7 @@ function onlyChild(children) {
 
 module.exports = onlyChild;
 }).call(this,require('_process'))
-},{"./ReactElement":54,"_process":1,"fbjs/lib/invariant":146}],124:[function(require,module,exports){
+},{"./ReactElement":58,"_process":1,"fbjs/lib/invariant":150}],128:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17007,7 +19155,7 @@ function quoteAttributeValueForBrowser(value) {
 }
 
 module.exports = quoteAttributeValueForBrowser;
-},{"./escapeTextContentForBrowser":109}],125:[function(require,module,exports){
+},{"./escapeTextContentForBrowser":113}],129:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17024,7 +19172,7 @@ module.exports = quoteAttributeValueForBrowser;
 var ReactMount = require('./ReactMount');
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
-},{"./ReactMount":67}],126:[function(require,module,exports){
+},{"./ReactMount":71}],130:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17115,7 +19263,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setInnerHTML;
-},{"fbjs/lib/ExecutionEnvironment":132}],127:[function(require,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":136}],131:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17156,7 +19304,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setTextContent;
-},{"./escapeTextContentForBrowser":109,"./setInnerHTML":126,"fbjs/lib/ExecutionEnvironment":132}],128:[function(require,module,exports){
+},{"./escapeTextContentForBrowser":113,"./setInnerHTML":130,"fbjs/lib/ExecutionEnvironment":136}],132:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17200,7 +19348,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 }
 
 module.exports = shouldUpdateReactComponent;
-},{}],129:[function(require,module,exports){
+},{}],133:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17392,7 +19540,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 }).call(this,require('_process'))
-},{"./ReactCurrentOwner":36,"./ReactElement":54,"./ReactInstanceHandles":63,"./getIteratorFn":117,"_process":1,"fbjs/lib/invariant":146,"fbjs/lib/warning":157}],130:[function(require,module,exports){
+},{"./ReactCurrentOwner":40,"./ReactElement":58,"./ReactInstanceHandles":67,"./getIteratorFn":121,"_process":1,"fbjs/lib/invariant":150,"fbjs/lib/warning":161}],134:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2015, Facebook, Inc.
@@ -17758,7 +19906,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = validateDOMNesting;
 }).call(this,require('_process'))
-},{"./Object.assign":24,"_process":1,"fbjs/lib/emptyFunction":138,"fbjs/lib/warning":157}],131:[function(require,module,exports){
+},{"./Object.assign":28,"_process":1,"fbjs/lib/emptyFunction":142,"fbjs/lib/warning":161}],135:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -17845,7 +19993,7 @@ var EventListener = {
 
 module.exports = EventListener;
 }).call(this,require('_process'))
-},{"./emptyFunction":138,"_process":1}],132:[function(require,module,exports){
+},{"./emptyFunction":142,"_process":1}],136:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17882,7 +20030,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],133:[function(require,module,exports){
+},{}],137:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17915,7 +20063,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],134:[function(require,module,exports){
+},{}],138:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -17956,7 +20104,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":133}],135:[function(require,module,exports){
+},{"./camelize":137}],139:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18012,7 +20160,7 @@ function containsNode(_x, _x2) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":148}],136:[function(require,module,exports){
+},{"./isTextNode":152}],140:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18098,7 +20246,7 @@ function createArrayFromMixed(obj) {
 }
 
 module.exports = createArrayFromMixed;
-},{"./toArray":156}],137:[function(require,module,exports){
+},{"./toArray":160}],141:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18185,7 +20333,7 @@ function createNodesFromMarkup(markup, handleScript) {
 
 module.exports = createNodesFromMarkup;
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":132,"./createArrayFromMixed":136,"./getMarkupWrap":142,"./invariant":146,"_process":1}],138:[function(require,module,exports){
+},{"./ExecutionEnvironment":136,"./createArrayFromMixed":140,"./getMarkupWrap":146,"./invariant":150,"_process":1}],142:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18224,7 +20372,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],139:[function(require,module,exports){
+},{}],143:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18247,7 +20395,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = emptyObject;
 }).call(this,require('_process'))
-},{"_process":1}],140:[function(require,module,exports){
+},{"_process":1}],144:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18274,7 +20422,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],141:[function(require,module,exports){
+},{}],145:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18310,7 +20458,7 @@ function getActiveElement() /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],142:[function(require,module,exports){
+},{}],146:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18408,7 +20556,7 @@ function getMarkupWrap(nodeName) {
 
 module.exports = getMarkupWrap;
 }).call(this,require('_process'))
-},{"./ExecutionEnvironment":132,"./invariant":146,"_process":1}],143:[function(require,module,exports){
+},{"./ExecutionEnvironment":136,"./invariant":150,"_process":1}],147:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18447,7 +20595,7 @@ function getUnboundedScrollPosition(scrollable) {
 }
 
 module.exports = getUnboundedScrollPosition;
-},{}],144:[function(require,module,exports){
+},{}],148:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18481,7 +20629,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],145:[function(require,module,exports){
+},{}],149:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18521,7 +20669,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":144}],146:[function(require,module,exports){
+},{"./hyphenate":148}],150:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18574,7 +20722,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 }).call(this,require('_process'))
-},{"_process":1}],147:[function(require,module,exports){
+},{"_process":1}],151:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18598,7 +20746,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],148:[function(require,module,exports){
+},{}],152:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18624,7 +20772,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":147}],149:[function(require,module,exports){
+},{"./isNode":151}],153:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18675,7 +20823,7 @@ var keyMirror = function (obj) {
 
 module.exports = keyMirror;
 }).call(this,require('_process'))
-},{"./invariant":146,"_process":1}],150:[function(require,module,exports){
+},{"./invariant":150,"_process":1}],154:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18711,7 +20859,7 @@ var keyOf = function (oneKeyObj) {
 };
 
 module.exports = keyOf;
-},{}],151:[function(require,module,exports){
+},{}],155:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18763,7 +20911,7 @@ function mapObject(object, callback, context) {
 }
 
 module.exports = mapObject;
-},{}],152:[function(require,module,exports){
+},{}],156:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18795,7 +20943,7 @@ function memoizeStringOnly(callback) {
 }
 
 module.exports = memoizeStringOnly;
-},{}],153:[function(require,module,exports){
+},{}],157:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18819,7 +20967,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = performance || {};
-},{"./ExecutionEnvironment":132}],154:[function(require,module,exports){
+},{"./ExecutionEnvironment":136}],158:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18854,7 +21002,7 @@ if (performance.now) {
 }
 
 module.exports = performanceNow;
-},{"./performance":153}],155:[function(require,module,exports){
+},{"./performance":157}],159:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.
  * All rights reserved.
@@ -18905,7 +21053,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],156:[function(require,module,exports){
+},{}],160:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -18965,7 +21113,7 @@ function toArray(obj) {
 
 module.exports = toArray;
 }).call(this,require('_process'))
-},{"./invariant":146,"_process":1}],157:[function(require,module,exports){
+},{"./invariant":150,"_process":1}],161:[function(require,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -19025,12 +21173,12 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 }).call(this,require('_process'))
-},{"./emptyFunction":138,"_process":1}],158:[function(require,module,exports){
+},{"./emptyFunction":142,"_process":1}],162:[function(require,module,exports){
 'use strict';
 
 module.exports = require('./lib/React');
 
-},{"./lib/React":26}],159:[function(require,module,exports){
+},{"./lib/React":30}],163:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19042,9 +21190,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // app.js
-
 var React = require('react');
 var ReactDOM = require('react-dom');
+var Compound = require('mendeleev').Compound;
 
 var Table = require('./components/table.js');
 
@@ -19054,13 +21202,31 @@ var App = function (_React$Component) {
 	function App() {
 		_classCallCheck(this, App);
 
-		return _possibleConstructorReturn(this, Object.getPrototypeOf(App).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this));
+
+		_this.addElement = _this.addElement.bind(_this);
+		return _this;
 	}
 
 	_createClass(App, [{
+		key: 'getInitialState',
+		value: function getInitialState() {
+			var compound = new Compound();
+			return {
+				compound: compound
+			};
+		}
+	}, {
+		key: 'addElement',
+		value: function addElement(element) {
+			this.state.compound.add(element);
+			console.log('Element Added...');
+		}
+	}, {
 		key: 'render',
 		value: function render() {
-			return React.createElement(Table, null);
+			return React.createElement(Table, {
+				onElementClick: this.addElement });
 		}
 	}]);
 
@@ -19069,7 +21235,7 @@ var App = function (_React$Component) {
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
 
-},{"./components/table.js":162,"react":158,"react-dom":2}],160:[function(require,module,exports){
+},{"./components/table.js":166,"mendeleev":3,"react":162,"react-dom":6}],164:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19090,15 +21256,24 @@ var Element = function (_React$Component) {
 	function Element() {
 		_classCallCheck(this, Element);
 
-		return _possibleConstructorReturn(this, Object.getPrototypeOf(Element).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Element).call(this));
+
+		_this.onClick = _this.onClick.bind(_this);
+		return _this;
 	}
 
 	_createClass(Element, [{
+		key: 'onClick',
+		value: function onClick() {
+			this.props.onClick(this.props.element);
+		}
+	}, {
 		key: 'render',
 		value: function render() {
+			console.log(this.props);
 			return React.createElement(
 				'td',
-				null,
+				{ onClick: this.onClick },
 				this.props.element
 			);
 		}
@@ -19109,7 +21284,7 @@ var Element = function (_React$Component) {
 
 module.exports = Element;
 
-},{"react":158}],161:[function(require,module,exports){
+},{"react":162}],165:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19147,7 +21322,7 @@ var Space = function (_React$Component) {
 
 module.exports = Space;
 
-},{"react":158}],162:[function(require,module,exports){
+},{"react":162}],166:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19176,6 +21351,8 @@ var Table = function (_React$Component) {
 	_createClass(Table, [{
 		key: 'render',
 		value: function render() {
+			var _this2 = this;
+
 			return React.createElement(
 				'table',
 				null,
@@ -19183,7 +21360,9 @@ var Table = function (_React$Component) {
 					'tbody',
 					null,
 					schema.map(function (row) {
-						return React.createElement(Row, { data: row });
+						return React.createElement(Row, {
+							data: row,
+							onElementClick: _this2.props.onElementClick });
 					})
 				)
 			);
@@ -19195,8 +21374,10 @@ var Table = function (_React$Component) {
 
 module.exports = Table;
 
-},{"../data/table_schema.js":164,"./table_row.js":163,"react":158}],163:[function(require,module,exports){
+},{"../data/table_schema.js":168,"./table_row.js":167,"react":162}],167:[function(require,module,exports){
 'use strict';
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -19224,11 +21405,13 @@ var Row = function (_React$Component) {
 	_createClass(Row, [{
 		key: 'getTableData',
 		value: function getTableData(data) {
+			var _this2 = this;
+
 			return data.map(function (td) {
 				if (td.space) {
 					return React.createElement(Space, td);
 				} else {
-					return React.createElement(Element, td);
+					return React.createElement(Element, _extends({}, td, { onClick: _this2.props.onElementClick }));
 				}
 			});
 		}
@@ -19248,9 +21431,9 @@ var Row = function (_React$Component) {
 
 module.exports = Row;
 
-},{"./element.js":160,"./space.js":161,"react":158}],164:[function(require,module,exports){
+},{"./element.js":164,"./space.js":165,"react":162}],168:[function(require,module,exports){
 'use strict';
 
 module.exports = [[{ element: 'H' }, { space: true }, { space: true, width: 10, height: 3, id: 'data-view' }, { space: true, width: 5, id: 'space-2' }, { element: 'He' }], [{ element: 'Li' }, { element: 'Be' }, { element: 'B' }, { element: 'C' }, { element: 'N' }, { element: 'O' }, { element: 'F' }, { element: 'Ne' }], [{ element: 'Na' }, { element: 'Mg' }, { element: 'Al' }, { element: 'Si' }, { element: 'P' }, { element: 'S' }, { element: 'Cl' }, { element: 'Ar' }], [{ element: 'K' }, { element: 'Ca' }, { element: 'Sc' }, { element: 'Ti' }, { element: 'V' }, { element: 'Cr' }, { element: 'Mn' }, { element: 'Fe' }, { element: 'Co' }, { element: 'Ni' }, { element: 'Cu' }, { element: 'Zn' }, { element: 'Ga' }, { element: 'Ge' }, { element: 'As' }, { element: 'Se' }, { element: 'Br' }, { element: 'Kr' }], [{ element: 'Rb' }, { element: 'Sr' }, { element: 'Y' }, { element: 'Zr' }, { element: 'Nb' }, { element: 'Mo' }, { element: 'Tc' }, { element: 'Ru' }, { element: 'Rh' }, { element: 'Pd' }, { element: 'Ag' }, { element: 'Cd' }, { element: 'In' }, { element: 'Sn' }, { element: 'Sb' }, { element: 'Te' }, { element: 'I' }, { element: 'Xe' }], [{ element: 'Cs' }, { element: 'Ba' }, { space: true, height: 2, id: 'space-3' }, { element: 'Hf' }, { element: 'Ta' }, { element: 'W' }, { element: 'Re' }, { element: 'Os' }, { element: 'Ir' }, { element: 'Pt' }, { element: 'Au' }, { element: 'Hg' }, { element: 'Tl' }, { element: 'Pb' }, { element: 'Bi' }, { element: 'Po' }, { element: 'At' }, { element: 'Rn' }], [{ element: 'Fr' }, { element: 'Ra' }, { element: 'Rf' }, { element: 'Db' }, { element: 'Sg' }, { element: 'Bh' }, { element: 'Hs' }, { element: 'Mt' }, { element: 'Ds' }, { element: 'Rg' }, { element: 'Cn' }, { element: 'Uut' }, { element: 'Fl' }, { element: 'Uup' }, { element: 'Lv' }, { element: 'Uus' }, { element: 'Uuo' }], [{ space: true, width: 2, id: 'space-4' }, { space: true, width: 16, id: 'space-5' }], [{ space: true, width: 3, id: 'space-6' }, { element: 'La' }, { element: 'Ce' }, { element: 'Pr' }, { element: 'Nd' }, { element: 'Pm' }, { element: 'Sm' }, { element: 'Eu' }, { element: 'Gd' }, { element: 'Tb' }, { element: 'Dy' }, { element: 'Ho' }, { element: 'Er' }, { element: 'Tm' }, { element: 'Yb' }, { element: 'Lu' }], [{ space: true, width: 3, id: 'space-7' }, { element: 'Ac' }, { element: 'Th' }, { element: 'Pa' }, { element: 'U' }, { element: 'Np' }, { element: 'Pu' }, { element: 'Am' }, { element: 'Cm' }, { element: 'Bk' }, { element: 'Cf' }, { element: 'Es' }, { element: 'Fm' }, { element: 'Md' }, { element: 'No' }, { element: 'Lr' }]];
 
-},{}]},{},[159]);
+},{}]},{},[163]);

@@ -10,7 +10,9 @@ class Table extends React.Component {
 			<table>
 				<tbody>
 					{ schema.map( row => {
-						return <Row data={row} />
+						return <Row 
+							data={row} 
+							onElementClick={this.props.onElementClick} />
 					})}
 				</tbody>
 			</table>

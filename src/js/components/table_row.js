@@ -10,7 +10,7 @@ class Row extends React.Component {
 			if (td.space) {
 				return <Space {...td} />
 			} else {
-				return <Element {...td} />
+				return <Element {...td} onClick= {this.props.onElementClick} />
 			}
 		})
 	}
