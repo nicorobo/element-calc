@@ -1,6 +1,7 @@
 // element.js
 
 const React = require('react');
+const PeriodicTable = require('mendeleev').PeriodicTable;
 
 class Element extends React.Component {
 	constructor() {
@@ -11,10 +12,14 @@ class Element extends React.Component {
 		this.props.onClick(this.props.element);
 	}
 	render () {
-		console.log(this.props);
+		var data = PeriodicTable.getElement(this.props.element);
 		return (
-			<td onClick = {this.onClick}>
-				{this.props.element}
+			<td 
+				className = 'element'
+				onClick = {this.onClick}>
+				<div className="number">{data.number}</div>
+				<div className="symbol">{data.symbol}</div>
+				<div className="mass">{data.mass}</div>
 			</td>
 		)
 	}

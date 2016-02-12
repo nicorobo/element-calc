@@ -21244,6 +21244,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // element.js
 
 var React = require('react');
+var PeriodicTable = require('mendeleev').PeriodicTable;
 
 var Element = function (_React$Component) {
 	_inherits(Element, _React$Component);
@@ -21265,11 +21266,27 @@ var Element = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-			console.log(this.props);
+			var data = PeriodicTable.getElement(this.props.element);
 			return React.createElement(
 				'td',
-				{ onClick: this.onClick },
-				this.props.element
+				{
+					className: 'element',
+					onClick: this.onClick },
+				React.createElement(
+					'div',
+					{ className: 'number' },
+					data.number
+				),
+				React.createElement(
+					'div',
+					{ className: 'symbol' },
+					data.symbol
+				),
+				React.createElement(
+					'div',
+					{ className: 'mass' },
+					data.mass
+				)
 			);
 		}
 	}]);
@@ -21279,7 +21296,7 @@ var Element = function (_React$Component) {
 
 module.exports = Element;
 
-},{"react":162}],165:[function(require,module,exports){
+},{"mendeleev":3,"react":162}],165:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
