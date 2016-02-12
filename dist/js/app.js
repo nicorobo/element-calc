@@ -19069,7 +19069,88 @@ var App = function (_React$Component) {
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
 
-},{"./components/table.js":160,"react":158,"react-dom":2}],160:[function(require,module,exports){
+},{"./components/table.js":162,"react":158,"react-dom":2}],160:[function(require,module,exports){
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// element.js
+
+var React = require('react');
+
+var Element = function (_React$Component) {
+	_inherits(Element, _React$Component);
+
+	function Element() {
+		_classCallCheck(this, Element);
+
+		return _possibleConstructorReturn(this, Object.getPrototypeOf(Element).apply(this, arguments));
+	}
+
+	_createClass(Element, [{
+		key: 'render',
+		value: function render() {
+			console.log(this.props.element);
+			return React.createElement(
+				'td',
+				null,
+				'Element'
+			);
+		}
+	}]);
+
+	return Element;
+}(React.Component);
+
+module.exports = Element;
+
+},{"react":158}],161:[function(require,module,exports){
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// space.js
+
+var React = require('react');
+
+var Space = function (_React$Component) {
+	_inherits(Space, _React$Component);
+
+	function Space() {
+		_classCallCheck(this, Space);
+
+		return _possibleConstructorReturn(this, Object.getPrototypeOf(Space).apply(this, arguments));
+	}
+
+	_createClass(Space, [{
+		key: 'render',
+		value: function render() {
+			return React.createElement(
+				'td',
+				null,
+				'Space'
+			);
+		}
+	}]);
+
+	return Space;
+}(React.Component);
+
+module.exports = Space;
+
+},{"react":158}],162:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19113,7 +19194,7 @@ var Table = function (_React$Component) {
 
 module.exports = Table;
 
-},{"../data/table_schema.js":162,"./table_row.js":161,"react":158}],161:[function(require,module,exports){
+},{"../data/table_schema.js":164,"./table_row.js":163,"react":158}],163:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19127,6 +19208,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // table_row.js
 
 var React = require('react');
+var Space = require('./space.js');
+var Element = require('./element.js');
 
 var Row = function (_React$Component) {
 	_inherits(Row, _React$Component);
@@ -19141,11 +19224,11 @@ var Row = function (_React$Component) {
 		key: 'getTableData',
 		value: function getTableData(data) {
 			return data.map(function (td) {
-				return React.createElement(
-					'h1',
-					null,
-					' Hello '
-				);
+				if (td.space) {
+					return React.createElement(Space, td);
+				} else {
+					return React.createElement(Element, td);
+				}
 			});
 		}
 	}, {
@@ -19164,7 +19247,7 @@ var Row = function (_React$Component) {
 
 module.exports = Row;
 
-},{"react":158}],162:[function(require,module,exports){
+},{"./element.js":160,"./space.js":161,"react":158}],164:[function(require,module,exports){
 'use strict';
 
 module.exports = [[{ element: 'H' }, { space: true }, { space: true, width: 10, height: 3, id: 'data-view' }, { space: true, width: 5, id: 'space-2' }, { element: 'He' }], [{ element: 'Li' }, { element: 'Be' }, { element: 'B' }, { element: 'C' }, { element: 'N' }, { element: 'O' }, { element: 'F' }, { element: 'Ne' }], [{ element: 'Na' }, { element: 'Mg' }, { element: 'Al' }, { element: 'Si' }, { element: 'P' }, { element: 'S' }, { element: 'Cl' }, { element: 'Ar' }], [{ element: 'K' }, { element: 'Ca' }, { element: 'Sc' }, { element: 'Ti' }, { element: 'V' }, { element: 'Cr' }, { element: 'Mn' }, { element: 'Fe' }, { element: 'Co' }, { element: 'Ni' }, { element: 'Cu' }, { element: 'Zn' }, { element: 'Ga' }, { element: 'Ge' }, { element: 'As' }, { element: 'Se' }, { element: 'Br' }, { element: 'Kr' }], [{ element: 'Rb' }, { element: 'Sr' }, { element: 'Y' }, { element: 'Zr' }, { element: 'Nb' }, { element: 'Mo' }, { element: 'Tc' }, { element: 'Ru' }, { element: 'Rh' }, { element: 'Pd' }, { element: 'Ag' }, { element: 'Cd' }, { element: 'In' }, { element: 'Sn' }, { element: 'Sb' }, { element: 'Te' }, { element: 'I' }, { element: 'Xe' }], [{ element: 'Cs' }, { element: 'Ba' }, { space: true, height: 2, id: 'space-3' }, { element: 'Hf' }, { element: 'Ta' }, { element: 'W' }, { element: 'Re' }, { element: 'Os' }, { element: 'Ir' }, { element: 'Pt' }, { element: 'Au' }, { element: 'Hg' }, { element: 'Tl' }, { element: 'Pb' }, { element: 'Bi' }, { element: 'Po' }, { element: 'At' }, { element: 'Rn' }], [{ element: 'Fr' }, { element: 'Ra' }, { element: 'Rf' }, { element: 'Db' }, { element: 'Sg' }, { element: 'Bh' }, { element: 'Hs' }, { element: 'Mt' }, { element: 'Ds' }, { element: 'Rg' }, { element: 'Cn' }, { element: 'Uut' }, { element: 'Fl' }, { element: 'Uup' }, { element: 'Lv' }, { element: 'Uus' }, { element: 'Uuo' }], [{ space: true, width: 2, id: 'space-4' }, { space: true, width: 16, id: 'space-5' }], [{ space: true, width: 3, id: 'space-6' }, { element: 'La' }, { element: 'Ce' }, { element: 'Pr' }, { element: 'Nd' }, { element: 'Pm' }, { element: 'Sm' }, { element: 'Eu' }, { element: 'Gd' }, { element: 'Tb' }, { element: 'Dy' }, { element: 'Ho' }, { element: 'Er' }, { element: 'Tm' }, { element: 'Yb' }, { element: 'Lu' }], [{ space: true, width: 3, id: 'space-7' }, { element: 'Ac' }, { element: 'Th' }, { element: 'Pa' }, { element: 'U' }, { element: 'Np' }, { element: 'Pu' }, { element: 'Am' }, { element: 'Cm' }, { element: 'Bk' }, { element: 'Cf' }, { element: 'Es' }, { element: 'Fm' }, { element: 'Md' }, { element: 'No' }, { element: 'Lr' }]];

@@ -19,3 +19,5 @@ table.js will render our periodic table.
 
 element will be the actual element, will trigger a click handler, and will display the abbr., mass, and atomic number. 
 	Each element should be around 5.39 % screen width.
+
+space will be a td element that is meant to be blank

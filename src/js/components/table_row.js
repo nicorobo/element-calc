@@ -1,11 +1,17 @@
 // table_row.js
 
 const React = require('react');
+const Space = require('./space.js');
+const Element = require('./element.js');
 
 class Row extends React.Component {
 	getTableData (data) {
 		return data.map( td => {
-				return <h1> Hello </h1>
+			if (td.space) {
+				return <Space {...td} />
+			} else {
+				return <Element {...td} />
+			}
 		})
 	}
 
