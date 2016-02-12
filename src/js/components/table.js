@@ -18,5 +18,4 @@ class Table extends React.Component {
 	}
 }
 
-
 module.exports = Table;
