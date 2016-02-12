@@ -18,3 +18,4 @@ util.js will have utility methods to handle the math.
 table.js will render our periodic table.
 
 element will be the actual element, will trigger a click handler, and will display the abbr., mass, and atomic number. 
+	Each element should be around 5.39 % screen width.
