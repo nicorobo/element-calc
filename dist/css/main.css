@@ -12,6 +12,12 @@ table {
       display: block;
       margin-top: 100%; }
     table td .content {
+      -webkit-user-select: none;
+      /* Chrome all / Safari all */
+      -moz-user-select: none;
+      /* Firefox all */
+      -ms-user-select: none;
+      /* IE 10+ */
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       position: absolute;
       top: 0;
@@ -58,4 +64,5 @@ table {
   table .type-actinoid {
     background-color: #a7a7a7; }
   table .element {
+    cursor: pointer;
     border: 1px solid #444; }
