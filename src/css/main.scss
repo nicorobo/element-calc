@@ -6,7 +6,7 @@ body {
 	color: $text-primary;
 }
 table {
-	width: 90%;
+	width: 100%;
 	border-collapse: collapse;
 
 	td {
@@ -24,6 +24,16 @@ table {
 			bottom: 0;
 			right: 0;
 			left: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.symbol {
+				align-self: center;
+			}
+			.mass {
+				align-self: center;
+			}
 		}
 	}
 

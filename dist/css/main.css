@@ -2,7 +2,7 @@ body {
   color: #4ECAC9; }
 
 table {
-  width: 90%;
+  width: 100%;
   border-collapse: collapse; }
   table td {
     width: 5.39%;
@@ -16,6 +16,13 @@ table {
       top: 0;
       bottom: 0;
       right: 0;
-      left: 0; }
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      table td .content .symbol {
+        align-self: center; }
+      table td .content .mass {
+        align-self: center; }
   table .element {
     border: 1px solid gray; }
