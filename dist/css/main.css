@@ -1,5 +1,5 @@
 body {
-  color: #4ECAC9; }
+  color: #333; }
 
 table {
   width: 100%;
@@ -12,6 +12,7 @@ table {
       display: block;
       margin-top: 100%; }
     table td .content {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -21,8 +22,29 @@ table {
       flex-direction: column;
       justify-content: space-between; }
       table td .content .symbol {
-        align-self: center; }
+        align-self: center;
+        font-weight: bolder; }
       table td .content .mass {
         align-self: center; }
+  table .type-alkali-metal {
+    background-color: #f4ee64; }
+  table .type-alkaline-earth {
+    background-color: #fcc171; }
+  table .type-transition-metal {
+    background-color: #ea93d9; }
+  table .type-post-transition-metal {
+    background-color: #77f0b4; }
+  table .type-metalloid {
+    background-color: #f58989; }
+  table .type-other-nonmetal {
+    background-color: #8fc8f8; }
+  table .type-halogen {
+    background-color: #9487f8; }
+  table .type-noble-gas {
+    background-color: #85f780; }
+  table .type-lanthanoid {
+    background-color: #c7c7c7; }
+  table .type-actinoid {
+    background-color: #989898; }
   table .element {
     border: 1px solid gray; }

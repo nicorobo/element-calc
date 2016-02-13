@@ -21270,7 +21270,7 @@ var Element = function (_React$Component) {
 			return React.createElement(
 				'td',
 				{
-					className: 'element',
+					className: 'element type-' + data.type,
 					onClick: this.onClick },
 				React.createElement(
 					'div',

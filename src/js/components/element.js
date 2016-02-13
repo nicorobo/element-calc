@@ -15,7 +15,7 @@ class Element extends React.Component {
 		var data = PeriodicTable.getElement(this.props.element);
 		return (
 			<td 
-				className = 'element'
+				className = {'element type-'+data.type}
 				onClick = {this.onClick}>
 				<div className = 'content'>
 					<div className="number">{data.number}</div>
