@@ -3,6 +3,7 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const Compound = require('mendeleev').Compound;
 
+const DataBar = require('./components/data_bar.js')
 const Table = require('./components/table.js');
 
 class App extends React.Component {
@@ -21,8 +22,11 @@ class App extends React.Component {
 
 	render() {
 		return(
-			<Table
-				onElementClick={this.addElement} />
+			<div>
+				<DataBar />
+				<Table
+					onElementClick={this.addElement} />
+			</div>
 		)
 	}
 }

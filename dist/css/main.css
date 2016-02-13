@@ -2,6 +2,7 @@ body {
   color: #444; }
 
 table {
+  margin-top: 55px;
   width: 100%;
   border-collapse: collapse; }
   table td {
@@ -66,3 +67,13 @@ table {
   table .element {
     cursor: pointer;
     border: 1px solid #444; }
+
+.data-bar {
+  width: 100vw;
+  height: 50px;
+  background-color: rgba(68, 68, 68, 0.9);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0; }

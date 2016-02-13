@@ -1,11 +1,11 @@
 // src/css/main.scss
 
 @import './variables.scss';
-
 body {
 	color: $text-primary;
 }
 table {
+	margin-top: 55px;
 	width: 100%;
 	border-collapse: collapse;
 
@@ -63,4 +63,16 @@ table {
 		cursor: pointer;
 		border: 1px solid $text-primary;
 	}
+}
+
+.data-bar {
+	width: 100vw;
+	height: 50px;
+	background-color: transparentize($text-primary, 0.1);
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+
 }
