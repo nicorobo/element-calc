@@ -18,12 +18,15 @@ class App extends React.Component {
 	addElement(element) {
 		this.state.compound.add(element);
 		console.log(`${element} added to compound...`);
+		this.forceUpdate();
 	}
 
 	render() {
 		return(
 			<div>
-				<DataBar />
+				<DataBar 
+					mass={this.state.compound.mass}
+					compound={this.state.compound.toHTML()} />
 				<Table
 					onElementClick={this.addElement} />
 			</div>

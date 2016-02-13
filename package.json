@@ -26,5 +26,20 @@
     "mendeleev": "^1.0.1",
     "react": "^0.14.6",
     "react-dom": "^0.14.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickroberts404/element-calc.git"
+  },
+  "keywords": [
+    "chemistry",
+    "elements",
+    "calculator",
+    "molar",
+    "mass"
+  ],
+  "bugs": {
+    "url": "https://github.com/nickroberts404/element-calc/issues"
+  },
+  "homepage": "https://github.com/nickroberts404/element-calc#readme"
 }

@@ -21217,6 +21217,7 @@ var App = function (_React$Component) {
 		value: function addElement(element) {
 			this.state.compound.add(element);
 			console.log(element + ' added to compound...');
+			this.forceUpdate();
 		}
 	}, {
 		key: 'render',
@@ -21224,7 +21225,9 @@ var App = function (_React$Component) {
 			return React.createElement(
 				'div',
 				null,
-				React.createElement(DataBar, null),
+				React.createElement(DataBar, {
+					mass: this.state.compound.mass,
+					compound: this.state.compound.toHTML() }),
 				React.createElement(Table, {
 					onElementClick: this.addElement })
 			);
@@ -21271,7 +21274,18 @@ var DataBar = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
-			return React.createElement('div', { className: 'data-bar' });
+			var mass = this.props.mass;
+			return React.createElement(
+				'div',
+				{ className: 'data-bar' },
+				React.createElement('div', { className: 'blank' }),
+				React.createElement(
+					'div',
+					{ className: 'mass' },
+					mass.toFixed(4)
+				),
+				React.createElement('div', { className: 'compound', dangerouslySetInnerHTML: { __html: this.props.compound } })
+			);
 		}
 	}]);
 

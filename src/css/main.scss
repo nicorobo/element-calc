@@ -3,6 +3,7 @@
 @import './variables.scss';
 body {
 	color: $text-primary;
+	font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 table {
 	margin-top: 55px;
@@ -20,7 +21,6 @@ table {
 		}
 		.content {
 			@include unselectable();
-			font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
 			position:absolute;
 			top: 0;
 			bottom: 0;
@@ -68,11 +68,25 @@ table {
 .data-bar {
 	width: 100vw;
 	height: 50px;
-	background-color: transparentize($text-primary, 0.1);
+	background-color: transparentize(white, 0.1);
 	position: fixed;
+	display: flex;
+	align-items: center;
 	z-index: 999;
 	top: 0;
 	left: 0;
 	right: 0;
+	color: $text-primary;
+	
+	div {
+		flex-grow: 1;
+	}
+	.mass {
+		text-align: center;
+	}
+	.compound {
+		text-align: right;
+		padding-right: 30px;
+	}
 
 }

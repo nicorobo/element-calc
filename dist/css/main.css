@@ -1,5 +1,6 @@
 body {
-  color: #444; }
+  color: #444;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 table {
   margin-top: 55px;
@@ -19,7 +20,6 @@ table {
       /* Firefox all */
       -ms-user-select: none;
       /* IE 10+ */
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -71,9 +71,19 @@ table {
 .data-bar {
   width: 100vw;
   height: 50px;
-  background-color: rgba(68, 68, 68, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
+  display: flex;
+  align-items: center;
   z-index: 999;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  color: #444; }
+  .data-bar div {
+    flex-grow: 1; }
+  .data-bar .mass {
+    text-align: center; }
+  .data-bar .compound {
+    text-align: right;
+    padding-right: 30px; }
