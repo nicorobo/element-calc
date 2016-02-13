@@ -21274,18 +21274,22 @@ var Element = function (_React$Component) {
 					onClick: this.onClick },
 				React.createElement(
 					'div',
-					{ className: 'number' },
-					data.number
-				),
-				React.createElement(
-					'div',
-					{ className: 'symbol' },
-					data.symbol
-				),
-				React.createElement(
-					'div',
-					{ className: 'mass' },
-					data.mass
+					{ className: 'content' },
+					React.createElement(
+						'div',
+						{ className: 'number' },
+						data.number
+					),
+					React.createElement(
+						'div',
+						{ className: 'symbol' },
+						data.symbol
+					),
+					React.createElement(
+						'div',
+						{ className: 'mass' },
+						Math.round(data.mass * 100) / 100
+					)
 				)
 			);
 		}
@@ -21297,7 +21301,7 @@ var Element = function (_React$Component) {
 module.exports = Element;
 
 },{"mendeleev":3,"react":162}],165:[function(require,module,exports){
-'use strict';
+"use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -21321,11 +21325,13 @@ var Space = function (_React$Component) {
 	}
 
 	_createClass(Space, [{
-		key: 'render',
+		key: "render",
 		value: function render() {
-			return React.createElement('td', {
-				colSpan: this.props.width || 1,
-				rowSpan: this.props.height || 1 });
+			return React.createElement(
+				"td",
+				{ className: "space" },
+				React.createElement("div", { className: "content" })
+			);
 		}
 	}]);
 
@@ -21446,6 +21452,6 @@ module.exports = Row;
 },{"./element.js":164,"./space.js":165,"react":162}],168:[function(require,module,exports){
 'use strict';
 
-module.exports = [[{ element: 'H' }, { space: true }, { space: true, width: 10, height: 3, id: 'data-view' }, { space: true, width: 5, id: 'space-2' }, { element: 'He' }], [{ element: 'Li' }, { element: 'Be' }, { element: 'B' }, { element: 'C' }, { element: 'N' }, { element: 'O' }, { element: 'F' }, { element: 'Ne' }], [{ element: 'Na' }, { element: 'Mg' }, { element: 'Al' }, { element: 'Si' }, { element: 'P' }, { element: 'S' }, { element: 'Cl' }, { element: 'Ar' }], [{ element: 'K' }, { element: 'Ca' }, { element: 'Sc' }, { element: 'Ti' }, { element: 'V' }, { element: 'Cr' }, { element: 'Mn' }, { element: 'Fe' }, { element: 'Co' }, { element: 'Ni' }, { element: 'Cu' }, { element: 'Zn' }, { element: 'Ga' }, { element: 'Ge' }, { element: 'As' }, { element: 'Se' }, { element: 'Br' }, { element: 'Kr' }], [{ element: 'Rb' }, { element: 'Sr' }, { element: 'Y' }, { element: 'Zr' }, { element: 'Nb' }, { element: 'Mo' }, { element: 'Tc' }, { element: 'Ru' }, { element: 'Rh' }, { element: 'Pd' }, { element: 'Ag' }, { element: 'Cd' }, { element: 'In' }, { element: 'Sn' }, { element: 'Sb' }, { element: 'Te' }, { element: 'I' }, { element: 'Xe' }], [{ element: 'Cs' }, { element: 'Ba' }, { space: true, height: 2, id: 'space-3' }, { element: 'Hf' }, { element: 'Ta' }, { element: 'W' }, { element: 'Re' }, { element: 'Os' }, { element: 'Ir' }, { element: 'Pt' }, { element: 'Au' }, { element: 'Hg' }, { element: 'Tl' }, { element: 'Pb' }, { element: 'Bi' }, { element: 'Po' }, { element: 'At' }, { element: 'Rn' }], [{ element: 'Fr' }, { element: 'Ra' }, { element: 'Rf' }, { element: 'Db' }, { element: 'Sg' }, { element: 'Bh' }, { element: 'Hs' }, { element: 'Mt' }, { element: 'Ds' }, { element: 'Rg' }, { element: 'Cn' }, { element: 'Uut' }, { element: 'Fl' }, { element: 'Uup' }, { element: 'Lv' }, { element: 'Uus' }, { element: 'Uuo' }], [{ space: true, width: 2, id: 'space-4' }, { space: true, width: 16, id: 'space-5' }], [{ space: true, width: 3, id: 'space-6' }, { element: 'La' }, { element: 'Ce' }, { element: 'Pr' }, { element: 'Nd' }, { element: 'Pm' }, { element: 'Sm' }, { element: 'Eu' }, { element: 'Gd' }, { element: 'Tb' }, { element: 'Dy' }, { element: 'Ho' }, { element: 'Er' }, { element: 'Tm' }, { element: 'Yb' }, { element: 'Lu' }], [{ space: true, width: 3, id: 'space-7' }, { element: 'Ac' }, { element: 'Th' }, { element: 'Pa' }, { element: 'U' }, { element: 'Np' }, { element: 'Pu' }, { element: 'Am' }, { element: 'Cm' }, { element: 'Bk' }, { element: 'Cf' }, { element: 'Es' }, { element: 'Fm' }, { element: 'Md' }, { element: 'No' }, { element: 'Lr' }]];
+module.exports = [[{ element: 'H' }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { element: 'He' }], [{ element: 'Li' }, { element: 'Be' }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { element: 'B' }, { element: 'C' }, { element: 'N' }, { element: 'O' }, { element: 'F' }, { element: 'Ne' }], [{ element: 'Na' }, { element: 'Mg' }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { element: 'Al' }, { element: 'Si' }, { element: 'P' }, { element: 'S' }, { element: 'Cl' }, { element: 'Ar' }], [{ element: 'K' }, { element: 'Ca' }, { element: 'Sc' }, { element: 'Ti' }, { element: 'V' }, { element: 'Cr' }, { element: 'Mn' }, { element: 'Fe' }, { element: 'Co' }, { element: 'Ni' }, { element: 'Cu' }, { element: 'Zn' }, { element: 'Ga' }, { element: 'Ge' }, { element: 'As' }, { element: 'Se' }, { element: 'Br' }, { element: 'Kr' }], [{ element: 'Rb' }, { element: 'Sr' }, { element: 'Y' }, { element: 'Zr' }, { element: 'Nb' }, { element: 'Mo' }, { element: 'Tc' }, { element: 'Ru' }, { element: 'Rh' }, { element: 'Pd' }, { element: 'Ag' }, { element: 'Cd' }, { element: 'In' }, { element: 'Sn' }, { element: 'Sb' }, { element: 'Te' }, { element: 'I' }, { element: 'Xe' }], [{ element: 'Cs' }, { element: 'Ba' }, { space: true }, { element: 'Hf' }, { element: 'Ta' }, { element: 'W' }, { element: 'Re' }, { element: 'Os' }, { element: 'Ir' }, { element: 'Pt' }, { element: 'Au' }, { element: 'Hg' }, { element: 'Tl' }, { element: 'Pb' }, { element: 'Bi' }, { element: 'Po' }, { element: 'At' }, { element: 'Rn' }], [{ element: 'Fr' }, { element: 'Ra' }, { space: true }, { element: 'Rf' }, { element: 'Db' }, { element: 'Sg' }, { element: 'Bh' }, { element: 'Hs' }, { element: 'Mt' }, { element: 'Ds' }, { element: 'Rg' }, { element: 'Cn' }, { element: 'Uut' }, { element: 'Fl' }, { element: 'Uup' }, { element: 'Lv' }, { element: 'Uus' }, { element: 'Uuo' }], [{ space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }, { space: true }], [{ space: true }, { space: true }, { space: true }, { element: 'La' }, { element: 'Ce' }, { element: 'Pr' }, { element: 'Nd' }, { element: 'Pm' }, { element: 'Sm' }, { element: 'Eu' }, { element: 'Gd' }, { element: 'Tb' }, { element: 'Dy' }, { element: 'Ho' }, { element: 'Er' }, { element: 'Tm' }, { element: 'Yb' }, { element: 'Lu' }], [{ space: true }, { space: true }, { space: true }, { element: 'Ac' }, { element: 'Th' }, { element: 'Pa' }, { element: 'U' }, { element: 'Np' }, { element: 'Pu' }, { element: 'Am' }, { element: 'Cm' }, { element: 'Bk' }, { element: 'Cf' }, { element: 'Es' }, { element: 'Fm' }, { element: 'Md' }, { element: 'No' }, { element: 'Lr' }]];
 
 },{}]},{},[163]);

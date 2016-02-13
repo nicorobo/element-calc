@@ -17,9 +17,11 @@ class Element extends React.Component {
 			<td 
 				className = 'element'
 				onClick = {this.onClick}>
-				<div className="number">{data.number}</div>
-				<div className="symbol">{data.symbol}</div>
-				<div className="mass">{data.mass}</div>
+				<div className = 'content'>
+					<div className="number">{data.number}</div>
+					<div className="symbol">{data.symbol}</div>
+					<div className="mass">{Math.round(data.mass*100)/100}</div>
+				</div>
 			</td>
 		)
 	}

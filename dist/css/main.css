@@ -2,4 +2,20 @@ body {
   color: #4ECAC9; }
 
 table {
-  width: 100%; }
+  width: 90%;
+  border-collapse: collapse; }
+  table td {
+    width: 5.39%;
+    position: relative; }
+    table td:after {
+      content: '';
+      display: block;
+      margin-top: 100%; }
+    table td .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+  table .element {
+    border: 1px solid gray; }
