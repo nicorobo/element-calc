@@ -17,3 +17,12 @@ $types: (
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 }
+
+@mixin absolute($t, $r, $b, $l) {
+	position: absolute;
+	top: $t;
+	right: $r;
+	bottom: $b;
+	left: $l;
+
+}

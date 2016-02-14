@@ -3,8 +3,8 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 table {
-  margin-top: 55px;
   width: 100%;
+  margin-top: 55px;
   border-collapse: collapse; }
   table td {
     width: 5.39%;
@@ -22,8 +22,8 @@ table {
       /* IE 10+ */
       position: absolute;
       top: 0;
-      bottom: 0;
       right: 0;
+      bottom: 0;
       left: 0;
       display: flex;
       flex-direction: column;
@@ -31,19 +31,19 @@ table {
       table td .content:hover .symbol {
         color: white; }
       table td .content .symbol {
-        align-self: center;
-        font-weight: bolder;
         font-size: 2.7vw;
-        line-height: 1; }
-      table td .content .mass {
-        align-self: center;
-        font-size: 1.2vw;
-        margin-bottom: 0.1vw; }
-      table td .content .number {
+        line-height: 1;
         font-weight: bolder;
+        align-self: center; }
+      table td .content .mass {
+        font-size: 1.2vw;
+        margin-bottom: 0.1vw;
+        align-self: center; }
+      table td .content .number {
         font-size: 1vw;
-        margin: 0.2vw 0 0 0.2vw;
-        line-height: 1; }
+        line-height: 1;
+        font-weight: bolder;
+        margin: 0.2vw 0 0 0.2vw; }
   table .type-alkali-metal {
     background-color: #f6f181; }
   table .type-alkaline-earth {
@@ -65,21 +65,21 @@ table {
   table .type-actinoid {
     background-color: #a7a7a7; }
   table .element {
-    cursor: pointer;
-    border: 1px solid #444; }
+    border: 1px solid #444;
+    cursor: pointer; }
 
 .data-bar {
+  background: rgba(255, 255, 255, 0.9);
+  color: #444;
   width: 100vw;
   height: 50px;
-  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
-  display: flex;
-  align-items: center;
-  z-index: 999;
   top: 0;
   left: 0;
   right: 0;
-  color: #444; }
+  display: flex;
+  align-items: center;
+  z-index: 999; }
   .data-bar div {
     flex-grow: 1; }
   .data-bar .mass {
