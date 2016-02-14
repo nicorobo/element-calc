@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 body {
   color: #444;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -70,7 +71,7 @@ table {
 
 .data-bar {
   background: rgba(255, 255, 255, 0.9);
-  color: #444;
+  color: #f58989;
   width: 100vw;
   height: 50px;
   position: fixed;
@@ -80,10 +81,7 @@ table {
   display: flex;
   align-items: center;
   z-index: 999; }
-  .data-bar div {
-    flex-grow: 1; }
-  .data-bar .mass {
-    text-align: center; }
-  .data-bar .compound {
-    text-align: right;
-    padding-right: 30px; }
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }

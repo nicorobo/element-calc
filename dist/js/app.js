@@ -2121,6 +2121,7 @@ class Compound {
 	constructor (element_list) {
 		this.mass = 0;
 		this.elements = {};
+		this.elementsList = [];
 		if(element_list){
 			for (var element in element_list) {
 				let quantity = element_list[element];
@@ -2139,6 +2140,7 @@ class Compound {
 			this.elements[element] += quantity;
 		} else {
 			this.elements[element] = quantity;
+			this.elementsList.push(element);
 		}
 		this.mass += (quantity * element_data.mass);
 		return true;
@@ -2153,6 +2155,7 @@ class Compound {
 		let elementCount = this.elements[element];
 		if (quantity >= elementCount) {
 			delete this.elements[element];
+			this.elementsList.splice(this.elementsList.indexOf(element), 1);
 			this.mass -= (elementCount * element_data.mass);
 		} else {
 			this.elements[element] -= quantity;
@@ -21216,7 +21219,6 @@ var App = function (_React$Component) {
 		key: 'addElement',
 		value: function addElement(element) {
 			this.state.compound.add(element);
-			console.log(element + ' added to compound...');
 			this.forceUpdate();
 		}
 	}, {
@@ -21229,7 +21231,8 @@ var App = function (_React$Component) {
 					mass: this.state.compound.mass,
 					compound: this.state.compound.toHTML() }),
 				React.createElement(Table, {
-					onElementClick: this.addElement })
+					onElementClick: this.addElement,
+					activeElements: this.state.compound.elementsList })
 			);
 		}
 	}]);
@@ -21331,10 +21334,11 @@ var Element = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 			var data = PeriodicTable.getElement(this.props.element);
+			var extraClass = this.props.activeElements.length > 0 && this.props.activeElements.indexOf(this.props.element) < 0 ? 'grayscale ' : '';
 			return React.createElement(
 				'td',
 				{
-					className: 'element type-' + data.type,
+					className: extraClass + 'element type-' + data.type,
 					onClick: this.onClick },
 				React.createElement(
 					'div',
@@ -21444,7 +21448,8 @@ var Table = function (_React$Component) {
 					schema.map(function (row) {
 						return React.createElement(Row, {
 							data: row,
-							onElementClick: _this2.props.onElementClick });
+							onElementClick: _this2.props.onElementClick,
+							activeElements: _this2.props.activeElements });
 					})
 				)
 			);
@@ -21493,7 +21498,9 @@ var Row = function (_React$Component) {
 				if (td.space) {
 					return React.createElement(Space, td);
 				} else {
-					return React.createElement(Element, _extends({}, td, { onClick: _this2.props.onElementClick }));
+					return React.createElement(Element, _extends({}, td, {
+						onClick: _this2.props.onElementClick,
+						activeElements: _this2.props.activeElements }));
 				}
 			});
 		}
