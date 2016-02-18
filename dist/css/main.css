@@ -16,8 +16,6 @@ table {
       margin-top: 100%; }
     table td:hover .symbol {
       color: white; }
-    table td:hover.grayscale .symbol {
-      color: #444; }
     table td .content {
       -webkit-user-select: none;
       /* Chrome all / Safari all */
@@ -87,6 +85,3 @@ table {
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
-  .grayscale:hover {
-    -webkit-filter: none;
-    filter: none; }

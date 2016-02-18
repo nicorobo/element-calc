@@ -26,9 +26,6 @@ table {
 		&:hover .symbol {
 			color: white;
 		}
-		&:hover.grayscale .symbol {
-			color: $text-primary;
-		}
 
 		.content {
 			@include unselectable();
@@ -89,8 +86,4 @@ table {
 .grayscale{ 
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	&:hover {
-		-webkit-filter: none;
-		filter: none;
-	}
 }
