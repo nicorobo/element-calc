@@ -14,8 +14,8 @@ class DataBar extends React.Component {
 		var mass = this.props.mass
 		return (
 			<div className='data-bar' >
-				<div className='blank'></div>
 				<div className='mass'>{mass.toFixed(4)}</div>
+				<div className='blank'></div>
 				<div className='compound' dangerouslySetInnerHTML={{__html:this.props.compound}}></div>
 			</div>
 		)

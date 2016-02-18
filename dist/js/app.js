@@ -21281,12 +21281,12 @@ var DataBar = function (_React$Component) {
 			return React.createElement(
 				'div',
 				{ className: 'data-bar' },
-				React.createElement('div', { className: 'blank' }),
 				React.createElement(
 					'div',
 					{ className: 'mass' },
 					mass.toFixed(4)
 				),
+				React.createElement('div', { className: 'blank' }),
 				React.createElement('div', { className: 'compound', dangerouslySetInnerHTML: { __html: this.props.compound } })
 			);
 		}

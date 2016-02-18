@@ -1,11 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+html, body {
+  margin: 0;
+  padding: 0; }
+
 body {
   color: #444;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
+#app {
+  margin: 1.2%; }
+
 table {
   width: 100%;
-  margin-top: 55px;
   border-collapse: collapse; }
   table td {
     width: 5.39%;
@@ -70,17 +75,9 @@ table {
     cursor: pointer; }
 
 .data-bar {
-  background: rgba(255, 255, 255, 0.9);
-  color: #f58989;
-  width: 100vw;
-  height: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  z-index: 999; }
+  left: 13vw;
+  top: 14vw;
+  position: absolute; }
 
 .grayscale {
   -webkit-filter: grayscale(100%);
