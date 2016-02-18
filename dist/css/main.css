@@ -14,6 +14,10 @@ table {
       content: '';
       display: block;
       margin-top: 100%; }
+    table td:hover .symbol {
+      color: white; }
+    table td:hover.grayscale .symbol {
+      color: #444; }
     table td .content {
       -webkit-user-select: none;
       /* Chrome all / Safari all */
@@ -29,8 +33,6 @@ table {
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
-      table td .content:hover .symbol {
-        color: white; }
       table td .content .symbol {
         font-size: 2.7vw;
         line-height: 1;
@@ -85,3 +87,6 @@ table {
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
+  .grayscale:hover {
+    -webkit-filter: none;
+    filter: none; }

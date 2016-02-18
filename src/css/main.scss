@@ -23,16 +23,19 @@ table {
 			margin-top: 100%;
 		}
 
+		&:hover .symbol {
+			color: white;
+		}
+		&:hover.grayscale .symbol {
+			color: $text-primary;
+		}
+
 		.content {
 			@include unselectable();
 			@include absolute(0, 0, 0, 0);
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-
-			&:hover .symbol {
-				color: white;
-			}
 
 			.symbol {
 				font-size: 2.7vw;
@@ -86,4 +89,8 @@ table {
 .grayscale{ 
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	&:hover {
+		-webkit-filter: none;
+		filter: none;
+	}
 }
