@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 body {
   color: #444;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+#app {
+  margin: 1%; }
 
 table {
   width: 100%;
@@ -71,7 +76,7 @@ table {
 
 .data-bar {
   background: rgba(255, 255, 255, 0.9);
-  color: #f58989;
+  color: #444;
   width: 100vw;
   height: 50px;
   position: fixed;

@@ -5,9 +5,13 @@
 body {
 	color: $text-primary;
 	font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
-	// font-family: 'Open Sans';
+	margin: 0;
+	padding: 0;
 }
 
+#app {
+	margin: $app-margin;
+}
 table {
 	width: 100%;
 	margin-top: 55px;
@@ -71,7 +75,7 @@ table {
 
 .data-bar {
 	background: transparentize(white, 0.1);
-	color: map-get($types, 'metalloid');
+	color: $text-primary;
 	width: 100vw;
 	height: 50px;
 	position: fixed;
