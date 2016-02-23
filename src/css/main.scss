@@ -14,9 +14,11 @@ body {
 }
 table {
 	width: 100%;
-	margin-top: 55px;
+	margin-top: 65px;
 	border-collapse: collapse;
-
+	.collapse:after {
+		margin-top: 50%;
+	}
 	td {
 		width: 5.39%;
 		position: relative;
@@ -29,10 +31,6 @@ table {
 
 		&:hover .symbol {
 			color: white;
-		}
-
-		.collapse:after {
-			margin-top: 50%;
 		}
 
 		.content {
@@ -72,7 +70,7 @@ table {
 	}
 
 	.element {
-		border: 1px solid $text-primary;
+		// border: 1px solid $text-primary;
 		cursor: pointer;
 	}
 }
@@ -81,7 +79,7 @@ table {
 	background: transparentize(white, 0.1);
 	color: $text-primary;
 	width: 100vw;
-	height: 50px;
+	height: 55px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -89,9 +87,32 @@ table {
 	display: flex;
 	align-items: center;
 	z-index: 999;
+	 .center {
+	 	flex-grow: 1;
+	 	text-align: center;
+	 	overflow-x: auto;
+		 .mass {
+			font-weight: bolder;
+			color: #6A6A6A;
+			font-size: 1.3em;
+			letter-spacing: 0.05em;
+		 }
+		 .compound {
+			font-weight: lighter;
+			letter-spacing: 0.1em;
+		 }
+	 }
+	 button {
+		margin-right: $app-margin*3;
+		cursor: pointer;
+	 }
 }
 
 .grayscale{ 
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+	// -webkit-filter: grayscale(100%);
+	// filter: grayscale(100%);
+	background: white !important;
+	&:hover {
+		color: $text-primary !important;
+	}
 }

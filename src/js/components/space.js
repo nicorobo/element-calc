@@ -7,7 +7,6 @@ class Space extends React.Component {
 		var extraClass = this.props.collapse ? ' collapse' : '';
 		return (
 			<td className={"space"+extraClass}>
-				<div className="content"></div>
 			</td>
 		)
 	}

@@ -10,8 +10,10 @@ body {
 
 table {
   width: 100%;
-  margin-top: 55px;
+  margin-top: 65px;
   border-collapse: collapse; }
+  table .collapse:after {
+    margin-top: 50%; }
   table td {
     width: 5.39%;
     position: relative; }
@@ -21,8 +23,6 @@ table {
       margin-top: 100%; }
     table td:hover .symbol {
       color: white; }
-    table td .collapse:after {
-      margin-top: 50%; }
     table td .content {
       -webkit-user-select: none;
       /* Chrome all / Safari all */
@@ -73,14 +73,13 @@ table {
   table .type-actinoid {
     background-color: #a7a7a7; }
   table .element {
-    border: 1px solid #444;
     cursor: pointer; }
 
 .data-bar {
   background: rgba(255, 255, 255, 0.9);
   color: #444;
   width: 100vw;
-  height: 50px;
+  height: 55px;
   position: fixed;
   top: 0;
   left: 0;
@@ -88,7 +87,23 @@ table {
   display: flex;
   align-items: center;
   z-index: 999; }
+  .data-bar .center {
+    flex-grow: 1;
+    text-align: center;
+    overflow-x: auto; }
+    .data-bar .center .mass {
+      font-weight: bolder;
+      color: #6A6A6A;
+      font-size: 1.3em;
+      letter-spacing: 0.05em; }
+    .data-bar .center .compound {
+      font-weight: lighter;
+      letter-spacing: 0.1em; }
+  .data-bar button {
+    margin-right: 3%;
+    cursor: pointer; }
 
 .grayscale {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
+  background: white !important; }
+  .grayscale:hover {
+    color: #444 !important; }
