@@ -4,7 +4,7 @@ const React = require('react');
 const PeriodicTable = require('mendeleev').PeriodicTable;
 
 class Element extends React.Component {
-	constructor() {
+	constructor () {
 		super();
 		this.onClick = this.onClick.bind(this);
 	}

@@ -31,6 +31,10 @@ table {
 			color: white;
 		}
 
+		.collapse:after {
+			margin-top: 50%;
+		}
+
 		.content {
 			@include unselectable();
 			@include absolute(0, 0, 0, 0);

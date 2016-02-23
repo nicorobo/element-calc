@@ -10,6 +10,7 @@ class App extends React.Component {
 	constructor() {
 		super()
 		this.addElement = this.addElement.bind(this);
+		this.clearCompound = this.clearCompound.bind(this);
 		this.state = {
 			compound: new Compound()
 		}
@@ -20,12 +21,18 @@ class App extends React.Component {
 		this.forceUpdate();
 	}
 
+	clearCompound() {
+		this.state.compound.clear();
+		this.forceUpdate();
+	}
+
 	render() {
 		return(
 			<div>
 				<DataBar 
 					mass={this.state.compound.mass}
-					compound={this.state.compound.toHTML()} />
+					compound={this.state.compound.toHTML()}
+					clearCompound={this.clearCompound} />
 				<Table
 					onElementClick={this.addElement} 
 					activeElements={this.state.compound.elementsList}/>

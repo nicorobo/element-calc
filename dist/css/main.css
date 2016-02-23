@@ -21,6 +21,8 @@ table {
       margin-top: 100%; }
     table td:hover .symbol {
       color: white; }
+    table td .collapse:after {
+      margin-top: 50%; }
     table td .content {
       -webkit-user-select: none;
       /* Chrome all / Safari all */
