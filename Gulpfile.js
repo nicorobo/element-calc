@@ -9,6 +9,7 @@ const connect 		= require('gulp-connect');
 const open 			= require('gulp-open');
 const babel 		= require('babelify');
 const util			= require('gulp-util');
+const autoprefixer 	= require('gulp-autoprefixer');
 
 const port = 2000;
 
@@ -46,6 +47,7 @@ gulp.task('dev-watch', ()=> {
 gulp.task('pro-sass', ()=> {
 	return gulp.src('./src/css/main.scss')
 		.pipe(sass('main.css'))
+		.pipe(autoprefixer({browsers: ['> 2%'], cascade: false}))
 		.pipe(minicss())
 		.pipe(gulp.dest('./dist/css'));
 });
