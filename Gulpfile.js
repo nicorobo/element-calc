@@ -8,6 +8,7 @@ const buffer		= require('vinyl-buffer');
 const connect 		= require('gulp-connect');
 const open 			= require('gulp-open');
 const babel 		= require('babelify');
+const util			= require('gulp-util');
 
 const port = 2000;
 
@@ -52,10 +53,11 @@ gulp.task('pro-sass', ()=> {
 // This task bundles our scripts using browserify, and then minifies it.
 gulp.task('pro-scripts', ()=> {
 	return browserify('./src/js/app.js')
+		.transform(babel, {presets: ["react", "es2015"], global: true}) 
 		.bundle()
 		.pipe(source('app.js'))
 		.pipe(buffer())
-		.pipe(minijs())
+		.pipe(minijs().on('error', util.log))
 		.pipe(gulp.dest('./dist/js'));
 });
 
