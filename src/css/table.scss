@@ -20,6 +20,7 @@ table {
 		&:hover .symbol {
 			color: white;
 		}
+		
 
 		
 	}
@@ -27,6 +28,9 @@ table {
 	@each $type, $color in $types {
 		.type-#{$type} {
 			background-color: lighten($color, 6);
+		}
+		td:hover.grayscale.type-#{$type} .symbol {
+			color: lighten($color, 6);
 		}
 	}
 

@@ -46,24 +46,44 @@ table {
       color: white; }
   table .type-alkali-metal {
     background-color: #f6f181; }
+  table td:hover.grayscale.type-alkali-metal .symbol {
+    color: #f6f181; }
   table .type-alkaline-earth {
     background-color: #fdce8f; }
+  table td:hover.grayscale.type-alkaline-earth .symbol {
+    color: #fdce8f; }
   table .type-transition-metal {
     background-color: #efade2; }
+  table td:hover.grayscale.type-transition-metal .symbol {
+    color: #efade2; }
   table .type-post-transition-metal {
     background-color: #93f3c3; }
+  table td:hover.grayscale.type-post-transition-metal .symbol {
+    color: #93f3c3; }
   table .type-metalloid {
     background-color: #f7a5a5; }
+  table td:hover.grayscale.type-metalloid .symbol {
+    color: #f7a5a5; }
   table .type-other-nonmetal {
     background-color: #acd6fa; }
+  table td:hover.grayscale.type-other-nonmetal .symbol {
+    color: #acd6fa; }
   table .type-halogen {
     background-color: #aea4fa; }
+  table td:hover.grayscale.type-halogen .symbol {
+    color: #aea4fa; }
   table .type-noble-gas {
     background-color: #a1f99d; }
+  table td:hover.grayscale.type-noble-gas .symbol {
+    color: #a1f99d; }
   table .type-lanthanoid {
     background-color: #d6d6d6; }
+  table td:hover.grayscale.type-lanthanoid .symbol {
+    color: #d6d6d6; }
   table .type-actinoid {
     background-color: #a7a7a7; }
+  table td:hover.grayscale.type-actinoid .symbol {
+    color: #a7a7a7; }
   table .element {
     cursor: pointer; }
 
