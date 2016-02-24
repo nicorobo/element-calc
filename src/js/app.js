@@ -6,6 +6,10 @@ const Compound = require('mendeleev').Compound;
 const DataBar = require('./components/data_bar.js')
 const Table = require('./components/table.js');
 
+const attachFastClick = require('fastclick');
+attachFastClick(document.body);
+
+
 class App extends React.Component {
 	constructor() {
 		super()
