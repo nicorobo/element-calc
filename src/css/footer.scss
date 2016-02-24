@@ -2,10 +2,14 @@ footer {
 	text-align: center;
 	font-weight: 300;
 	margin: 3%;
+	color: $text-primary;
 	font-size: 0.8em;
 	a {
 		text-decoration: none;
-		color: darken(map-get($types, 'other-nonmetal'), 20);
+		color: darken(map-get($types, 'other-nonmetal'), 15);
+		&:hover {
+			color: map-get($types, 'other-nonmetal');
+		}
 	}
 	@media (min-width:700px){
 		font-size: 1em;
