@@ -1,0 +1,28 @@
+table .content {
+			@include unselectable();
+			@include absolute(0, 0, 0, 0);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			.symbol {
+				font-size: 2.7vw;
+				line-height: 1;
+				font-weight: bolder;
+				align-self: center;
+			}
+
+			.mass {
+				font-size: 1.2vw;
+				margin-bottom: 0.1vw;
+				align-self: center;
+
+			}
+
+			.number {
+				font-size: 1vw;
+				line-height: 1;
+				font-weight: bolder;
+				margin: 0.2vw 0 0 0.2vw;
+			}
+		}

@@ -1,6 +1,9 @@
 // src/css/main.scss
 
 @import './variables.scss';
+@import './table.scss';
+@import './databar.scss';
+@import './footer.scss';
 
 body {
 	color: $text-primary;
@@ -11,101 +14,6 @@ body {
 
 #app {
 	margin: $app-margin;
-}
-table {
-	width: 100%;
-	margin-top: 65px;
-	border-collapse: collapse;
-	.collapse:after {
-		margin-top: 50%;
-	}
-	td {
-		width: 5.39%;
-		position: relative;
-
-		&:after {
-			content: '';
-			display: block;
-			margin-top: 100%;
-		}
-
-		&:hover .symbol {
-			color: white;
-		}
-
-		.content {
-			@include unselectable();
-			@include absolute(0, 0, 0, 0);
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-
-			.symbol {
-				font-size: 2.7vw;
-				line-height: 1;
-				font-weight: bolder;
-				align-self: center;
-			}
-
-			.mass {
-				font-size: 1.2vw;
-				margin-bottom: 0.1vw;
-				align-self: center;
-
-			}
-
-			.number {
-				font-size: 1vw;
-				line-height: 1;
-				font-weight: bolder;
-				margin: 0.2vw 0 0 0.2vw;
-			}
-		}
-	}
-
-	@each $type, $color in $types {
-		.type-#{$type} {
-			background-color: lighten($color, 6);
-		}
-	}
-
-	.element {
-		// border: 1px solid $text-primary;
-		cursor: pointer;
-	}
-}
-
-.data-bar {
-	background: transparentize(white, 0.1);
-	color: $text-primary;
-	width: 100vw;
-	height: 55px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-	z-index: 999;
-	 .center {
-	 	flex-grow: 1;
-	 	text-align: center;
-	 	overflow-x: auto;
-		 .mass {
-			font-weight: bolder;
-			color: #6A6A6A;
-			font-size: 1.3em;
-			letter-spacing: 0.05em;
-		 }
-		 .compound {
-			font-weight: lighter;
-			letter-spacing: 0.1em;
-		 }
-	 }
-	 button {
-		margin-right: $app-margin*3;
-		cursor: pointer;
-	 }
 }
 
 .grayscale{ 

@@ -1,0 +1,13 @@
+footer {
+	text-align: center;
+	font-weight: 300;
+	margin: 3%;
+	font-size: 0.8em;
+	a {
+		text-decoration: none;
+		color: darken(map-get($types, 'other-nonmetal'), 20);
+	}
+	@media (min-width:700px){
+		font-size: 1em;
+	}
+}

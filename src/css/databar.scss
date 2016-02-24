@@ -1,0 +1,32 @@
+.data-bar {
+	background: transparentize(white, 0.1);
+	color: $text-primary;
+	width: 100vw;
+	height: 55px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	z-index: 999;
+	 .center {
+	 	flex-grow: 1;
+	 	text-align: center;
+	 	overflow-x: auto;
+		 .mass {
+			font-weight: bolder;
+			color: #6A6A6A;
+			font-size: 1.3em;
+			letter-spacing: 0.05em;
+		 }
+		 .compound {
+			font-weight: lighter;
+			letter-spacing: 0.1em;
+		 }
+	 }
+	 button {
+		margin-right: $app-margin*3;
+		cursor: pointer;
+	 }
+}

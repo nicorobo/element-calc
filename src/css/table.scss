@@ -1,0 +1,37 @@
+@import './elements.scss';
+
+table {
+	width: 100%;
+	margin-top: 65px;
+	border-collapse: collapse;
+	.collapse:after {
+		margin-top: 50%;
+	}
+	td {
+		width: 5.39%;
+		position: relative;
+
+		&:after {
+			content: '';
+			display: block;
+			margin-top: 100%;
+		}
+
+		&:hover .symbol {
+			color: white;
+		}
+
+		
+	}
+
+	@each $type, $color in $types {
+		.type-#{$type} {
+			background-color: lighten($color, 6);
+		}
+	}
+
+	.element {
+		// border: 1px solid $text-primary;
+		cursor: pointer;
+	}
+}
