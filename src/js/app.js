@@ -10,6 +10,7 @@ class App extends React.Component {
 	constructor() {
 		super()
 		this.addElement = this.addElement.bind(this);
+		this.removeElement = this.removeElement.bind(this);
 		this.clearCompound = this.clearCompound.bind(this);
 		this.state = {
 			compound: new Compound()
@@ -18,6 +19,11 @@ class App extends React.Component {
 
 	addElement(element) {
 		this.state.compound.add(element);
+		this.forceUpdate();
+	}
+
+	removeElement(element) {
+		this.state.compound.remove(element);
 		this.forceUpdate();
 	}
 
@@ -35,6 +41,7 @@ class App extends React.Component {
 					clearCompound={this.clearCompound} />
 				<Table
 					onElementClick={this.addElement} 
+					onElementRightClick={this.removeElement}
 					activeElements={this.state.compound.elementsList}/>
 			</div>
 		)

@@ -7,9 +7,14 @@ class Element extends React.Component {
 	constructor () {
 		super();
 		this.onClick = this.onClick.bind(this);
+		this.onRightClick = this.onRightClick.bind(this);
 	}
 	onClick () {
 		this.props.onClick(this.props.element);
+	}
+	onRightClick (e) {
+		e.preventDefault();
+		this.props.onRightClick(this.props.element);
 	}
 	render () {
 		var data = PeriodicTable.getElement(this.props.element);
@@ -19,7 +24,8 @@ class Element extends React.Component {
 		return (
 			<td 
 				className = {extraClass+'element type-'+data.type}
-				onClick = {this.onClick}>
+				onClick = {this.onClick}
+				onContextMenu = {this.onRightClick}>
 				<div className = 'content'>
 					<div className="number">{data.number}</div>
 					<div className="symbol">{data.symbol}</div>

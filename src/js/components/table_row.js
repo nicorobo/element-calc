@@ -13,6 +13,7 @@ class Row extends React.Component {
 				return <Element 
 					{...td} 
 					onClick= {this.props.onElementClick}
+					onRightClick={this.props.onElementRightClick}
 					activeElements={this.props.activeElements} />
 			}
 		})

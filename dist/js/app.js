@@ -21210,6 +21210,7 @@ var App = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this));
 
 		_this.addElement = _this.addElement.bind(_this);
+		_this.removeElement = _this.removeElement.bind(_this);
 		_this.clearCompound = _this.clearCompound.bind(_this);
 		_this.state = {
 			compound: new Compound()
@@ -21221,6 +21222,12 @@ var App = function (_React$Component) {
 		key: 'addElement',
 		value: function addElement(element) {
 			this.state.compound.add(element);
+			this.forceUpdate();
+		}
+	}, {
+		key: 'removeElement',
+		value: function removeElement(element) {
+			this.state.compound.remove(element);
 			this.forceUpdate();
 		}
 	}, {
@@ -21241,6 +21248,7 @@ var App = function (_React$Component) {
 					clearCompound: this.clearCompound }),
 				React.createElement(Table, {
 					onElementClick: this.addElement,
+					onElementRightClick: this.removeElement,
 					activeElements: this.state.compound.elementsList })
 			);
 		}
@@ -21331,6 +21339,7 @@ var Element = function (_React$Component) {
 		var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Element).call(this));
 
 		_this.onClick = _this.onClick.bind(_this);
+		_this.onRightClick = _this.onRightClick.bind(_this);
 		return _this;
 	}
 
@@ -21338,6 +21347,12 @@ var Element = function (_React$Component) {
 		key: 'onClick',
 		value: function onClick() {
 			this.props.onClick(this.props.element);
+		}
+	}, {
+		key: 'onRightClick',
+		value: function onRightClick(e) {
+			e.preventDefault();
+			this.props.onRightClick(this.props.element);
 		}
 	}, {
 		key: 'render',
@@ -21348,7 +21363,8 @@ var Element = function (_React$Component) {
 				'td',
 				{
 					className: extraClass + 'element type-' + data.type,
-					onClick: this.onClick },
+					onClick: this.onClick,
+					onContextMenu: this.onRightClick },
 				React.createElement(
 					'div',
 					{ className: 'content' },
@@ -21455,6 +21471,7 @@ var Table = function (_React$Component) {
 						return React.createElement(Row, {
 							data: row,
 							onElementClick: _this2.props.onElementClick,
+							onElementRightClick: _this2.props.onElementRightClick,
 							activeElements: _this2.props.activeElements });
 					})
 				)
@@ -21506,6 +21523,7 @@ var Row = function (_React$Component) {
 				} else {
 					return React.createElement(Element, _extends({}, td, {
 						onClick: _this2.props.onElementClick,
+						onRightClick: _this2.props.onElementRightClick,
 						activeElements: _this2.props.activeElements }));
 				}
 			});

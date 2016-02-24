@@ -13,6 +13,7 @@ class Table extends React.Component {
 						return <Row 
 							data={row} 
 							onElementClick={this.props.onElementClick}
+							onElementRightClick={this.props.onElementRightClick}
 							activeElements={this.props.activeElements} />
 					})}
 				</tbody>
