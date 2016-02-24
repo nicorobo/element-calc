@@ -17,7 +17,7 @@ body {
 	flex-direction: column;
 }
 #wrapper {
-	flex-grow: 1;
+	flex: 1 0 auto;
 }
 
 #app {

@@ -26,7 +26,7 @@ gulp.task('dev-sass', ()=> {
 gulp.task('dev-scripts', ()=> {
 	return browserify('./src/js/app.js')
 		.on('error', handle_error)
-		.transform(babel, {presets: ["react", "es2015"]}) 
+		.transform(babel, {presets: ["react", "es2015"], global: true}) 
 		.bundle()
 		.on('error', handle_error)
 		.pipe(source('app.js'))
@@ -47,7 +47,7 @@ gulp.task('dev-watch', ()=> {
 gulp.task('pro-sass', ()=> {
 	return gulp.src('./src/css/main.scss')
 		.pipe(sass('main.css'))
-		.pipe(autoprefixer({browsers: ['> 2%'], cascade: false}))
+		.pipe(autoprefixer({browsers: ['last 2 versions'], cascade: false}))
 		.pipe(minicss())
 		.pipe(gulp.dest('./dist/css'));
 });
