@@ -21588,9 +21588,6 @@ var Element = function (_React$Component) {
 
 		_this.onClick = _this.onClick.bind(_this);
 		_this.onRightClick = _this.onRightClick.bind(_this);
-		_this.onTouchStart = _this.onTouchStart.bind(_this);
-		_this.onTouchEnd = _this.onTouchEnd.bind(_this);
-		_this.state = { addNew: true, timeout: null };
 		return _this;
 	}
 
@@ -21606,26 +21603,6 @@ var Element = function (_React$Component) {
 			this.props.onRightClick(this.props.element);
 		}
 	}, {
-		key: 'onTouchStart',
-		value: function onTouchStart() {
-			var _this2 = this;
-
-			var timer = window.setTimeout(function () {
-				_this2.props.onRightClick(_this2.props.element);
-				_this2.setState({ addNew: false });
-			}, 500);
-			this.setState({ timeout: timer });
-		}
-	}, {
-		key: 'onTouchEnd',
-		value: function onTouchEnd() {
-			window.clearTimeout(this.state.timeout);
-			if (this.state.addNew) {
-				this.props.onClick(this.props.element);
-				this.setState({ addNew: false });
-			}
-		}
-	}, {
 		key: 'render',
 		value: function render() {
 			var data = PeriodicTable.getElement(this.props.element);
@@ -21635,8 +21612,6 @@ var Element = function (_React$Component) {
 				{
 					className: extraClass + 'element type-' + data.type,
 					onClick: this.onClick,
-					onTouchStart: this.onTouchStart,
-					onTouchEnd: this.onTouchEnd,
 					onContextMenu: this.onRightClick },
 				React.createElement(
 					'div',
