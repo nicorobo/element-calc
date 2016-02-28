@@ -6,33 +6,39 @@ const PeriodicTable = require('mendeleev').PeriodicTable;
 class Element extends React.Component {
 	constructor () {
 		super();
-		this.onClick = this.onClick.bind(this);
-		this.onRightClick = this.onRightClick.bind(this);
 		this.onTouchStart = this.onTouchStart.bind(this);
 		this.onTouchEnd = this.onTouchEnd.bind(this);
-		this.state = { addNew: true, timeout: null }
+		this.onMouseLeave = this.onMouseLeave.bind(this);
+		this.state = { addNew: true, timeout: null, active: false }
 	}
-	onClick () {
-		this.props.onClick(this.props.element);
-	}
-	onRightClick (e) {
+	onTouchStart (e) {
+		e.stopPropagation();
 		e.preventDefault();
-		this.props.onRightClick(this.props.element);
-	}
-	onTouchStart () {
 		var timer = window.setTimeout(() => {
 			this.props.onRightClick(this.props.element);
-			this.setState({addNew: false})
+			var interval = window.setInterval(() => {
+				this.props.onRightClick(this.props.element);
+			}, 500) 
+			this.setState({interval, addNew: false})
 		}, 500 )
-		this.setState({timeout: timer});
+		this.setState({timeout: timer, active: true});
 	}
-	onTouchEnd () {
+	onTouchEnd (e) {
+		e.stopPropagation();
+		e.preventDefault();
 		window.clearTimeout(this.state.timeout)
-		if (this.state.addNew) {
+		window.clearInterval(this.state.interval);
+		if (this.state.addNew && this.state.active) {
 			this.props.onClick(this.props.element);
-			this.setState({addNew: false })
 		}
+		this.setState({addNew: true, active: false })
 	}
+	onMouseLeave () {
+		window.clearTimeout(this.state.timeout);
+		window.clearInterval(this.state.interval);
+		this.setState({addNew: true, active: false });
+	}
+
 	render () {
 		var data = PeriodicTable.getElement(this.props.element);
 		var extraClass = this.props.activeElements.length > 0 && this.props.activeElements.indexOf(this.props.element) < 0 
@@ -41,10 +47,11 @@ class Element extends React.Component {
 		return (
 			<td 
 				className = {extraClass+'element type-'+data.type}
-				onClick = {this.onClick}
+				onMouseDown = {this.onTouchStart}
+				onMouseUp = {this.onTouchEnd}
 				onTouchStart = {this.onTouchStart}
 				onTouchEnd = {this.onTouchEnd}
-				onContextMenu = {this.onRightClick}>
+				onMouseLeave = {this.onMouseLeave}>
 				<div className = 'content'>
 					<div className="number">{data.number}</div>
 					<div className="symbol">{data.symbol}</div>
