@@ -38,8 +38,6 @@ class Element extends React.Component {
 		window.clearInterval(this.state.interval);
 		this.setState({addNew: true, active: false });
 	}
-
->>>>>>> touch-minus
 	render () {
 		var data = PeriodicTable.getElement(this.props.element);
 		var extraClass = this.props.activeElements.length > 0 && this.props.activeElements.indexOf(this.props.element) < 0 

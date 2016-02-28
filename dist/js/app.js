@@ -22415,30 +22415,14 @@ var Element = function (_React$Component) {
 
 		var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Element).call(this));
 
-<<<<<<< HEAD
-		_this.onClick = _this.onClick.bind(_this);
-		_this.onRightClick = _this.onRightClick.bind(_this);
-=======
 		_this.onTouchStart = _this.onTouchStart.bind(_this);
 		_this.onTouchEnd = _this.onTouchEnd.bind(_this);
 		_this.onMouseLeave = _this.onMouseLeave.bind(_this);
 		_this.state = { addNew: true, timeout: null, active: false };
->>>>>>> touch-minus
 		return _this;
 	}
 
 	_createClass(Element, [{
-<<<<<<< HEAD
-		key: 'onClick',
-		value: function onClick() {
-			this.props.onClick(this.props.element);
-		}
-	}, {
-		key: 'onRightClick',
-		value: function onRightClick(e) {
-			e.preventDefault();
-			this.props.onRightClick(this.props.element);
-=======
 		key: 'onTouchStart',
 		value: function onTouchStart(e) {
 			var _this2 = this;
@@ -22472,7 +22456,6 @@ var Element = function (_React$Component) {
 			window.clearTimeout(this.state.timeout);
 			window.clearInterval(this.state.interval);
 			this.setState({ addNew: true, active: false });
->>>>>>> touch-minus
 		}
 	}, {
 		key: 'render',
@@ -22483,16 +22466,11 @@ var Element = function (_React$Component) {
 				'td',
 				{
 					className: extraClass + 'element type-' + data.type,
-<<<<<<< HEAD
-					onClick: this.onClick,
-					onContextMenu: this.onRightClick },
-=======
 					onMouseDown: this.onTouchStart,
 					onMouseUp: this.onTouchEnd,
 					onTouchStart: this.onTouchStart,
 					onTouchEnd: this.onTouchEnd,
 					onMouseLeave: this.onMouseLeave },
->>>>>>> touch-minus
 				React.createElement(
 					'div',
 					{ className: 'content' },
