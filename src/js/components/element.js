@@ -12,8 +12,8 @@ class Element extends React.Component {
 		this.state = { addNew: true, timeout: null, active: false }
 	}
 	onTouchStart (e) {
-		e.stopPropagation();
-		e.preventDefault();
+		// e.stopPropagation();
+		// e.preventDefault();
 		var timer = window.setTimeout(() => {
 			this.props.onRightClick(this.props.element);
 			var interval = window.setInterval(() => {

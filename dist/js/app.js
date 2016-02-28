@@ -22427,8 +22427,8 @@ var Element = function (_React$Component) {
 		value: function onTouchStart(e) {
 			var _this2 = this;
 
-			e.stopPropagation();
-			e.preventDefault();
+			// e.stopPropagation();
+			// e.preventDefault();
 			var timer = window.setTimeout(function () {
 				_this2.props.onRightClick(_this2.props.element);
 				var interval = window.setInterval(function () {
