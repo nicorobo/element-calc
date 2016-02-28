@@ -50,7 +50,8 @@ class Element extends React.Component {
 				onMouseUp = {this.onTouchEnd}
 				onTouchStart = {this.onTouchStart}
 				onTouchEnd = {this.onTouchEnd}
-				onMouseLeave = {this.onMouseLeave}>
+				onMouseLeave = {this.onMouseLeave}
+				onTouchMove = {this.onMouseLeave}>
 				<div className = 'content'>
 					<div className="number">{data.number}</div>
 					<div className="symbol">{data.symbol}</div>

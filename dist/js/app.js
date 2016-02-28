@@ -22470,7 +22470,8 @@ var Element = function (_React$Component) {
 					onMouseUp: this.onTouchEnd,
 					onTouchStart: this.onTouchStart,
 					onTouchEnd: this.onTouchEnd,
-					onMouseLeave: this.onMouseLeave },
+					onMouseLeave: this.onMouseLeave,
+					onTouchMove: this.onMouseLeave },
 				React.createElement(
 					'div',
 					{ className: 'content' },
