@@ -18,7 +18,7 @@ class Element extends React.Component {
 			this.props.onRightClick(this.props.element);
 			var interval = window.setInterval(() => {
 				this.props.onRightClick(this.props.element);
-			}, 500) 
+			}, 300) 
 			this.setState({interval, addNew: false})
 		}, 500 )
 		this.setState({timeout: timer, active: true});

@@ -22363,7 +22363,7 @@ var DataBar = function (_React$Component) {
 	_createClass(DataBar, [{
 		key: 'render',
 		value: function render() {
-			var mass = this.props.mass;
+			var mass = this.props.mass < 0.5 ? 0 : this.props.mass;
 			return React.createElement(
 				'div',
 				{ className: 'data-bar' },
@@ -22433,7 +22433,7 @@ var Element = function (_React$Component) {
 				_this2.props.onRightClick(_this2.props.element);
 				var interval = window.setInterval(function () {
 					_this2.props.onRightClick(_this2.props.element);
-				}, 500);
+				}, 300);
 				_this2.setState({ interval: interval, addNew: false });
 			}, 500);
 			this.setState({ timeout: timer, active: true });
