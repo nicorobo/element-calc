@@ -1,6 +1,7 @@
 // data_bar.js
 
 const React = require('react');
+const CompoundDisplay = require('./compound-display.js')
 
 class DataBar extends React.Component {
 	render () {
@@ -9,7 +10,7 @@ class DataBar extends React.Component {
 			<div className='data-bar' >
 				<div className='center'>
 					<div className='mass'>{mass.toFixed(4)}</div>
-					<div className="compound" dangerouslySetInnerHTML={{__html:this.props.compound}}></div>
+					<CompoundDisplay newCompound={this.props.newCompound} compound={this.props.compound} />
 				</div>
 				<button className="clear" onClick={this.props.clearCompound}>
 					Clear

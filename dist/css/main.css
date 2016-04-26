@@ -111,6 +111,9 @@ table {
     .data-bar .center .compound {
       font-weight: lighter;
       letter-spacing: 0.1em; }
+      .data-bar .center .compound span {
+        font-weight: normal;
+        font-size: 0.75em; }
   .data-bar button {
     margin-right: 3%;
     cursor: pointer; }
