@@ -22446,17 +22446,28 @@ var DataBar = function (_React$Component) {
 			this.props.newCompound(e.target.value);
 		}
 	}, {
+		key: 'handleKeyDown',
+		value: function handleKeyDown(e) {
+			if (e.keyCode === 13) {
+				this.exitInputMode();
+			}
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			if (this.state.inputMode) {
 				return React.createElement('input', { type: 'text',
 					id: 'compound-input',
 					value: this.state.inputValue,
-					onChange: this.handleChange.bind(this), autoFocus: true });
+					onChange: this.handleChange.bind(this),
+					onKeyDown: this.handleKeyDown.bind(this), autoFocus: true });
 			} else {
-				return React.createElement('div', { className: 'compound',
-					dangerouslySetInnerHTML: { __html: (this.props.compound || "<span>No Elements Selected</span>") + "<i class='fa fa-pencil'></i>" },
-					onClick: this.enterInputMode.bind(this) });
+				return React.createElement(
+					'div',
+					{ className: 'compound-container' },
+					React.createElement('div', { className: 'compound', dangerouslySetInnerHTML: { __html: this.props.compound || "<span>No Elements Selected</span>" } }),
+					React.createElement('i', { className: 'fa fa-pencil', onClick: this.enterInputMode.bind(this) })
+				);
 			}
 		}
 	}]);

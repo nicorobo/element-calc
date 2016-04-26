@@ -29,6 +29,11 @@ class DataBar extends React.Component {
 		this.setState({inputValue: e.target.value});
 		this.props.newCompound(e.target.value);
 	}
+	handleKeyDown(e) {
+		if(e.keyCode === 13) {
+			this.exitInputMode();
+		}
+	}
 
 	render () {
 		if (this.state.inputMode){
@@ -36,14 +41,16 @@ class DataBar extends React.Component {
 				<input type="text" 
 					id="compound-input"
 					value={this.state.inputValue}
-					onChange={this.handleChange.bind(this)} autoFocus/>
+					onChange={this.handleChange.bind(this)}
+					onKeyDown={this.handleKeyDown.bind(this)} autoFocus/>
 			)
 		}
 		else {
 			return (
-				<div className="compound" 
-					dangerouslySetInnerHTML={{__html:(this.props.compound||"<span>No Elements Selected</span>")+"<i class='fa fa-pencil'></i>"}}
-					onClick={this.enterInputMode.bind(this)}></div>
+				<div className="compound-container">
+					<div className="compound" dangerouslySetInnerHTML={{__html:this.props.compound||"<span>No Elements Selected</span>"}}></div>
+					<i className='fa fa-pencil' onClick={this.enterInputMode.bind(this)}></i>
+				</div>
 			)
 		}
 	}

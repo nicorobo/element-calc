@@ -27,16 +27,20 @@
 				font-weight: normal;
 				font-size: 0.75em;
 			}
-			.fa-pencil {
-				color: #bbb;
-				padding: 2px;
-				margin-left: 5px;
-				cursor: pointer;
-				&:hover {
-					color: $text-primary;
-				}
-			}
 		 }
+		 .compound-container {
+		 	display: flex;
+		 	justify-content: center;
+		 }
+		.fa-pencil {
+			color: #bbb;
+			padding: 2px;
+			margin-left: 5px;
+			cursor: pointer;
+			&:hover {
+				color: $text-primary;
+			}
+		}
 	 }
 	 button {
 		margin-right: $app-margin*3;

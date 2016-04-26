@@ -114,13 +114,16 @@ table {
       .data-bar .center .compound span {
         font-weight: normal;
         font-size: 0.75em; }
-      .data-bar .center .compound .fa-pencil {
-        color: #bbb;
-        padding: 2px;
-        margin-left: 5px;
-        cursor: pointer; }
-        .data-bar .center .compound .fa-pencil:hover {
-          color: #444; }
+    .data-bar .center .compound-container {
+      display: flex;
+      justify-content: center; }
+    .data-bar .center .fa-pencil {
+      color: #bbb;
+      padding: 2px;
+      margin-left: 5px;
+      cursor: pointer; }
+      .data-bar .center .fa-pencil:hover {
+        color: #444; }
   .data-bar button {
     margin-right: 3%;
     cursor: pointer; }
