@@ -27,6 +27,15 @@
 				font-weight: normal;
 				font-size: 0.75em;
 			}
+			.fa-pencil {
+				color: #bbb;
+				padding: 2px;
+				margin-left: 5px;
+				cursor: pointer;
+				&:hover {
+					color: $text-primary;
+				}
+			}
 		 }
 	 }
 	 button {

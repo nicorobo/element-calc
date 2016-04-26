@@ -42,7 +42,7 @@ class DataBar extends React.Component {
 		else {
 			return (
 				<div className="compound" 
-					dangerouslySetInnerHTML={{__html:this.props.compound||"<span>No Elements Selected</span>"}}
+					dangerouslySetInnerHTML={{__html:(this.props.compound||"<span>No Elements Selected</span>")+"<i class='fa fa-pencil'></i>"}}
 					onClick={this.enterInputMode.bind(this)}></div>
 			)
 		}

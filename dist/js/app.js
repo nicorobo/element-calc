@@ -22437,7 +22437,7 @@ var DataBar = function (_React$Component) {
 		value: function exitInputMode() {
 			this.setState({ inputMode: false });
 			window.removeEventListener('mousedown', this.checkForInputClick);
-			window.removeEventListener('touchstart', this.checkForInputClick.bind(this));
+			window.removeEventListener('touchstart', this.checkForInputClick);
 		}
 	}, {
 		key: 'handleChange',
@@ -22455,7 +22455,7 @@ var DataBar = function (_React$Component) {
 					onChange: this.handleChange.bind(this), autoFocus: true });
 			} else {
 				return React.createElement('div', { className: 'compound',
-					dangerouslySetInnerHTML: { __html: this.props.compound || "<span>No Elements Selected</span>" },
+					dangerouslySetInnerHTML: { __html: (this.props.compound || "<span>No Elements Selected</span>") + "<i class='fa fa-pencil'></i>" },
 					onClick: this.enterInputMode.bind(this) });
 			}
 		}
