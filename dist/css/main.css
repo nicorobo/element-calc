@@ -112,6 +112,7 @@ table {
       font-weight: lighter;
       letter-spacing: 0.1em; }
       .data-bar .center .compound span {
+        letter-spacing: 0.05em;
         font-weight: normal;
         font-size: 0.75em; }
     .data-bar .center .compound-container {
@@ -125,8 +126,20 @@ table {
       .data-bar .center .fa-pencil:hover {
         color: #444; }
   .data-bar button {
-    margin-right: 3%;
-    cursor: pointer; }
+    margin-right: 2%;
+    cursor: pointer;
+    height: 55px;
+    color: #333;
+    font-size: 1em;
+    background-color: rgba(245, 137, 137, 0.5);
+    outline: none;
+    font-weight: lighter;
+    border: none;
+    padding: 0 1em; }
+    .data-bar button:hover {
+      background-color: rgba(243, 113, 113, 0.5); }
+    .data-bar button:active {
+      background-color: rgba(241, 90, 90, 0.5); }
 
 #compound-input {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;

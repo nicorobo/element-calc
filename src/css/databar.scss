@@ -24,6 +24,7 @@
 			font-weight: lighter;
 			letter-spacing: 0.1em;
 			span {
+				letter-spacing: 0.05em;
 				font-weight: normal;
 				font-size: 0.75em;
 			}
@@ -43,8 +44,23 @@
 		}
 	 }
 	 button {
-		margin-right: $app-margin*3;
+		margin-right: $app-margin*2;
 		cursor: pointer;
+		height: 55px;
+		color: #333;
+		font-size: 1em;
+		background-color: transparentize(map-get($types, metalloid), 0.5);
+		outline: none;
+		// font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: lighter;
+		border: none;
+		padding: 0 1em;
+		&:hover {
+			background-color: darken(transparentize(map-get($types, metalloid), 0.5), 5);
+		}
+		&:active {
+			background-color: darken(transparentize(map-get($types, metalloid), 0.5), 10);
+		}
 	 }
 }
 
