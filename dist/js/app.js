@@ -22458,6 +22458,7 @@ var DataBar = function (_React$Component) {
 			if (this.state.inputMode) {
 				return React.createElement('input', { type: 'text',
 					id: 'compound-input',
+					placeholder: 'H2O',
 					value: this.state.inputValue,
 					onChange: this.handleChange.bind(this),
 					onKeyDown: this.handleKeyDown.bind(this), autoFocus: true });

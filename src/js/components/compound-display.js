@@ -40,6 +40,7 @@ class DataBar extends React.Component {
 			return (
 				<input type="text" 
 					id="compound-input"
+					placeholder="H2O"
 					value={this.state.inputValue}
 					onChange={this.handleChange.bind(this)}
 					onKeyDown={this.handleKeyDown.bind(this)} autoFocus/>

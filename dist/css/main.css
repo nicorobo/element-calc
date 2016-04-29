@@ -128,6 +128,13 @@ table {
     margin-right: 3%;
     cursor: pointer; }
 
+#compound-input {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  font-size: 0.8em;
+  outline: none; }
+
 footer {
   text-align: center;
   font-weight: 300;
