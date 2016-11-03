@@ -159,6 +159,11 @@ footer {
     color: #47a5f4; }
     footer a:hover {
       color: #8fc8f8; }
+  footer .brand-link {
+    letter-spacing: 0.05em;
+    color: #18d577; }
+    footer .brand-link:hover {
+      color: #93F3C3; }
   @media (min-width: 700px) {
     footer {
       font-size: 1em; } }
