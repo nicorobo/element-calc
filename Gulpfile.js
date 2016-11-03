@@ -16,7 +16,7 @@ const port = 2000;
 // This task compiles sass into css.
 gulp.task('dev-sass', ()=> {
 	return gulp.src('./src/css/main.scss')
-		.pipe(sass('main.css'))
+		.pipe(sass())
 		.on('error', handle_error)
 		.pipe(gulp.dest('./dist/css'))
 		.pipe(connect.reload())
