@@ -11,13 +11,12 @@ const babel 		= require('babelify');
 const util			= require('gulp-util');
 const autoprefixer 	= require('gulp-autoprefixer');
 
-const port = 2000;
+const port = 3000;
 
 // This task compiles sass into css.
 gulp.task('dev-sass', ()=> {
 	return gulp.src('./src/css/main.scss')
-		.pipe(sass('main.css'))
-		.on('error', handle_error)
+		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('./dist/css'))
 		.pipe(connect.reload())
 });
