@@ -12,7 +12,7 @@ class DataBar extends React.Component {
 				<div className='center'>
 					<div className='mass'>{mass.toFixed(4)}</div>
 					<CompoundDisplay newCompound={this.props.newCompound} compound={this.props.compound} />
-					<div className='percentages'>{percentages.map(p => `${p.element}(${p.percentage.toFixed(3)}) `)}</div>
+					<div className='percentages'>{percentages.map(p => <span className='percentage-group'><span className="percentage-element">{p.element} </span><span className="percentage-value">{(p.percentage*100).toFixed(2)}%</span></span>)}</div>
 				</div>
 				<button className="clear" onClick={this.props.clearCompound}>
 					Clear

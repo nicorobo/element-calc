@@ -2,7 +2,7 @@
 	background: transparentize(white, 0.1);
 	color: $text-primary;
 	width: 100vw;
-	height: 55px;
+	height: 70px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -21,7 +21,7 @@
 			letter-spacing: 0.05em;
 		 }
 		 .compound {
-			font-weight: lighter;
+			font-weight: 300;
 			letter-spacing: 0.1em;
 			span {
 				letter-spacing: 0.05em;
@@ -63,9 +63,22 @@
 	 }
 }
 
+.percentages {
+	font-size: 0.85em;
+	color: $text-primary;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+.percentage-group {
+	margin-right: 0.3em;
+}
+.percentage-value {
+	font-weight: 300;
+}
+
 #compound-input {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: lighter;
+	font-weight: 300;
 	letter-spacing: 0.1em;
 	font-size: 0.8em;
 	outline: none;

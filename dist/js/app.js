@@ -22629,7 +22629,22 @@ var DataBar = function (_React$Component) {
 						'div',
 						{ className: 'percentages' },
 						percentages.map(function (p) {
-							return p.element + '(' + p.percentage.toFixed(3) + ') ';
+							return React.createElement(
+								'span',
+								{ className: 'percentage-group' },
+								React.createElement(
+									'span',
+									{ className: 'percentage-element' },
+									p.element,
+									' '
+								),
+								React.createElement(
+									'span',
+									{ className: 'percentage-value' },
+									(p.percentage * 100).toFixed(2),
+									'%'
+								)
+							);
 						})
 					)
 				),

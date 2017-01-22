@@ -31,7 +31,7 @@ table .content {
 
 table {
   width: 100%;
-  margin-top: 65px;
+  margin-top: 70px;
   border-collapse: collapse; }
   table .collapse:after {
     margin-top: 50%; }
@@ -91,7 +91,7 @@ table {
   background: rgba(255, 255, 255, 0.9);
   color: #444;
   width: 100vw;
-  height: 55px;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -109,7 +109,7 @@ table {
       font-size: 1.3em;
       letter-spacing: 0.05em; }
     .data-bar .center .compound {
-      font-weight: lighter;
+      font-weight: 300;
       letter-spacing: 0.1em; }
       .data-bar .center .compound span {
         letter-spacing: 0.05em;
@@ -141,9 +141,21 @@ table {
     .data-bar button:active {
       color: #f58989; }
 
+.percentages {
+  font-size: 0.85em;
+  color: #444;
+  overflow-x: auto;
+  white-space: nowrap; }
+
+.percentage-group {
+  margin-right: 0.3em; }
+
+.percentage-value {
+  font-weight: 300; }
+
 #compound-input {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   letter-spacing: 0.1em;
   font-size: 0.8em;
   outline: none; }
