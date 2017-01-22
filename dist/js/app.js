@@ -4169,7 +4169,6 @@ var Compound = function () {
 	function Compound(element_list) {
 		_classCallCheck(this, Compound);
 
-		this.mass = 0;
 		this.elements = {};
 		this.elementsList = [];
 		if (element_list) {
@@ -4184,8 +4183,7 @@ var Compound = function () {
 		key: 'add',
 		value: function add(element, quantity) {
 			quantity = quantity || 1;
-			var element_data = elements[element];
-			if (!element_data) {
+			if (!elements[element]) {
 				return false;
 			}
 			if (this.elements[element]) {
@@ -4194,34 +4192,52 @@ var Compound = function () {
 				this.elements[element] = quantity;
 				this.elementsList.push(element);
 			}
-			this.mass += quantity * element_data.mass;
 			return true;
 		}
 	}, {
 		key: 'remove',
 		value: function remove(element, quantity) {
 			quantity = quantity || 1;
-			var element_data = elements[element];
-			if (!element_data || !this.elements[element]) {
+			if (!elements[element] || !this.elements[element]) {
 				return false;
 			}
 			var elementCount = this.elements[element];
 			if (quantity >= elementCount) {
 				delete this.elements[element];
 				this.elementsList.splice(this.elementsList.indexOf(element), 1);
-				this.mass -= elementCount * element_data.mass;
 			} else {
 				this.elements[element] -= quantity;
-				this.mass -= quantity * element_data.mass;
 			}
 			return true;
 		}
 	}, {
 		key: 'clear',
 		value: function clear() {
-			this.mass = 0;
 			this.elements = {};
 			this.elementsList = [];
+		}
+	}, {
+		key: 'getMass',
+		value: function getMass() {
+			var mass = 0;
+			// Okay okay, if I have time i'll find better names, this is getting nuts.
+			for (var element in this.elements) {
+				mass += this.elements[element] * elements[element].mass;
+			}
+			return mass;
+		}
+	}, {
+		key: 'getPercentages',
+		value: function getPercentages() {
+			var self = this;
+			var mass = this.getMass();
+			var percentages = this.elementsList.map(function (el) {
+				return {
+					element: el,
+					percentage: self.elements[el] * elements[el].mass / mass
+				};
+			});
+			return percentages;
 		}
 	}, {
 		key: 'toHTML',
@@ -4349,7 +4365,6 @@ var Utility = function () {
 				var quantity = fragment.match(/([0-9]+)/g) || 1;
 				list[element] = parseInt(quantity) + (list[element] || 0);
 			}
-			console.log(list);
 			return list;
 		}
 	}]);
@@ -22456,7 +22471,7 @@ var App = function (_React$Component) {
 				null,
 				React.createElement(DataBar, {
 					mass: this.state.compound.getMass(),
-					percentages: this.state.compound.getMassPercentages(),
+					percentages: this.state.compound.getPercentages(),
 					compound: this.state.compound.toHTML(),
 					clearCompound: this.clearCompound.bind(this),
 					newCompound: this.newCompound.bind(this) }),
@@ -22596,6 +22611,7 @@ var DataBar = function (_React$Component) {
 	_createClass(DataBar, [{
 		key: 'render',
 		value: function render() {
+			var percentages = this.props.percentages;
 			var mass = this.props.mass < 0.5 ? 0 : this.props.mass;
 			return React.createElement(
 				'div',
@@ -22608,7 +22624,14 @@ var DataBar = function (_React$Component) {
 						{ className: 'mass' },
 						mass.toFixed(4)
 					),
-					React.createElement(CompoundDisplay, { newCompound: this.props.newCompound, compound: this.props.compound })
+					React.createElement(CompoundDisplay, { newCompound: this.props.newCompound, compound: this.props.compound }),
+					React.createElement(
+						'div',
+						{ className: 'percentages' },
+						percentages.map(function (p) {
+							return p.element + '(' + p.percentage.toFixed(3) + ') ';
+						})
+					)
 				),
 				React.createElement(
 					'button',
