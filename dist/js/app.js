@@ -22631,7 +22631,7 @@ var DataBar = function (_React$Component) {
 						percentages.map(function (p) {
 							return React.createElement(
 								'span',
-								{ className: 'percentage-group' },
+								{ key: p.element, className: 'percentage-group' },
 								React.createElement(
 									'span',
 									{ className: 'percentage-element' },
@@ -22845,8 +22845,9 @@ var Table = function (_React$Component) {
 				React.createElement(
 					'tbody',
 					null,
-					schema.map(function (row) {
+					schema.map(function (row, i) {
 						return React.createElement(Row, {
+							key: i,
 							data: row,
 							onElementClick: _this2.props.onElementClick,
 							onElementRightClick: _this2.props.onElementRightClick,
@@ -22895,11 +22896,12 @@ var Row = function (_React$Component) {
 		value: function getTableData(data) {
 			var _this2 = this;
 
-			return data.map(function (td) {
+			return data.map(function (td, i) {
 				if (td.space) {
-					return React.createElement(Space, td);
+					return React.createElement(Space, _extends({}, td, { key: i }));
 				} else {
 					return React.createElement(Element, _extends({}, td, {
+						key: td.element,
 						onClick: _this2.props.onElementClick,
 						onRightClick: _this2.props.onElementRightClick,
 						activeElements: _this2.props.activeElements }));

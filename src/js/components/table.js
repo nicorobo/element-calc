@@ -9,8 +9,9 @@ class Table extends React.Component {
 		return (
 			<table>
 				<tbody>
-					{ schema.map( row => {
+					{ schema.map( (row, i) => {
 						return <Row 
+							key={i}
 							data={row} 
 							onElementClick={this.props.onElementClick}
 							onElementRightClick={this.props.onElementRightClick}

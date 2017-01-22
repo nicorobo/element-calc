@@ -6,13 +6,14 @@ const Element = require('./element.js');
 
 class Row extends React.Component {
 	getTableData (data) {
-		return data.map( td => {
+		return data.map( (td, i) => {
 			if (td.space) {
-				return <Space {...td} />
+				return <Space {...td} key={i} />
 			} else {
 				return <Element 
 					{...td} 
-					onClick= {this.props.onElementClick}
+					key={td.element}
+					onClick={this.props.onElementClick}
 					onRightClick={this.props.onElementRightClick}
 					activeElements={this.props.activeElements} />
 			}
