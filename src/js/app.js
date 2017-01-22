@@ -45,7 +45,8 @@ class App extends React.Component {
 		return(
 			<div>
 				<DataBar 
-					mass={this.state.compound.mass}
+					mass={this.state.compound.getMass()}
+					percentages={this.state.compound.getMassPercentages()}
 					compound={this.state.compound.toHTML()}
 					clearCompound={this.clearCompound.bind(this)} 
 					newCompound={this.newCompound.bind(this)}/>
