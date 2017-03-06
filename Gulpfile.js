@@ -45,7 +45,7 @@ gulp.task('dev-watch', ()=> {
 // This task compiles sass into css, and then minifies it.
 gulp.task('pro-sass', ()=> {
 	return gulp.src('./src/css/main.scss')
-		.pipe(sass('main.css'))
+		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({browsers: ['last 2 versions'], cascade: false}))
 		.pipe(minicss())
 		.pipe(gulp.dest('./dist/css'));
