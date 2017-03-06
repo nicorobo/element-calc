@@ -39,7 +39,7 @@ gulp.task('dev-scripts', ()=> {
 gulp.task('dev-watch', ()=> {
 	gulp.watch('./src/css/**/*.scss', 	['dev-sass']);
 	gulp.watch('./src/js/**/*.js', 		['dev-scripts']);
-	gulp.watch('./index.html', 			['reload']);
+	gulp.watch('./dist/index.html', 	['reload']);
 })
 
 // This task compiles sass into css, and then minifies it.

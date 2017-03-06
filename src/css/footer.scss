@@ -11,14 +11,23 @@ footer {
 			color: map-get($types, 'other-nonmetal');
 		}
 	}
-	.brand-link {
-		letter-spacing: 0.05em;
-		color: darken(#93F3C3, 30);
-		&:hover {
-			color: #93F3C3;
-		}
-	}
 	@media (min-width:700px){
 		font-size: 1em;
 	}
+}
+.footer-heart {
+	font-style: normal;
+	color: #cb6773;
+}
+.footer-brand {
+	color: #333;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.footer-brand-emphasis {
+	color: #1ABC9C;
+	font-weight: bold;
 }

@@ -171,14 +171,23 @@ footer {
     color: #47a5f4; }
     footer a:hover {
       color: #8fc8f8; }
-  footer .brand-link {
-    letter-spacing: 0.05em;
-    color: #18d577; }
-    footer .brand-link:hover {
-      color: #93F3C3; }
   @media (min-width: 700px) {
     footer {
       font-size: 1em; } }
+
+.footer-heart {
+  font-style: normal;
+  color: #cb6773; }
+
+.footer-brand {
+  color: #333;
+  text-decoration: none; }
+  .footer-brand:hover {
+    text-decoration: underline; }
+
+.footer-brand-emphasis {
+  color: #1ABC9C;
+  font-weight: bold; }
 
 html, body {
   height: 100%; }
