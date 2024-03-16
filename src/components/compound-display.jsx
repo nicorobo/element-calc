@@ -1,8 +1,7 @@
 // compound_display.js
+import React from 'react';
 
-const React = require('react');
-
-class DataBar extends React.Component {
+export default class DataBar extends React.Component {
 	constructor () {
 		super(...arguments)
 		this.state = {
@@ -61,5 +60,3 @@ function cleanSubTags(str) {
 	var clean = str.replace(/<sub>|<\/sub>/g, "");
 	return clean;
 }
-
-module.exports = DataBar;
