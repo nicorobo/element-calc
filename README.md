@@ -1,4 +1,4 @@
-_This is an elderly project, one of the first things I made while teaching myself Javascript in college. I recently converted it to Vite so I could get it running again without playing with all the old Gulp plugins, but I've left the sweet, naive essence of the code in-tact ❤️_
+_This is an elderly project, one of the first things I made while teaching myself Javascript in college. I recently converted it to Vite so I could get it running again without playing with all the old Gulp plugins, but I've left the sweet, naive essence of the code intact ❤️_
 
 # element-calc
 
